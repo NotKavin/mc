@@ -1,0 +1,19 @@
+lastAccountName: Dream
+timestamps:
+  login: 1675365980819
+  logout: 1675366009822
+ipAddress: 127.0.0.1
+lastlocation:
+  world: bwsolo4
+  x: -66.03129359101243
+  y: -10.281043493009703
+  z: -43.94389677374499
+  yaw: 358.50012
+  pitch: -90.0
+logoutlocation:
+  world: crmapin
+  x: 0.5468124523821354
+  y: 64.0
+  z: 0.4175847184915828
+  yaw: 0.69605005
+  pitch: 0.39341038

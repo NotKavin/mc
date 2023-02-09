@@ -1,0 +1,19 @@
+lastAccountName: 'null'
+timestamps:
+  login: 1675351610573
+  logout: 1675352029999
+ipAddress: 127.0.0.1
+lastlocation:
+  world: bwsolo4
+  x: -49.553552218339036
+  y: -9.404447471036473
+  z: -61.56674977863199
+  yaw: -19.199951
+  pitch: 12.449993
+logoutlocation:
+  world: crmapin
+  x: 0.5468124523821354
+  y: 64.0
+  z: 0.4175847184915828
+  yaw: 0.69605005
+  pitch: 0.39341038

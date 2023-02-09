@@ -1,0 +1,52 @@
+# > ---
+# > LeakParkour parkours
+# > Visit Spigot page for more informations 
+# > https://goo.gl/Z99sVg
+# > ---
+
+Parkours:
+  '1':
+    status: 'ON'
+    points:
+      '1':
+        world: crmapin
+        x: 15
+        y: 45
+        z: -38
+        yaw: 178.50208
+      '2':
+        world: crmapin
+        x: 93
+        y: 70
+        z: -30
+        yaw: 325.80237
+      '3':
+        world: crmapin
+        x: 68
+        y: 81
+        z: 22
+        yaw: 190.50122
+      '4':
+        world: crmapin
+        x: -3
+        y: 112
+        z: 117
+        yaw: 129.8999
+      '5':
+        world: crmapin
+        x: -68
+        y: 103
+        z: 24
+        yaw: 111.076416
+      '6':
+        world: crmapin
+        x: -28
+        y: 105
+        z: -56
+        yaw: 200.77625
+      '7':
+        world: crmapin
+        x: 0
+        y: 112
+        z: -5
+        yaw: 353.2522

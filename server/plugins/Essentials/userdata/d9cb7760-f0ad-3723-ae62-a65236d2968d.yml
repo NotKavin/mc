@@ -1,0 +1,19 @@
+lastAccountName: yoya
+timestamps:
+  login: 1675387361908
+  logout: 1675389503083
+ipAddress: 127.0.0.1
+lastlocation:
+  world: luckyblock
+  x: 359.31205194503207
+  y: -0.9397268140589867
+  z: 620.4609125363868
+  yaw: 260.25052
+  pitch: 57.599968
+logoutlocation:
+  world: crmapin
+  x: 0.5468124523821354
+  y: 64.0
+  z: 0.41758471849158285
+  yaw: 357.2461
+  pitch: -48.149998

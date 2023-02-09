@@ -1,0 +1,20 @@
+lastAccountName: FlameBlade
+timestamps:
+  login: 1675356807220
+  logout: 1675357188600
+ipAddress: 127.0.0.1
+lastlocation:
+  world: bwsolo1
+  x: -28.186115251987545
+  y: -11.119412824213422
+  z: -2.8172771934418632
+  yaw: -261.29987
+  pitch: 63.6
+logoutlocation:
+  world: crmapin
+  x: 0.5468124523821354
+  y: 64.0
+  z: 0.4175847184915828
+  yaw: 0.69605005
+  pitch: 0.39341038
+afk: false

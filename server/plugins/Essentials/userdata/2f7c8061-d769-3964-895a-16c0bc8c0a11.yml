@@ -1,0 +1,19 @@
+lastAccountName: ThatGuy
+timestamps:
+  login: 1675296902330
+  logout: 1675296924772
+ipAddress: 127.0.0.1
+lastlocation:
+  world: bwsolo1
+  x: -101.11748204253965
+  y: 71.0
+  z: -73.30383091807246
+  yaw: 84.150055
+  pitch: 13.199997
+logoutlocation:
+  world: crmapin
+  x: 5.6249305621869
+  y: 65.0
+  z: 7.662161837435867
+  yaw: 47.346054
+  pitch: -28.556593

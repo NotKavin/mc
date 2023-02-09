@@ -1,0 +1,19 @@
+lastAccountName: Vison1
+timestamps:
+  login: 1675562391176
+  logout: 1675562431495
+ipAddress: 127.0.0.1
+lastlocation:
+  world: bwsolo1
+  x: -13.187889791659975
+  y: -11.119412824213422
+  z: 0.3443745569209444
+  yaw: 69.45032
+  pitch: 90.0
+logoutlocation:
+  world: crmapin
+  x: 0.7011307347822571
+  y: 62.0
+  z: 29.27983820026748
+  yaw: 355.8961
+  pitch: 9.543411

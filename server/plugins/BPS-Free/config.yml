@@ -1,0 +1,99 @@
+#      ___                         ___
+#     /\__\                       /\  \
+#    /:/ _/_         ___          \:\  \
+#   /:/ /\  \       /\__\          \:\  \
+#  /:/ /::\  \     /:/  /      _____\:\  \
+# /:/_/:/\:\__\   /:/__/      /::::::::\__\
+# \:\/:/ /:/  /  /::\  \      \:\~~\~~\/__/
+#  \::/ /:/  /  /:/\:\  \      \:\  \
+#   \/_/:/  /   \/__\:\  \      \:\  \
+#     /:/  /         \:\__\      \:\__\
+#     \/__/           \/__/       \/__/
+
+# See the latest updates.
+CHECK_UPDATE: false
+# If you modify this you will have to restart your server!
+DEPENDENCIES:
+  ProtocolLib: false
+  PlaceholderAPI: false
+
+# You can check here the whole list of minecraft sounds.
+# 1.8.8x - 1.12x         https://pastebin.com/W8ZnDx3V
+# 1.13x - 1.16x              https://bit.ly/1F8lxso
+SOUND_USE:
+  NO_UPDATE_SOUND: "ENDERDRAGON_GROWL"
+  ON_COMMAND: "CAT_PURR"
+  SDOTHER: "CAT_HISS"
+  SDRELOAD: "LEVEL_UP"
+
+# Use: STN.ADMIN
+# You can add infinite commands here
+BPS-FREE:
+  # if it is false, what the plugin will do is what will cause the whole event and let them see their plugins.
+  NO_PLUGINS: true
+  TABS:
+    # 1.13x - 1.16x
+    BLOCK_ALL_TAB: true
+    # 1.8.8x - 1.12x
+    BLOCK_TAB_OLD: true
+  SOUND_USE: true
+  NO_PL_SOUND: "ENDERDRAGON_GROWL"
+  COMMANDS:
+    - "?"
+    - "bukkit:plugins"
+    - "bukkit:?"
+    - "bukkit:help"
+    - "bukkit:ver"
+    - "bukkit:version"
+    - "bukkit:about"
+    - "bukkit:pl"
+    - "bukkit:msg"
+    - "bukkit:kill"
+    - "bukkit:tell"
+    - "bukkit:me"
+    - "minecraft:me"
+    - "pl"
+    - "plugins"
+    - "me"
+    - "about"
+    - "version"
+    - "ver"
+    - "icanhasbukkit"
+    - "help"
+  TITLE_ENABLE: true
+  TITLE: "<exclusive>"
+  SUBTITLE: "&7&o(( You do not have access ))"
+  PERMISSIONS:
+    - '&f'
+    - '  &0▉▉▉▉▉▉▉▉&f   &9&lC X &f&lＳＴＵＤＩＯＳ&e® &f&l** &c&lFATAL ERROR &f&l**'
+    - '  &0▉▉▉▉▉▉▉▉&f'
+    - '  &0▉&e▉▉▉▉▉▉&0▉&f     &c&l(!) &cThis command is not available now &c&l(!)'
+    - '  &e▉&f▉&0▉&e▉▉&0▉&f▉&e▉&f &7&o(( Registered in the database for security ))'
+    - '  &0▉&7▉&e▉▉▉▉&7▉&0▉'
+    - '  &0▉▉▉▉▉▉▉▉&f     &6&l╰☆╮ &aSupport &fstn-studios.com/support'
+    - '  &0▉▉▉&7▉▉&0▉▉▉'
+    - '  &0▉▉▉▉▉▉▉▉&f       &eCopyright © 2020 &6stn-studios.com'
+    - '&f'
+
+# Use: BPS.ADMIN
+RELOAD:
+  SUCCESS:
+    - "&aRecharging Plugin ..."
+    - "&aPlugin Loaded Correctly!"
+
+# Use: BPS.ADMIN
+PERMS:
+  TITLE: "<exclusive>"
+  SUBTITLE: "&7&o(( You do not have access ))"
+  SD_NO_COMMAND: "ENDERDRAGON_GROWL"
+  NO_PERMISSIONS:
+    - "&f"
+    - "  &0▉▉▉▉▉▉▉▉&f"
+    - "  &0▉▉▉▉▉▉▉▉&f                       &c&lERROR | UNDEFINED"
+    - "  &0▉&e▉▉▉▉▉▉&0▉&f"
+    - "  &e▉&f▉&0▉&e▉▉&0▉&f▉&e▉   &c                    Only Administrators"
+    - "  &0▉&7▉&e▉▉▉▉&7▉&0▉"
+    - "  &0▉▉▉▉▉▉▉▉&f"
+    - "  &0▉▉▉&7▉▉&0▉▉▉&f   &eCopyright © 2022 | cxSTUDIOS"
+    - "  &0▉▉▉▉▉▉▉▉&f"
+    - "&f"

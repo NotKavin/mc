@@ -1,0 +1,19 @@
+lastAccountName: LeoMessi
+timestamps:
+  login: 1674759106806
+  logout: 1674760509621
+ipAddress: 127.0.0.1
+lastlocation:
+  world: bwsolo4
+  x: -56.507378753375505
+  y: -10.16803286050481
+  z: 7.335129889653729
+  yaw: 293.07733
+  pitch: 50.962135
+logoutlocation:
+  world: crmapin
+  x: 0.5468124523821354
+  y: 64.0
+  z: 0.41758471849158285
+  yaw: 0.6955705
+  pitch: 0.39818144

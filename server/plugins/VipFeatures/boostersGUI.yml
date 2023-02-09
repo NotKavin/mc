@@ -1,0 +1,14 @@
+boostersGUI:
+  invSize: 27
+  BOOSTER_X_2:
+    material: IRON_INGOT
+    data: 0
+    slot: 11
+  BOOSTER_X_3:
+    material: GOLD_INGOT
+    data: 0
+    slot: 15
+  backItem:
+    material: ARROW
+    data: 0
+    slot: 22

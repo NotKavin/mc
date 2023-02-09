@@ -1,0 +1,18 @@
+mainGUI:
+  invSize: 27
+  trailsGUI:
+    material: BLAZE_POWDER
+    data: 0
+    slot: 10
+  spellsGUI:
+    material: WEB
+    data: 0
+    slot: 12
+  particlesGUI:
+    material: REDSTONE
+    data: 0
+    slot: 14
+  boostersGUI:
+    material: APPLE
+    data: 0
+    slot: 16

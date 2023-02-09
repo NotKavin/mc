@@ -1,0 +1,21 @@
+# This is the server motd.
+Server-MOTD:
+  Line-1: '&a       BedWars Setup &c[1.8-1.18]'
+  Line-2: '&e&l        STABLE VERSION (1.7)'
+# The motd of the player when they join in.
+JoinGame-MOTD:
+  Enabled: true
+  # Check forum for placeholders.
+  # Supported for PlaceholderAPI placeholders.
+  Messages:
+  - '&b&lVERSION - &c1.7.1-STABLE'
+# Server icon.
+Custom-Server-Icon:
+  # Set to true will load image from motd folder.
+  Enabled: false
+  # Make sure it's 64 x 64 pixels with png format.
+  Image: server-icon.png
+# The maximum players of the server.
+Server-Maximum-Players:
+  Modify: true
+  Maximum-Players: 200

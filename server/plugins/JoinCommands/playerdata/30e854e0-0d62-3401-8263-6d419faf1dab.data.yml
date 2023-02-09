@@ -1,0 +1,6 @@
+join-commands:
+  played-before: true
+  played-before-world-list:
+  - crmapin
+  - bwsolo1
+  - bwsolo4

@@ -1,0 +1,26 @@
+spellsGUI:
+  invSize: 27
+  EXPLOSIVE:
+    material: TNT
+    data: 0
+    slot: 11
+  FIRE:
+    material: BLAZE_POWDER
+    data: 0
+    slot: 12
+  WEB:
+    material: WEB
+    data: 0
+    slot: 13
+  ZOMBIE:
+    material: SKULL_ITEM
+    data: 2
+    slot: 14
+  POISON:
+    material: POTION
+    data: 0
+    slot: 15
+  backItem:
+    material: ARROW
+    data: 0
+    slot: 22

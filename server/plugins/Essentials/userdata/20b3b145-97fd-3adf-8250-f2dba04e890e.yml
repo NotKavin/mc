@@ -1,0 +1,19 @@
+lastAccountName: evan
+timestamps:
+  login: 1674681560830
+  logout: 1674681657790
+ipAddress: 127.0.0.1
+lastlocation:
+  world: bwsolo4
+  x: -15.300000011920911
+  y: -10.835973235100667
+  z: -5.699999988079091
+  yaw: -122.85022
+  pitch: 90.0
+logoutlocation:
+  world: crmapin
+  x: 9.300000011920933
+  y: 36.0
+  z: 39.30000001192093
+  yaw: 127.29606
+  pitch: 6.393411

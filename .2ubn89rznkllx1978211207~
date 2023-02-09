@@ -1,0 +1,172 @@
+# BedWars1058 by andrei1058.
+# generators.yml Documentation: https://gitlab.com/andrei1058/BedWars1058/wikis/generators-configuration
+
+Default:
+  iron:
+    delay: 1
+    amount: 1
+    spawn-limit: 64
+  gold:
+    delay: 3
+    amount: 1
+    spawn-limit: 32
+  diamond:
+    tierI:
+      delay: 30
+      spawn-limit: 4
+    tierII:
+      delay: 20
+      spawn-limit: 6
+      start: 300
+    tierIII:
+      delay: 15
+      spawn-limit: 8
+      start: 360
+  emerald:
+    tierI:
+      delay: 70
+      spawn-limit: 4
+    tierII:
+      delay: 50
+      spawn-limit: 6
+      start: 360
+    tierIII:
+      delay: 30
+      spawn-limit: 8
+      start: 360
+Luckyblock:
+  iron:
+    delay: 1
+    amount: 1
+    spawn-limit: 48
+  gold:
+    delay: 3
+    amount: 1
+    spawn-limit: 16
+  diamond:
+    tierI:
+      delay: 30
+      spawn-limit: 8
+    tierII:
+      delay: 20
+      spawn-limit: 12
+      start: 180
+    tierIII:
+      delay: 15
+      spawn-limit: 16
+      start: 240
+  emerald:
+    tierI:
+      delay: 70
+      spawn-limit: 8
+    tierII:
+      delay: 50
+      spawn-limit: 12
+      start: 240
+    tierIII:
+      delay: 30
+      spawn-limit: 16
+      start: 240
+stack-items: false
+Cancau:
+  iron:
+    delay: 1
+    amount: 1
+    spawn-limit: 48
+  gold:
+    delay: 3
+    amount: 1
+    spawn-limit: 16
+  diamond:
+    tierI:
+      delay: 30
+      spawn-limit: 8
+    tierII:
+      delay: 20
+      spawn-limit: 12
+      start: 180
+    tierIII:
+      delay: 15
+      spawn-limit: 16
+      start: 240
+  emerald:
+    tierI:
+      delay: 70
+      spawn-limit: 8
+    tierII:
+      delay: 50
+      spawn-limit: 12
+      start: 240
+    tierIII:
+      delay: 30
+      spawn-limit: 16
+      start: 240
+stack-items: false
+4v4:
+  iron:
+    delay: 1
+    amount: 1
+    spawn-limit: 48
+  gold:
+    delay: 3
+    amount: 1
+    spawn-limit: 16
+  diamond:
+    tierI:
+      delay: 30
+      spawn-limit: 4
+    tierII:
+      delay: 20
+      spawn-limit: 6
+      start: 300
+    tierIII:
+      delay: 15
+      spawn-limit: 8
+      start: 360
+  emerald:
+    tierI:
+      delay: 70
+      spawn-limit: 4
+    tierII:
+      delay: 50
+      spawn-limit: 6
+      start: 360
+    tierIII:
+      delay: 30
+      spawn-limit: 8
+      start: 360
+stack-items: false
+1v1:
+  iron:
+    delay: 1
+    amount: 1
+    spawn-limit: 64
+  gold:
+    delay: 2
+    amount: 1
+    spawn-limit: 32
+  diamond:
+    tierI:
+      delay: 15
+      spawn-limit: 8
+    tierII:
+      delay: 10
+      spawn-limit: 12
+      start: 300
+    tierIII:
+      delay: 7
+      spawn-limit: 16
+      start: 360
+  emerald:
+    tierI:
+      delay: 35
+      spawn-limit: 8
+    tierII:
+      delay: 25
+      spawn-limit: 12
+      start: 360
+    tierIII:
+      delay: 15
+      spawn-limit: 16
+      start: 360
+stack-items: false

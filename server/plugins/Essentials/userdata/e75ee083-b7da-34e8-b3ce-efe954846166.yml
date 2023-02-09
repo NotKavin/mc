@@ -1,0 +1,19 @@
+lastAccountName: Creeps
+timestamps:
+  login: 1674760084853
+  logout: 1674760367391
+ipAddress: 127.0.0.1
+lastlocation:
+  world: bwsolo4
+  x: -60.083298288390665
+  y: -9.835973235100667
+  z: 24.11036000202286
+  yaw: 82.18384
+  pitch: -89.7
+logoutlocation:
+  world: crmapin
+  x: 0.5468124523821354
+  y: 64.0
+  z: 0.41758471849158285
+  yaw: 0.69605005
+  pitch: 0.39341038

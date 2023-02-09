@@ -1,0 +1,19 @@
+lastAccountName: Amongus
+timestamps:
+  login: 1674630138491
+  logout: 1674632059967
+ipAddress: 127.0.0.1
+lastlocation:
+  world: luckyblock
+  x: 323.6540290830155
+  y: 78.0
+  z: 596.0786434759307
+  yaw: 4.8828125E-4
+  pitch: -2.4000373
+logoutlocation:
+  world: crmapin
+  x: 0.5468124523821354
+  y: 64.0
+  z: 0.4175847184915828
+  yaw: 0.69605005
+  pitch: 0.39341038

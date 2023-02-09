@@ -1,0 +1,510 @@
+menu_title: 'Ranks'
+open_command:
+- store
+size: 54
+update_interval: 1
+items:
+      GREEN-SEPARATOR:
+        material: 160
+        data: 13
+        priority: 99
+        slots:
+        - 9
+        display_name: '&7'
+        lore: []
+        left_click_commands: []
+        right_click_commands: []
+
+      BLACK-SEPARATOR:
+        material: 160
+        data: 15
+        priority: 99
+        slots:
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        display_name: '&7'
+        lore: []
+        left_click_commands: []
+        right_click_commands: []
+
+      RANKS:
+        material: EMERALD
+        slot: 0
+        display_name: '&aRanks'
+        lore:
+        - '&7Ranks upgrade your Server'
+        - '&7experience without offering'
+        - '&7any in-game advantages.'
+        - '&7Each rank has all perk'
+        - '&7from previous ranks. Mouse'
+        - '&7over each rank in this'
+        - '&7category to see what they'
+        - '&7offer!'
+        - '&7'
+        - '&eYour current rank''s value'
+        - '&eis automatically deducted'
+        - '&efrom the future rank'
+        - '&eupgrade.'
+        left_click_commands: []
+        right_click_commands: []
+
+      MYSTERY-BOXES:
+        material: ENDER_CHEST
+        slot: 1
+        display_name: '&aMystery Boxes'
+        lore:
+        - '&7Mystery Boxes contain'
+        - '&7various cool cosmetic'
+        - '&7features for your character'
+        - '&7and your housing plot.'
+        - '&7'
+        - '&7All Mystery Boxes purchased'
+        - '&7here do not require any'
+        - '&7rank to open including 4✫'
+        - '&7and 5✫!'
+        - '&7'
+        - '&7You can open your Mystery'
+        - '&7Boxes in Mystery Vaults'
+        - '&7found in lobbies.'
+        - '&7'
+        - '&eClick to view!'
+        left_click_commands:
+        - '[player] store2'
+        right_click_commands:
+        - '[player] store2'
+
+      VIP-RANK:
+        material: DIAMOND
+        priority: 1
+        slot: 27
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%playerpoints_points%'
+              output: 699
+        display_name: '&aVIP Rank'
+        lore:
+        - '&7VIP provides basic perks'
+        - '&7which improve the Server'
+        - '&7experience!'
+        - ''
+        - '&a✓ &7Chat Prefix: &a[VIP]'
+        - '&a✓ &7Name Color: &aGREEN'
+        - '&a✓ &7+30 Exclusive Cosmetics'
+        - '&a✓ &7Housing Mailbox'
+        - '&a✓ &7/fw Command'
+        - '&a✓ &7[Website] Avatar Frame'
+        - '&a✓ &7[Website] Background'
+        - '&7and more...'
+        - '&7'
+        - '&eClick the book below to'
+        - '&eview more perks!'
+        - ''
+        - '&7Cost: &a699 Gold'
+        - ''
+        - '&eClick to purchase!'
+        left_click_commands:
+        - '[console] points take %player_name% 699'
+        - '[message] &aYou successfully purchased &aVIP Rank &awith your Gold!<delay=60>'
+        - '[console] rank %player_name% VIP<delay=60>'
+        - '[close]'
+        right_click_commands:
+        - '[console] points take %player_name% 699'
+        - '[message] &aYou successfully purchased &aVIP Rank &awith your Gold!<delay=60>'
+        - '[console] rank %player_name% VIP<delay=60>'
+        - '[close]'
+
+      VIP-RANK-LOCKED:
+        material: DIAMOND
+        slot: 27
+        view_requirement:
+          requirements:
+            level:
+              type: '<'
+              input: '%playerpoints_points%'
+              output: 699
+        display_name: '&aVIP Rank'
+        lore:
+        - '&7VIP provides basic perks'
+        - '&7which improve the Server'
+        - '&7experience!'
+        - ''
+        - '&a✓ &7Chat Prefix: &a[VIP]'
+        - '&a✓ &7Name Color: &aGREEN'
+        - '&a✓ &7+30 Exclusive Cosmetics'
+        - '&a✓ &7Housing Mailbox'
+        - '&a✓ &7/fw Command'
+        - '&a✓ &7[Website] Avatar Frame'
+        - '&a✓ &7[Website] Background'
+        - '&7and more...'
+        - '&7'
+        - '&eClick the book below to'
+        - '&eview more perks!'
+        - ''
+        - '&7Cost: &a699 Gold'
+        - ''
+        - '&cNot enough money in your wallet!'
+        left_click_commands: []
+        right_click_commands: []
+
+
+      VIP+-RANK:
+        material: DIAMOND
+        priority: 1
+        slot: 29
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%playerpoints_points%'
+              output: 1499
+        display_name: '&aVIP&6+&a Rank'
+        lore:
+        - '&7VIP+ contains every perk'
+        - '&7from VIP and then more!'
+        - ''
+        - '&a✓ &7Chat Prefix: &a[VIP&6+&a]'
+        - '&a✓ &7Name Color: &aGREEN'
+        - '&a✓ &7+60 Exclusive Cosmetics'
+        - '&a✓ &7Create Guilds'
+        - '&a✓ &7Baby Wild Ocelot Pet'
+        - '&a✓ &7Housing Mailbox'
+        - '&a✓ &7/fw Command'
+        - '&7and more...'
+        - '&7'
+        - '&eClick the book below to'
+        - '&eview more perks'
+        - ''
+        - '&7Cost: &a1499 Gold'
+        - ''
+        - '&eClick to purchase!'
+        left_click_commands:
+        - '[console] points take %player_name% 1499'
+        - '[message] &aYou successfully purchased &aVIP&6+&a Rank &awith your Gold!<delay=60>'
+        - '[console] rank %player_name% VIP+<delay=60>'
+        - '[close]'
+        right_click_commands:
+        - '[console] points take %player_name% 1499'
+        - '[message] &aYou successfully purchased &aVIP&6+&a Rank &awith your Gold!<delay=60>'
+        - '[console] rank %player_name% VIP+<delay=60>'
+        - '[close]'
+
+      VIP+-RANK-LOCKED:
+        material: DIAMOND
+        slot: 29
+        view_requirement:
+          requirements:
+            level:
+              type: '<'
+              input: '%playerpoints_points%'
+              output: 1499
+        display_name: '&aVIP&6+&a Rank'
+        lore:
+        - '&7VIP+ contains every perk'
+        - '&7from VIP and then more!'
+        - ''
+        - '&a✓ &7Chat Prefix: &a[VIP&6+&a]'
+        - '&a✓ &7Name Color: &aGREEN'
+        - '&a✓ &7+60 Exclusive Cosmetics'
+        - '&a✓ &7Create Guilds'
+        - '&a✓ &7Baby Wild Ocelot Pet'
+        - '&a✓ &7Housing Mailbox'
+        - '&a✓ &7/fw Command'
+        - '&7and more...'
+        - '&7'
+        - '&eClick the book below to'
+        - '&eview more perks'
+        - ''
+        - '&7Cost: &a1499 Gold'
+        - ''
+        - '&cNot enough money in your wallet!'
+        left_click_commands: []
+        right_click_commands: []
+
+      MVP-RANK:
+        material: DIAMOND
+        priority: 1
+        slot: 31
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%playerpoints_points%'
+              output: 2999
+        display_name: '&bMVP Rank'
+        lore:
+        - '&7MVP contains every perk'
+        - '&7from VIP and VIP+, and then'
+        - '&7more!'
+        - ''
+        - '&a✓ &7Chat Prefix: &b[MVP]'
+        - '&a✓ &7Name Color: &bAQUA'
+        - '&a✓ &7+110 Exclusive Cosmetics'
+        - '&a✓ &7Game Replays'
+        - '&a✓ &7Create Guilds'
+        - '&a✓ &7Baby Wild Ocelot Pet'
+        - '&a✓ &7Housing Mailbox'
+        - '&7and more...'
+        - '&7'
+        - '&eClick the book below to'
+        - '&eview more perks'
+        - ''
+        - '&7Cost: &a2999 Gold'
+        - ''
+        - '&eClick to purchase!'
+        left_click_commands:
+        - '[console] points take %player_name% 2999'
+        - '[message] &aYou successfully purchased &bMVP Rank &awith your Gold!<delay=60>'
+        - '[console] rank %player_name% MVP<delay=60>'
+        - '[close]'
+        right_click_commands:
+        - '[console] points take %player_name% 2999'
+        - '[message] &aYou successfully purchased &bMVP Rank &awith your Gold!<delay=60>'
+        - '[console] rank %player_name% MVP<delay=60>'
+        - '[close]'
+
+      MVP-RANK-LOCKED:
+        material: DIAMOND
+        slot: 31
+        view_requirement:
+          requirements:
+            level:
+              type: '<'
+              input: '%playerpoints_points%'
+              output: 2999
+        display_name: '&bMVP&b Rank'
+        lore:
+        - '&7MVP contains every perk'
+        - '&7from VIP and VIP+, and then'
+        - '&7more!'
+        - ''
+        - '&a✓ &7Chat Prefix: &b[MVP]'
+        - '&a✓ &7Name Color: &bAQUA'
+        - '&a✓ &7+110 Exclusive Cosmetics'
+        - '&a✓ &7Game Replays'
+        - '&a✓ &7Create Guilds'
+        - '&a✓ &7Baby Wild Ocelot Pet'
+        - '&a✓ &7Housing Mailbox'
+        - '&7and more...'
+        - '&7'
+        - '&eClick the book below to'
+        - '&eview more perks'
+        - ''
+        - '&7Cost: &a2999 Gold'
+        - ''
+        - '&cNot enough money in your wallet!'
+        left_click_commands: []
+        right_click_commands: []
+
+
+      MVP+-RANK:
+        material: DIAMOND
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        priority: 1
+        slot: 33
+        view_requirement:
+          requirements:
+            level:
+              type: '>='
+              input: '%playerpoints_points%'
+              output: 4499
+        display_name: '&bMVP&c+&b Rank'
+        lore:
+        - '&7MVP+ contains every perk'
+        - '&7from VIP, VIP+ and MVP,'
+        - '&7and then more!'
+        - ''
+        - '&a✓ &7Chat Prefix: &b[MVP]'
+        - '&a✓ &7Name Color: &bAQUA'
+        - '&a✓ &7+130 Exclusive Cosmetics'
+        - '&a✓ &7Map Selectors'
+        - '&a✓ &7Achievement Tracking'
+        - '&a✓ &7Exclusive Particle Packs'
+        - '&a✓ &7Ride and Control Lobby Pets'
+        - '&7and more...'
+        - '&7'
+        - '&eClick the book below to'
+        - '&eview more perks'
+        - ''
+        - '&7Cost: &a4499 Gold'
+        - ''
+        - '&eClick to purchase!'
+        left_click_commands:
+        - '[console] points take %player_name% 4499'
+        - '[message] &aYou successfully purchased &bMVP&c+&b Rank &awith your Gold!<delay=60>'
+        - '[console] rank %player_name% MVP+<delay=60>'
+        - '[close]'
+        right_click_commands:
+        - '[console] points take %player_name% 4499'
+        - '[message] &aYou successfully purchased &bMVP&c+&b Rank &awith your Gold!<delay=60>'
+        - '[console] rank %player_name% MVP+<delay=60>'
+        - '[close]'
+
+      MVP+-RANK-LOCKED:
+        material: DIAMOND
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        slot: 33
+        view_requirement:
+          requirements:
+            level:
+              type: '<'
+              input: '%playerpoints_points%'
+              output: 4499
+        display_name: '&bMVP&c+&b Rank'
+        lore:
+        - '&7MVP+ contains every perk'
+        - '&7from VIP, VIP+ and MVP,'
+        - '&7and then more!'
+        - ''
+        - '&a✓ &7Chat Prefix: &b[MVP]'
+        - '&a✓ &7Name Color: &bAQUA'
+        - '&a✓ &7+130 Exclusive Cosmetics'
+        - '&a✓ &7Map Selectors'
+        - '&a✓ &7Achievement Tracking'
+        - '&a✓ &7Exclusive Particle Packs'
+        - '&a✓ &7Ride and Control Lobby Pets'
+        - '&7and more...'
+        - '&7'
+        - '&eClick the book below to'
+        - '&eview more perks'
+        - ''
+        - '&7Cost: &a4499 Gold'
+        - ''
+        - '&cNot enough money in your wallet!'
+        left_click_commands: []
+        right_click_commands: []
+
+
+      MVP++-RANK:
+        material: GOLD_INGOT
+        enchantments:
+        - 'SILK_TOUCH;1'
+        hide_enchantments: true
+        priority: 1
+        slot: 35
+        display_name: '&6MVP&c++&6 Rank'
+        lore:
+        - '&7MVP++ is an exlusive Rank.'
+        - '&7Upgrade to your existing'
+        - '&7MVP+ Rank. MVP++ is the'
+        - '&7best way to support the'
+        - '&7Server.'
+        - ''
+        - '&a✓ &7Chat Prefix: &6[MVP&c++&6]'
+        - '&a✓ &7Name Color: &6GOLD'
+        - '&a✓ &7+150 Exclusive Cosmetics'
+        - '&a✓ &7Game Replays'
+        - '&a✓ &7/nick Command'
+        - '&a✓ &7Auto-tip'
+        - '&a✓ &7/stream Command'
+        - '&a✓ &7Gold Guild Tag Color'
+        - '&7and more...'
+        - '&7'
+        - '&eClick the book below to'
+        - '&eview more perks'
+        - '&7'
+        - '&7Cost: &a0 Gold'
+        - ''
+        - '&cRank này hiện chưa được cập nhật!'
+        left_click_commands:
+        - '[message] &eServer Store link: &bhttp://store.hypixel.net/'
+        - '[close]'
+        right_click_commands:
+        - '[message] &eServer Store link: &bhttp://store.hypixel.net/'
+        - '[close]'
+
+      VIP-PREVIEW:
+        material: BOOK
+        slot: 36
+        display_name: '&eView &a[VIP] &ePerks'
+        lore:
+        - '&7Click here to view more'
+        - '&7perks that come with this'
+        - '&7rank.'
+        left_click_commands:
+        - '[message] &eServer Store link: &bhttp://store.hypixel.net/'
+        - '[close]'
+        right_click_commands:
+        - '[message] &eServer Store link: &bhttp://store.hypixel.net/'
+        - '[close]'
+
+      VIP+-PREVIEW:
+        material: BOOK
+        slot: 38
+        display_name: '&eView &a[VIP&6+&a] &ePerks'
+        lore:
+        - '&7Click here to view more'
+        - '&7perks that come with this'
+        - '&7rank.'
+        left_click_commands:
+        - '[message] &eServer Store link: &bhttp://store.hypixel.net/'
+        - '[close]'
+        right_click_commands:
+        - '[message] &eServer Store link: &bhttp://store.hypixel.net/'
+        - '[close]'
+
+      MVP+-PREVIEW:
+        material: BOOK
+        slot: 42
+        display_name: '&eView &b[MVP&c+&b] &ePerks'
+        lore:
+        - '&7Click here to view more'
+        - '&7perks that come with this'
+        - '&7rank.'
+        left_click_commands:
+        - '[message] &eServer Store link: &bhttp://store.hypixel.net/'
+        - '[close]'
+        right_click_commands:
+        - '[message] &eServer Store link: &bhttp://store.hypixel.net/'
+        - '[close]'
+
+      MVP++-PREVIEW:
+        material: BOOK
+        slot: 44
+        display_name: '&eView &6[MVP&c++&6] &ePerks'
+        lore:
+        - '&7Click here to view more'
+        - '&7perks that come with this'
+        - '&7rank.'
+        left_click_commands:
+        - '[message] &eServer Store link: &bhttp://store.hypixel.net/'
+        - '[close]'
+        right_click_commands:
+        - '[message] &eServer Store link: &bhttp://store.hypixel.net/'
+        - '[close]'
+        
+      GOLD-WALLET:
+        material: 371
+        slot: 53
+        display_name: '&eGold Wallet: &6%playerpoints_points_formatted% Gold'
+        lore:
+        - '&7The Gold Wallet contains'
+        - '&7currency you can use in'
+        - '&7this menu to purchase'
+        - '&7items. You can purchase'
+        - '&7currency for your Gold'
+        - '&7Wallet at'
+        - '&a%customplaceholders_server_store%'
+        left_click_commands: []
+        right_click_commands: []
+
+      CLOSE:
+        material: BARRIER
+        slot: 45
+        display_name: '&aClose'
+        lore: []
+        left_click_commands:
+        - '[close]'
+        right_click_commands:
+        - '[close]'

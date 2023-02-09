@@ -1,0 +1,4 @@
+#
+#Wed Mar 02 14:54:02 IST 2022
+LinkedWorlds=
+ServerName=play.hexgame.in

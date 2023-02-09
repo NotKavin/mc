@@ -1,0 +1,18 @@
+Settings:
+  InGamePrefix: '&f[&bPlayerHider&f]'
+  ItemSlot: 2
+  OldMode:
+    Enabled: false
+    ItemID: 369
+    GUI-Title: '&8Hide Players'
+  NoPerm: '&cI''m Sorry, but you don''t have the permission to permform this action.
+    Please contact the server administrators if you believe this is in error.'
+  VisibleMessage: '&aAll Players are now visible'
+  HideMessage: '&7All Players are now hidden'
+  VIPVisibleMessage: '&5All VIP''s are now visible'
+Names:
+  OldMode:
+    OpenMenu: '&e&lPlayer Hider'
+  ShowAll: '&a&lAll Players visible'
+  HideAll: '&7&lNo Players visible'
+  OnlyVIP: '&5&lOnly VIP-Players visible'

@@ -1,0 +1,2314 @@
+# Translation by MiniFlex#1825
+lobby-items-compass-name: '&aTrò chơi &7(Nhấp Chuột Phải)'
+lobby-items-skull-name: '&aHồ sơ &7(Nhấp Chuột Phải)'
+lobby-items-emerald-name: '&aCửa hàng &7(Nhấp Chuột Phải)'
+lobby-items-language-name: '&aCollectibles Yêu Thích'
+lobby-items-selector-name: '&aSảnh chờ &7(Nhấp Chuột Phải)'
+spectator-items-teleporter-name: '&eDịch chuyển &7(Nhấp Chuột Phải)'
+spectator-items-leave-name: '&c&lQUAY LẠI SẢNH &7(Nhấp Chuột Phải)'
+pre-game-items-leave-name: '&c&lQUAY LẠI SẢNH &7(Nhấp Chuột Phải)'
+addons:
+  compass:
+    messages:
+      not-all-beds-destroyed: '&cKhông phải tất cả các giường của đối phương đều bị
+        phá hủy!'
+      purchase-message: '&cBạn sẽ mất khả năng theo dõi đội này khi bạn chết!'
+      not-enough-resource: '&cBạn không có đủ tài nguyên!'
+      already-tracking: '&cBạn đã theo dõi đội này!'
+    tracker-status:
+      not-enough: '&cBạn không có đủ tài nguyên!'
+      locked: '&cMở khóa khi tất cả giường của kẻ thù bị phá hủy!'
+      unlocked: '&eNhấp vào để mua!'
+    action-bar:
+      tracking-format: '&f&lMục tiêu: {teamColor}&l{target} &f&l- Khoảng cách: &a&l{distance}m'
+    team-message-format: '&a&lĐỘI > &7{player}: {message}'
+    compass-item:
+      display-name: '&aLa bàn &7(Nhấp chuột phải)'
+      lore: []
+    menus:
+      main-menu:
+        title: '&8Tracker & Communications'
+        tracker:
+          display-name: '&aTracker Shop'
+          lore:
+          - '&7Purchase tracking upgrade'
+          - '&7for your compass which will'
+          - '&7track each player on a'
+          - '&7specific team until you'
+          - '&7die.'
+          - ''
+          - '&eClick to open!'
+        tracker-team:
+          display-name: '&aTracker Shop'
+          lore:
+          - '&7Purchase tracking upgrade'
+          - '&7for your compass which will'
+          - '&7track each player on a'
+          - '&7specific team until you'
+          - '&7die.'
+          - ''
+          - '&eClick to open!'
+        communications:
+          display-name: '&aQuick Communications'
+          lore:
+          - '&7Send highlighted chat'
+          - '&7messages to your teammates!'
+          - ''
+          - '&eClick to open!'
+      tracker-menu:
+        title: '&8Purchase Enemy Tracker'
+        team-item:
+          display-name: '&cTrack Team {team}'
+          lore:
+          - '&7Purchase tracking upgrade'
+          - '&7for your compass which will'
+          - '&7track each player on a'
+          - '&7specific team until you'
+          - '&7die.'
+          - ''
+          - '&7Cost: &22 Emeralds'
+          - ''
+          - '{status}'
+        back-item:
+          display-name: '&aQuay lại'
+          lore:
+          - '&7To Tracker & Communication'
+      communications:
+        title: '&8Quick Communications'
+        back-item:
+          display-name: '&aGo Back'
+          lore:
+          - '&7To Tracker & Communication'
+        items:
+          '1':
+            message: '&aHello ( ﾟ◡ﾟ)/!'
+            display-name: '&aHello ( ﾟ◡ﾟ)/!'
+            lore:
+            - ''
+            - '&eNhấp vào để gửi!'
+          '2':
+            message: '&aI''m coming back to base!'
+            display-name: '&aI''m coming back to base!'
+            lore:
+            - ''
+            - '&eNhấp vào để gửi!'
+          '3':
+            message: '&aI''m defending!'
+            display-name: '&aI''m defending!'
+            lore:
+            - ''
+            - '&eNhấp vào để gửi!'
+          '4':
+            message: '&aI''''m attacking {team}'
+            display-name: '&aI''m attacking!'
+            lore:
+            - '&7You will be able to select'
+            - '&7the Team'
+            - ''
+            - '&eNhấp vào để gửi!'
+          '5':
+            message: '&aI''m collecting {resource}'
+            display-name: '&aI''m collecting resources!'
+            lore:
+            - '&7You will be able to select'
+            - '&7the Resource'
+            - ''
+            - '&eNhấp vào để gửi!'
+          '6':
+            message: '&aI have {resource}'
+            display-name: '&aI have resources!'
+            lore:
+            - '&7You will be able to select'
+            - '&7the Resource'
+            - ''
+            - '&eNhấp vào để gửi!'
+          '7':
+            message: '&aCảm ơn'
+            display-name: '&aCảm ơn!'
+            lore:
+            - ''
+            - '&eNhấp vào để gửi!'
+          '8':
+            message: '&aTrở lại căn cứ'
+            display-name: '&aTrở lại căn cứ!'
+            lore:
+            - ''
+            - '&eNhấp vào để gửi!'
+          '9':
+            message: '&aHãy bảo vệ giường!'
+            display-name: '&aBảo vệ!'
+            lore:
+            - ''
+            - '&eNhấp vào để gửi!'
+          '10':
+            message: '&aHãy tấn công {team}'
+            display-name: '&aTấn công!'
+            lore:
+            - '&7Bạn sẽ có thể chọn'
+            - '&7đội'
+            - ''
+            - '&eNhấp vào để gửi!'
+          '11':
+            message: '&aTôi cần {resource}'
+            display-name: '&aTôi cần tài nguyên!'
+            lore:
+            - '&7Bạn sẽ có thể chọn'
+            - '&7nguồn tài nguyên'
+            - ''
+            - '&eNhấp vào để gửi!'
+          '12':
+            message: '&aPlayer incoming!'
+            display-name: '&aPlayer incoming!!'
+            lore:
+            - ''
+            - '&eNhấp vào để gửi!'
+    communication-menus:
+      lore:
+      - '&7Nhấp vào để gửi tin nhắn: ''{message}&7'''
+      - '&7cho đồng đội của bạn!'
+      - ''
+      - '&eNhấp vào để gửi!'
+      teams:
+        title: '&8Chọn một tùy chọn:'
+        back-item:
+          display-name: '&aQuay lại'
+          lore:
+          - '&7Để liên lạc nhanh'
+      resources:
+        title: '&8Chọn một tùy chọn:'
+        back-item:
+          display-name: '&aQuay lại'
+          lore:
+          - '&7Để liên lạc nhanh'
+        iron:
+          resource-name: '&f&lSẮT'
+        gold:
+          resource-name: '&6&lVÀNG'
+        diamond:
+          resource-name: '&b&lKIM CƯƠNG'
+        emerald:
+          resource-name: '&2&lNGỌC LỤC BẢO'
+  team-selector:
+    inventory-name: '&8Chọn Đội'
+    selector-name: '&9Chọn Đội'
+    selector-lore:
+    - '&7Bấm chuột phải để chọn Đội!'
+    choice:
+      lore:
+      - ''
+      - '&7&o{members}'
+      - ''
+      - '&eBấm vào để tham gia đội!'
+      name: '{color}{team} &f({selected}&7/&f{total})'
+    switch-disabled: '{prefix}&cBạn không thể thay đổi tên!'
+    team-join: '{prefix}&eBạn đã tham gia đội {color}{team}&e!'
+    team-full: '{prefix}&cĐội {color}{team} &cđã đầy!'
+    teams-not-balanced: '{prefix}&cTeam không cân bằng! Hãy thử tham gia một team
+      khác!'
+    party-deny: '{prefix}&cBạn không thể chọn nhóm của mình vì bạn đang tham gia một
+      party!'
+    cant-join-while-starting: '{prefix}&cBạn không thể tham gia nhóm này tại thời
+      điểm này. Trò chơi đang bắt đầu!'
+    already-in-team: '{prefix}&cBạn đã ở trong đội này!'
+  leave-delay-name: '&c&lTrở về Lobby &7(Nhấp Chuột Phải)'
+  leave-delay-lore:
+  - '&7Nhấp chuột phải để rời khỏi lobby!'
+  leave-delay:
+    start: '&a&lDịch chuyển bạn đến Lobby trong 3 giây ... Nhấp chuột phải lần nữa
+      để hủy yêu cầu dịch chuyển!'
+    cancel: '&c&lDịch chuyển đã bị hủy bỏ!'
+  map:
+    play-map: '{prefix}&aBạn hiện đang chơi trên bản đồ &e{map}'
+    play-not: '{prefix}&cBạn đang ở sảnh chờ!'
+pre-game-items-Default-name: '&cName not set at: &fpre-game-items-Default-name'
+pre-game-items-Cancau-name: '&cName not set at: &fpre-game-items-Cancau-name'
+lobby-items-test-name: '&aCollectibles &7(Nhấp Chuột Phải)'
+pre-game-items-stats-name: '&eStats'
+lobby-items-compass-lore:
+- '&7Nhấp chuột phải để hiển thị Game Menu'
+lobby-items-selector-lore:
+- '&7Nhấp chuột phải để chuyển đổi giữa các sảnh chờ khác nhau!'
+- '&7Sử dụng điều này để tìm kiếm bạn bè của bạn'
+prefix: ''
+name: Vietnamese
+cmd-main-list:
+- ''
+- '&2▪ &7/bw stats'
+- '&2▪ &7/bw join &o<arena/group>'
+- '&2▪ &7/bw leave'
+- '&2▪ &7/bw lang'
+- '&2▪ &7/bw gui'
+- '&2▪ &7/bw start &3(vip)'
+arena-kicked-by-vip: |-
+  {prefix}&cXin lỗi, Bạn đã bị kick ra khỏi trò chơi do có 1 người chơi có thẩm quyền muốn tham gia
+  &aXin hãy mua rank để có thẩm quyền tương tự. &7&o(click)
+cmd-join-arena-full: |-
+  {prefix}&ctrò chơi đã đầy!
+  &aXin hãy mua rank để có quyền vào khi đầy. &7&o(click)
+cmd-join-arena-full-vips: |-
+  {prefix}&cChúng tôi rất...rất xin lỗi nhưng trò chơi này đã đầy.
+  &cChúng tôi biết bạn là 1 donator có thẩm quyền nhưng trò chơi đã đầy những người chơi có thẩm quyền/những nhân viên.
+arena-countdown-stopped: '{prefix}§cKhông có đủ người chơi! Đếm ngược đã dừng!'
+cmd-leave: '{prefix}&7{player} &eđã thoát!'
+arena-restart-kick: '{prefix}&eTrò chơi bạn đang tham gia đang khởi động lại.'
+arena-status-playing: '&cĐang chơi'
+arena-status-restarting: '&4Đang khởi động lại'
+arena-status-waiting: '&2Đang chờ §c{full}'
+arena-status-starting: '&6Đang bắt đầu §c{full}'
+cmd-join-not-found: '{prefix}&cKhông có bất kỳ trò chơi hoặc nhóm trò chơi nào có
+  tên: {name}'
+cmd-join-arenas-full: '{prefix}&cHiện tại không có trò chơi nào có sẵn :('
+cmd-not-in-arena: '{prefix}&cBạn không ở trong trò chơi !'
+arena-selector-gui-name: '&8Nhấp vào để tham gia'
+arena-selector-content-name: '&a&l{name}'
+arena-selector-content-lore:
+- ''
+- '&7Trạng Thái: {status}'
+- '&7Người Chơi: &f{on}&7/&f{max}'
+- '&7Thể Loại: &a{group}'
+- ''
+- '&aNhấp chuột trái để tham gia.'
+- '&eNhấp chuột phải để theo dõi.'
+cmd-lang-list-header: '{prefix} &2Ngôn ngữ có sẵn:'
+cmd-lang-list-format: '&a▪  &7{iso} - &f{name}'
+cmd-lang-usage: '{prefix}&7Hãy sử dụng: /lang &f&o<ngôn ngữ>'
+cmd-tp-player-not-found: '{prefix}&cKhông tìm thấy người chơi!'
+cmd-tp-not-in-arena: '{prefix}&cNgười chơi không được tìm thấy trong trò chơi Bed
+  Wars!'
+cmd-tp-not-started: '{prefix}&ctrò chơi nơi người chơi chưa bắt đầu!'
+cmd-tp-usage: '{prefix}&cHãy sử dụng: /bw tp <tên người chơi>'
+cmd-rejoin-player-reconnected: '{prefix}&7{player} &eđã kết nối lại!'
+cmd-lang-not-exist: '{prefix}&cNgôn ngữ này không tồn tại!'
+cmd-lang-set: '{prefix}&aBạn đã chọn ngôn ngữ Tiếng Việt!'
+cmd-lang-not-set: '{prefix}&cBạn không thể thay đổi ngôn ngữ trong trò chơi.'
+cmd-join-party-big: '{prefix}&cParty của bạn quá lớn để tham gia trò chơi này với
+  tư cách là một đội :('
+cmd-join-not-leader: '{prefix}&cChỉ chủ nhóm mới có thể chọn trò chơi.'
+generator-tier: '&eCấp &c{tier}'
+generator-diamond: '&b&lKim Cương'
+generator-emerald: '&a&lLục Bảo'
+generator-timer: '&eXuất hiện trong &c{seconds} &egiây'
+cmd-join-success: '{prefix}&7{player} &eđã tham gia trò chơi (&b{on}&e/&b{max}&e)!'
+arena-start-countdown: '{prefix}&eTrò chơi bắt đầu trong &6{time} &egiây!'
+arena-start-countdown-title: '&a{second}'
+arena-start-countdown-title-5: '&e5'
+arena-start-countdown-title-4: '&e4'
+arena-start-countdown-title-3: '&c3'
+arena-start-countdown-title-2: '&c2'
+arena-start-countdown-title-1: '&c1'
+arena-start-countdown-subtitle: ' '
+arena-countdown-stopped-title: '&cĐang chờ thêm người chơi..'
+format-chat-lobby: '{level} {vPrefix}{player}&f: {message}'
+format-chat-waiting: '&7{vPrefix}{player}&f: {message}'
+format-chat-team: '{level} &f{team} {vPrefix}{player}&f: {message}'
+format-chat-global: '&6[TỔNG] {level} {vPrefix}{team} {player}&f: {message}'
+format-chat-spectator: '&7[THEO DÕI] {vPrefix}{player}&f: {message}'
+arena-start-tutorial:
+- '&a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+- '&f                                   &lBedWars'
+- ''
+- '&e&l    Bảo vệ giường của bạn và phá hủy giường của kẻ thù.'
+- '&e&l      Nâng cấp bản thân và nhóm của bạn bằng cách thu thập'
+- '&e&l   Sắt, Vàng, Ngọc lục bảo và Kim cương'
+- '&e&l        để để có thể nâng cấp giúp bạn mạnh mẽ hơn.'
+- ''
+- '&a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+meaning-shout: shout, !
+interact-cant-place: '{prefix}&cBạn không thể đặt khối ở đây!'
+interact-cant-break: '{prefix}&cBạn chỉ có thể phá vỡ các khối được đặt bởi một người
+  chơi!'
+arena-start-title: '&aQUẨY NÀO!'
+scoreboard:
+  Default:
+    waiting:
+    - '&e&lBED WARS'
+    - '&7{date} &a[BETA]'
+    - ''
+    - '&fBản đồ: &a{map}'
+    - ''
+    - '&fNgười chơi: &a{on}/{max}'
+    - ''
+    - '&fĐang chờ...'
+    - ''
+    - '§fChế độ: &a{group}'
+    - '&fPhiên bản: &71.0'
+    - ''
+    - '&e{server_ip}'
+    starting:
+    - '&e&lBED WARS'
+    - '&7{date} &a[BETA]'
+    - ''
+    - '&fBản đồ: &a{map}'
+    - ''
+    - '&fNgười chơi: &a{on}/{max}'
+    - ''
+    - '&fBắt đầu sau &a{time}s'
+    - ''
+    - '§fChế độ: &a{group}'
+    - '&fPhiên bản: &71.0'
+    - ''
+    - '&e{server_ip}'
+    playing:
+    - '&e&lBED WARS'
+    - '&7{date} &a[BETA]'
+    - ''
+    - '&f{nextEvent}: &a{time}'
+    - ''
+    - '{TeamRedColor}Đ &f{TeamRedName}&f&f: {TeamRedStatus}'
+    - '{TeamBlueColor}X &f{TeamBlueName}&f: {TeamBlueStatus}'
+    - '{TeamGreenColor}L &f{TeamGreenName}&f: {TeamGreenStatus}'
+    - '{TeamYellowColor}V &f{TeamYellowName}&f: {TeamYellowStatus}'
+    - '{TeamAquaColor}L &f{TeamAquaName}&f: {TeamAquaStatus}'
+    - '{TeamWhiteColor}T &f{TeamWhiteName}&f: {TeamWhiteStatus}'
+    - '{TeamPinkColor}H &f{TeamPinkName}&f: {TeamPinkStatus}'
+    - '{TeamGrayColor}X &f{TeamGrayName}&f: {TeamGrayStatus}'
+    - ''
+    - '&e{server_ip}'
+  Doubles:
+    playing:
+    - '&e&lBED WARS'
+    - '&7{date} &a[BETA]'
+    - ''
+    - '&f{nextEvent}: &a{time}'
+    - ''
+    - '{TeamRedColor}Đ&f {TeamRedName}&f&f: {TeamRedStatus}'
+    - '{TeamBlueColor}X&f {TeamBlueName}&f: {TeamBlueStatus}'
+    - '{TeamGreenColor}L&f {TeamGreenName}&f: {TeamGreenStatus}'
+    - '{TeamYellowColor}V &f{TeamYellowName}&f: {TeamYellowStatus}'
+    - '{TeamAquaColor}L &f{TeamAquaName}&f: {TeamAquaStatus}'
+    - '{TeamWhiteColor}T &f{TeamWhiteName}&f: {TeamWhiteStatus}'
+    - '{TeamPinkColor}H &f{TeamPinkName}&f: {TeamPinkStatus}'
+    - '{TeamGrayColor}X &f{TeamGrayName}&f: {TeamGrayStatus}'
+    - ''
+    - '&e{server_ip}'
+  Cancau:
+    playing:
+    - '&e&lBED WARS'
+    - '&7{date} &a[BETA]'
+    - ''
+    - '&f{nextEvent}: &a{time}'
+    - ''
+    - '{TeamRedColor}Đ&f {TeamRedName}&f&f: {TeamRedStatus}'
+    - '{TeamBlueColor}X&f {TeamBlueName}&f: {TeamBlueStatus}'
+    - '{TeamGreenColor}L&f {TeamGreenName}&f: {TeamGreenStatus}'
+    - '{TeamYellowColor}V &f{TeamYellowName}&f: {TeamYellowStatus}'
+    - '{TeamAquaColor}L &f{TeamAquaName}&f: {TeamAquaStatus}'
+    - '{TeamWhiteColor}T &f{TeamWhiteName}&f: {TeamWhiteStatus}'
+    - '{TeamPinkColor}H &f{TeamPinkName}&f: {TeamPinkStatus}'
+    - '{TeamGrayColor}X &f{TeamGrayName}&f: {TeamGrayStatus}'
+    - ''
+    - '&e{server_ip}'
+  3v3v3v3:
+    playing:
+    - '&e&lBED WARS'
+    - '&7{date} &a[BETA]'
+    - ''
+    - '&f{nextEvent}: &a{time}'
+    - ''
+    - '{TeamRedColor}Đ&f {TeamRedName}&f&f: {TeamRedStatus}'
+    - '{TeamBlueColor}X&f {TeamBlueName}&f: {TeamBlueStatus}'
+    - '{TeamGreenColor}L&f {TeamGreenName}&f: {TeamGreenStatus}'
+    - '{TeamYellowColor}V &f{TeamYellowName}&f: {TeamYellowStatus}'
+    - ''
+    - '&fGiết: &a{kills}'
+    - '&fKết liễu: &a{finalKills}'
+    - '&fGiường phá hủy: &a{beds}'
+    - ''
+    - '&e{server_ip}'
+  Chungket:
+    playing:
+    - '&e&lBED WARS'
+    - '&7{date} &a[BETA]'
+    - ''
+    - '&f{nextEvent}: &a{time}'
+    - ''
+    - '{TeamRedColor}Đ&f {TeamRedName}&f&f: {TeamRedStatus}'
+    - '{TeamBlueColor}X&f {TeamBlueName}&f: {TeamBlueStatus}'
+    - '{TeamGreenColor}L&f {TeamGreenName}&f: {TeamGreenStatus}'
+    - '{TeamYellowColor}V &f{TeamYellowName}&f: {TeamYellowStatus}'
+    - ''
+    - '&fGiết: &a{kills}'
+    - '&fKết liễu: &a{finalKills}'
+    - '&fGiường phá hủy: &a{beds}'
+    - ''
+    - '&e{server_ip}'
+  4v4v4v4:
+    playing:
+    - '&e&lBED WARS'
+    - '&7{date} &a[BETA]'
+    - ''
+    - '&f{nextEvent}: &a{time}'
+    - ''
+    - '{TeamRedColor}Đ&f {TeamRedName}&f&f: {TeamRedStatus}'
+    - '{TeamBlueColor}X&f {TeamBlueName}&f: {TeamBlueStatus}'
+    - '{TeamGreenColor}L&f {TeamGreenName}&f: {TeamGreenStatus}'
+    - '{TeamYellowColor}V &f{TeamYellowName}&f: {TeamYellowStatus}'
+    - ''
+    - '&fGiết: &a{kills}'
+    - '&fKết liễu: &a{finalKills}'
+    - '&fGiường phá hủy: &a{beds}'
+    - ''
+    - '&e{server_ip}'
+  4v4:
+    playing:
+    - '&e&lBED WARS'
+    - '&7{date} &a[BETA]'
+    - ''
+    - '&f{nextEvent}: &a{time}'
+    - ''
+    - '{TeamRedColor}Đ&f {TeamRedName}&f&f: {TeamRedStatus}'
+    - '{TeamBlueColor}X&f {TeamBlueName}&f: {TeamBlueStatus}'
+    - ''
+    - '&fGiết: &a{kills}'
+    - '&fKết liễu: &a{finalKills}'
+    - '&fGiường phá hủy: &a{beds}'
+    - ''
+    - '&e{server_ip}'
+  lobby:
+  - '&e&lBED WARS'
+  - ''
+  - '&fCấp độ: %miniflexjav_level%'
+  - ''
+  - '&fTiến trình: &a{currentXp}&7/&b{requiredXp}'
+  - '{progress}'
+  - ''
+  - '&fRương Thần Bí: &e%gadgetsmenu_mystery_boxes%'
+  - ''
+  - '&fXu: &6%vault_eco_balance_fixed%'
+  - ''
+  - '&fTổng Hạ Gục: &a{kills}'
+  - '&fTổng Chiến Thắng: &a{wins}'
+  - ''
+  - '&e{server_ip}'
+format-sb-health:
+- '&c❤'
+format-spectator-team: SPECT
+format-spectator-color: '&7'
+format-sb-tab-prefix:
+  restarting:
+  - '{teamColor}&l{teamLetter} &r{teamColor}'
+  playing:
+  - '{teamColor}&l{teamLetter} &r{teamColor}'
+  starting:
+  - '{vSuffix}'
+  waiting:
+  - '{vSuffix}'
+  lobby:
+  - '{vPrefix}'
+format-sb-tab-suffix:
+  restarting: []
+  playing: []
+  starting:
+  - '{teamColor}&l{teamLetter}&r{teamColor}'
+  waiting:
+  - '{teamColor}&l{teamLetter}&r{teamColor}'
+  lobby:
+  - '%hauvongmc_tag%'
+format-sb-date: dd/MM/yy
+format-sb-team-generic: '{TeamColor}{TeamLetter}&f&l {TeamName}: {TeamStatus}'
+format-sb-team-eliminated: '&c&l✘'
+format-sb-bed-destroyed: '&a{remainingPlayers}'
+format-sb-team-alive: '&a&l✓'
+format-sb-generator-timer: mm:ss
+format-sb-you: '&7 BẠN'
+format-action-tracking: '&f&lTheo dõi: {team} &f&l- Khoảng cách: {distance}m'
+interact-cant-destroy-bed: '&cBạn không thể phá hủy giường của chính mình'
+team-eliminated: |2
+
+  &f&lTEAM ELIMINATED > &cĐội {TeamColor}{TeamName} &cđã bị loại bỏ!
+interact-bed-destroy-chat: |2
+
+  &f&lBED DESTRUCTION > &cGiường của {TeamColor}{TeamName} &cđã bị phá hủy bởi {PlayerColor}{PlayerName}&7!
+interact-bed-destroy-title: '&cMất Giường'
+interact-bed-destroy-subtitle: '&fBạn sẽ không còn được hồi sinh!'
+interact-bed-destroy-team: '&f&lBED DESTRUCTION > &7Giường của bạn bị phá hủy bởi
+  {PlayerColor}{PlayerName}&7!'
+player-die-void-regular: '{PlayerColor}{PlayerName} &7đã rơi xuống vực.'
+player-die-void-final: '{PlayerColor}{PlayerName} &7đã rơi xuống vực. &b&lKẾT LIỄU!'
+player-die-knocked-void-regular: '{PlayerColor}{PlayerName} &7đã bị đánh rơi xuống
+  vực bởi {KillerColor}{KillerName}&7.'
+player-die-knocked-void-final: '{PlayerColor}{PlayerName} &7đã bị đánh rơi xuống vực
+  bởi {KillerColor}{KillerName}&7. &b&lKẾT LIỄU!'
+player-die-knocked-fall-regular: '{PlayerColor}{PlayerName} &7was pushed by {KillerColor}{KillerName}&7.'
+player-die-knocked-fall-final: '{PlayerColor}{PlayerName} &7was pushed by {KillerColor}{KillerName}&7.
+  &b&lKẾT LIỄU!'
+player-die-bomb-regular: '{PlayerColor}{PlayerName} &7đã bị trúng một quả bom tình
+  yêu từ {KillerColor}{KillerName}&7.'
+player-die-bomb-final: '{PlayerColor}{PlayerName} &7đã bị trúng một quả bom tình yêu
+  từ {KillerColor}{KillerName}&7. &b&lKẾT LIỄU!'
+player-die-attack-regular: '{PlayerColor}{PlayerName} &7đã bị giết bởi {KillerColor}{KillerName}&7.'
+player-die-attack-final: '{PlayerColor}{PlayerName} &7đã bị giết bởi {KillerColor}{KillerName}&7.
+  &b&lKẾT LIỄU!'
+player-die-pvp-log-out-regular: '{PlayerColor}{PlayerName} &7disconnected while fighting
+  with {KillerColor}{KillerName}&7.'
+player-die-pvp-log-out-final: '{PlayerColor}{PlayerName} &7disconnected while fighting
+  with {KillerColor}{KillerName}&7. &b&lKẾT LIỄU!'
+bed-hologram-defend: '&c&lBảo vệ giường của bạn!'
+bed-hologram-destroyed: '&c&lGiường của bạn đã bị phá hủy!'
+player-respawn-title: '&cBẠN ĐÃ CHẾT!'
+player-respawn-subtitle: '&eBạn sẽ hồi sinh trong &c{time} &egiây!'
+player-respawn-timer-chat: '{prefix}&eBạn sẽ hồi sinh trong &c{time} &egiây!'
+player-respawned-title: '&aHỒI SINH!'
+player-eliminated-chat: '{prefix}&cBạn đã bị loại!'
+player-hit-bow: '{prefix}{TeamColor}{PlayerName} &7còn lại &c{amount} &7HP!'
+game-end-game-over-title: '&c&lTRÒ CHƠI KẾT THÚC!'
+game-end-victory-title: '&6&lCHIẾN THẮNG!'
+game-end-top-chat:
+- '&a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+- '&f                                   &lBedWars'
+- ''
+- '{winnerFormat}'
+- ''
+- ''
+- '&e                          &l1st Hạ gục &7- {firstName} - {firstKills}'
+- '&6                          &l2nd Hạ gục &7- {secondName} - {secondKills}'
+- '&c                          &l3rd Hạ gục &7- {thirdName} - {thirdKills}'
+- ''
+- '&a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+game-end-winner-team: '{prefix}{TeamColor}{TeamName} &ađã chiến thắng trò chơi!'
+format-winner-team: '      {TeamColor}{TeamName} &7- {members}'
+format-winner-solo: '                 {TeamColor}{TeamName} &7- {members}'
+meaning-nobody: Không ai
+format-tier1: I
+format-tier2: II
+format-tier3: III
+generator-upgrade-announce: '{prefix}&eLò sản xuất {generatorType} &eđược nâng cấp
+  tới cấp &c{tier}'
+npc-team-upgrades: '&bNÂNG CẤP,&e&lCHUỘT PHẢI'
+npc-solo-upgrades: '&bNÂNG CẤP,&e&lCHUỘT PHẢI'
+npc-team-shop: '&bCỬA HÀNG,&e&lCHUỘT PHẢI'
+npc-solo-shop: '&bCỬA HÀNG,&e&lCHUỘT PHẢI'
+meaning-full: Full
+meaning-iron-singular: Sắt
+meaning-iron-plural: Sắt
+meaning-gold-singular: Vàng
+meaning-gold-plural: Vàng
+meaning-emerald-singular: Ngọc Lục Bảo
+meaning-emerald-plural: Ngọc Lục Bảo
+meaning-diamond-singular: Kim Cương
+meaning-diamond-plural: Kim Cương
+meaning-vault-singular: $
+meaning-vault-plural: $
+cmd-join-usage: '§a▪ §7Hãy sử dụng: /bw join §o<arena/group>'
+cmd-blocked-in-game: '{prefix}&cBạn không thể làm điều này trong trò chơi.'
+upgrades-lore-click-buy: '{color}Nhấn vào đây để mua!'
+upgrades-lore-insuff-money: '{color}Bạn không có đủ {currency}'
+upgrades-lore-locked: '&cKHÓA'
+upgrades-lore-unlocked: '{color}ĐÃ MỞ KHÓA'
+upgrades:
+  Default:
+    generators:
+      tier1:
+        name: '&eLÒ CẤP 1'
+        lore:
+        - '&7LÒ SẼ SẢN XUẤT'
+        - '&7NHANH HƠN 50%..'
+        - ''
+        - '&8Giá:&b {cost} {currency}'
+        - ''
+        - '{loreFooter}'
+      tier2:
+        name: '&eLÒ CẤP 2'
+        lore:
+        - '&7LÒ SẼ SẢN XUẤT'
+        - '&7NHANH HƠN 100%..'
+        - ''
+        - '&8Giá:&b {cost} {currency}'
+        - ''
+        - '{loreFooter}'
+      tier3:
+        name: '&eLÒ CẤP 3'
+        lore:
+        - '&7LÒ SẼ SẢN XUẤT'
+        - '&7NGỌC LỤC BẢO.'
+        - ''
+        - '&8Giá:&b {cost} {currency}'
+        - ''
+        - '{loreFooter}'
+    maniacMiner:
+      tier1:
+        name: '&eKHÉO TAY'
+        lore:
+        - '&7Bạn sẽ đào nhanh với hiệu ứng'
+        - '&7ĐÀO NHANH I'
+        - ''
+        - '&8Giá:&b {cost} {currency}'
+        - ''
+        - '{loreFooter}'
+    sharpSword:
+      tier1:
+        name: '&eSẮC BÉN'
+        lore:
+        - '&7Cây kiếm sẽ được'
+        - '&7SẮC BÉN I!'
+        - ''
+        - '&8Giá:&b {cost} {currency}'
+        - ''
+        - '{loreFooter}'
+    reinforced:
+      tier1:
+        name: '&eTRỌNG GIÁP'
+        lore:
+        - '&7Giáp sẽ phù phép'
+        - '&7BẢO VỆ I!'
+        - ''
+        - '&8Giá:&b {cost} {currency}'
+        - ''
+        - '{loreFooter}'
+    trap:
+      tier1:
+        name: '&eĐẶT BẪY!'
+        lore:
+        - '&7Bẫy sẽ báo bạn có kể đột nhập'
+        - '&7để phá giường bạn'
+        - ''
+        - '&8Giá:&b {cost} {currency}'
+        - ''
+        - '{loreFooter}'
+    miningFatigue:
+      tier1:
+        name: '&eKIỆT SỨC'
+        lore:
+        - '&7Kẻ đột nhập nhà bạn sẽ bị'
+        - '&7KIỆT SỨC trong 10 giây vì'
+        - '&7đường dài!'
+        - ''
+        - '&8Giá:&b {cost} {currency}'
+        - ''
+        - '{loreFooter}'
+    healPool:
+      tier1:
+        name: '&eHỒI PHỤC'
+        lore:
+        - '&7Sẽ hồi máu cho đồng đội nhanh hơn bình thường'
+        - '&7khi ở gần nhà!'
+        - ''
+        - '&8Giá:&b {cost} {currency}'
+        - ''
+        - '{loreFooter}'
+upgrades-new-purchase: '&a{player} đã mua &6{upgradeName}'
+format-despawnable-health: '▮ '
+player-die-unknown-regular: '{PlayerColor}{PlayerName} &7đã chết.'
+player-die-unknown-final: '{PlayerColor}{PlayerName} &7đã chết. &b&lKẾT LIỄU!'
+player-die-shoot-regular: '{PlayerColor}{PlayerName} &7đã bị bắn chết bởi {KillerColor}{KillerName}&7!'
+player-die-shoot-final: '{PlayerColor}{PlayerName} &7đã bị bắn chết bởi {KillerColor}{KillerName}&7!
+  &b&lKẾT LIỄU!'
+player-die-bedbug-regular: '{PlayerColor}{PlayerName} &7đã bị giết bởi {KillerColor}{KillerTeamName}''s
+  &7BedBug!'
+player-die-bedbug-final: '{PlayerColor}{PlayerName} &7đã bị giết bởi {KillerColor}{KillerTeamName}''s
+  &7BedBug! &b&lKẾT LIỄU!'
+player-die-golem-regular: '{PlayerColor}{PlayerName} &7đã bị giết bởi {KillerColor}{KillerTeamName}''s
+  &7Iron Golem!'
+player-die-golem-final: '{PlayerColor}{PlayerName} &7đã bị giết bởi {KillerColor}{KillerTeamName}''s
+  &7Iron Golem! &b&lKẾT LIỄU!'
+player-loot-diamond: '{prefix}&b+{amount} {meaning}'
+player-loot-emerald: '{prefix}&a+{amount} {meaning}'
+player-loot-iron: '{prefix}&f+{amount} {meaning}'
+player-loot-gold: '{prefix}&6+{amount} {meaning}'
+player-die-bomb2-regular: '{PlayerColor}{PlayerName} &7bị trúng bom.'
+player-die-bomb2-final: '{PlayerColor}{PlayerName} &7bị trúng bom. &b&lFINAL KILL!'
+stats-inv-name: '&8Thông tin Bed Wars'
+stats-wins-name: '&6Chiến thắng'
+stats-wins-lore:
+- '&f{wins}'
+stats-losses-name: '&6Thua'
+stats-losses-lore:
+- '&f{losses}'
+stats-kills-name: '&6Giết'
+stats-kills-lore:
+- '&f{kills}'
+stats-deaths-name: '&6Chết'
+stats-deaths-lore:
+- '&f{deaths}'
+stats-final-kills-name: '&6Kết liễu'
+stats-final-kills-lore:
+- '&f{finalKills}'
+stats-final-deaths-name: '&6Final Deaths'
+stats-final-deaths-lore:
+- '&f{finalDeaths}'
+stats-beds-destroyed-name: '&6Phá hủy giường'
+stats-beds-destroyed-lore:
+- '&f{bedsDestroyed}'
+stats-first-play-name: '&6Lần đầu chơi'
+stats-first-play-lore:
+- '&f{firstPlay}'
+stats-last-play-name: '&6Lần cuối chơi'
+stats-last-play-lore:
+- '&f{lastPlay}'
+stats-games-played-name: '&6Trò chơi đã chơi'
+stats-games-played-lore:
+- '&f{gamesPlayed}'
+format-stats-time: dd/MM/yyyy/ HH:mm
+meaning-never: Never
+cmd-party-help:
+- '&6▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+- ''
+- '&e/party help &7- &bTổng các lệnh'
+- '&e/party invite <player> &7- &bMời người chơi tham gia nhóm của bạn'
+- '&e/party leave &7- &bThoát nhóm'
+- '&e/party remove <player> &7- &bXóa người chơi khỏi nhóm'
+- '&e/party accept <player> &7- &bChấp nhận lời mời nhóm'
+- '&e/party disband &7- &bGiải tán nhóm'
+- ''
+- '&6▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+cmd-party-invite-usage: '{prefix}&eSử Dụng: &7/party invite <player>'
+cmd-party-offline: '{prefix}&7{player} &eđã ngoại tuyến!'
+cmd-party-invite: '{prefix}&eLời mời đã được gửi tới &7{player}&6.'
+cmd-party-invite-received: '{prefix}&b{player} &eđã mời bạn tham gia nhóm của họ!
+  &o&7(Nhấp vào để chấp nhận)'
+cmd-party-invite-self: '{prefix}&cBạn không thể tự mời chính mình!'
+cmd-party-no-invite: '{prefix}&cKhông có yêu cầu nào để chấp nhận'
+cmd-party-already-in: '{prefix}&eBạn đã tham gia một Party!'
+cmd-party-no-perm: '{prefix}&cChỉ có Owner của party mới có thể làm điều này!'
+cmd-party-accept-usage: '{prefix}&eXử Dụng: &7/party accept <player>'
+cmd-party-join: '{prefix}&7{player} &eđã tham gia Party của bạn!'
+cmd-party-not-in: '{prefix}&cBạn không có mặt trong Party!'
+cmd-party-cant-leave: |-
+  {prefix}&cBạn không thể rời khỏi Party của bạn!
+  &eHãy thử dùng: &b/party disband
+cmd-party-leave: '{prefix}&7{player} &eđã rời khỏi party!'
+cmd-party-disband: '{prefix}&eParty đã tan rã!'
+cmd-party-remove-usage: '{prefix}&7Xử Dụng: &e/party remove <player>'
+cmd-party-remove: '{prefix}&7{player} &eđã bị đuổi ra khỏi Party,'
+cmd-party-remove-not-in: '{prefix}&7{player} &ekhông có trong Party!'
+next-event-beds-destroy: '&fGiường Tự Hủy'
+next-event-diamondII: '&fKim Cương II'
+next-event-diamondIII: '&fKim Cương III'
+next-event-dragon-spawn: '&fTử Chiến'
+next-event-emeraldII: '&fLục Bảo II'
+next-event-emeraldIII: '&fLục Bảo III'
+next-event-game-end: '&fKết Thúc'
+next-event-beds-destroy-title: '&cGIƯỜNG ĐÃ BỊ PHÁ HỦY!'
+next-event-beds-destroy-sub-title: '&fTất cả các giường đã bị phá hủy!'
+next-event-beds-destroy-chat: '&c&lTất cả các giường đã bị phá hủy!'
+next-event-sudden-death-title: '&fTử Chiến'
+next-event-sudden-death-sub-title: ''
+next-event-sudden-death-chat: '&cTỬ CHIẾN: &b{TeamDragons} &cRồng Đội {TeamColor}{TeamName}&c!'
+cmd-not-found: '{prefix}&cLệnh không tồn tại hoặc bạn không có quyền!'
+cmd-start-no-game: §c▪ §7Bạn không ở trong trò chơi!
+cmd-start: §c▪ §7Thời gian bắt đầu trò chơi đã được rút ngắn lại!
+cmd-start-no-perm: |-
+  {prefix}&7Bạn không thể buộc bắt đầu.
+  §7Hãy mua rank để có thẩm quyền làm điều này.
+cmd-join-spectate: |-
+  {prefix}§6bạn đang theo dõi §9{arena}§6.
+  {prefix}§ebạn có thể thoát bất cứ lúc nào với lệnh §c/leave§e.
+interact-cant-open-chest: '&cBạn không thể mở rương này vì đội này đã bị loại!'
+spectator-tp-gui-name: '&8Dịch chuyển'
+spectator-tp-gui-head-name: '&r{prefix}&r{player}'
+spectator-tp-gui-head-lore:
+- ''
+- '&7Nhấp chuột trái để theo dõi'
+spectator-tp-name: '&c&lTrở về sảnh chờ'
+spectator-tp-lore:
+- '&7Nhấp chuột phải để trở về lobby!'
+spectator-first-person-enter-title: '&aTheo dõi &7{player}'
+spectator-first-person-enter-subtitle: '&cSNEAK để thoát'
+spectator-first-person-quit-title: '&eThoát khỏi chế độ Theo Dõi'
+spectator-first-person-quit-subtitle: ''
+cmd-join-spectate-denied: '&cKhông thể theo dõi trò chơi này!'
+arena-leave-party-disbanded: '{prefix}§cOwner party đã rời đi và Party đã giải tán!'
+xp-reward-per-minute: '{prefix}&b+{xp} kinh nghiệm (Thời Gian Chơi Bed Wars).'
+xp-reward-game-win: '{prefix}&6+{xp} kinh nghiệm đã nhận được (Chiến Thắng Trò Chơi).'
+xp-reward-per-teammate: '{prefix}&6+{xp} kinh nghiệm đã nhận được (Hỗ Trợ Đồng Đội).'
+shop-items-messages:
+  inventory-name: '&8Mua Nhanh'
+  separator-item-name: '&8⇧ Thể loại'
+  separator-item-lore:
+  - '&8⇩ Vật phẩm'
+  quick-buy-item-name: '&bMua Ngay'
+  quick-buy-item-lore: []
+  quick-buy-empty-item-name: '&cChỗ trống!'
+  quick-buy-empty-item-lore:
+  - '&7This is a Quick Buy Slot!'
+  - '&bSneak Click &7any item in'
+  - '&7the shop to add it here.'
+  can-buy-color: '&a'
+  cant-buy-color: '&c'
+  blocks-category:
+    inventory-name: '&8Cửa Hàng Xây Dựng'
+    category-item-name: '&aXây Dựng'
+    category-item-lore:
+    - '&eNhấp vào để xem!'
+    content-item-wool-name: '{color}Len'
+    content-item-wool-lore:
+    - '&7Giá: &f{cost} {currency}'
+    - ''
+    - '&7Great for bridging across'
+    - '&7islands. Turns into your team''s'
+    - '&7color.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-clay-name: '{color}Đất Sét'
+    content-item-clay-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '&7Basic block to defend your bed.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-glass-name: '{color}Kính Chống Nổ'
+    content-item-glass-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '&7Immune to explosions.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-stone-name: '{color}Đá End'
+    content-item-stone-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '&7Solid block to defend your bed.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-ladder-name: '{color}Cầu Thang'
+    content-item-ladder-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '&7Useful to save cats stuck in'
+    - '&7trees.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-obsidian-name: '{color}Hắc Diện Thạch'
+    content-item-obsidian-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '&7Extreme protection for your bed.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-wood-name: '{color}Gỗ'
+    content-item-wood-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '&7Solid block to defend your bed'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+  melee-category:
+    inventory-name: '&8Cửa Hàng Cận chiến'
+    category-item-name: '&aCận Chiến'
+    category-item-lore:
+    - '&eNhấp vào để xem!'
+    content-item-stone-sword-name: '{color}Kiếm Đá'
+    content-item-stone-sword-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-iron-sword-name: '{color}Kiếm Sắt'
+    content-item-iron-sword-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-diamond-sword-name: '{color}Kiếm Kim Cương'
+    content-item-diamond-sword-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-stick-name: '{color}Gậy Bật Lùi (KnockBack I)'
+    content-item-stick-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+  armor-category:
+    inventory-name: '&8Cửa Hàng Trang Bị'
+    category-item-name: '&aTrang Bị'
+    category-item-lore:
+    - '&eNhấp vào để xem!'
+    content-item-chainmail-name: '{color}Giáp Xích'
+    content-item-chainmail-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '&7Chainmail leggings and boots'
+    - '&7which you will always spawn'
+    - '&7with.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-iron-armor-name: '{color}Giáp Sắt'
+    content-item-iron-armor-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '&7Iron leggings and boots which'
+    - '&7you will always spawn with.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-diamond-armor-name: '{color}Giáp Kim Cương'
+    content-item-diamond-armor-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '&7Diamond leggings and boots which'
+    - '&7you will always crush with.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+  tools-category:
+    inventory-name: '&8Cửa Hàng Dụng Cụ'
+    category-item-name: '&aDụng Cụ'
+    category-item-lore:
+    - '&eNhấp vào để xem!'
+    content-item-shears-name: '{color}Kéo'
+    content-item-shears-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '&7Great to get rid of wool. You'
+    - '&7will always spawn with these shears.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-pickaxe-name: '{color}Cúp {tier}'
+    content-item-pickaxe-lore:
+    - '&7Giá: {cost} {currency}'
+    - '&7Cấp: &e{tier}'
+    - ''
+    - '&7This is an upgradable item.'
+    - '&7It will lose 1 tier upon.'
+    - '&7death!'
+    - ''
+    - '&7You will permanently'
+    - '&7respawn with at least the'
+    - '&7lowest tier.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-axe-name: '{color}Rìu {tier}'
+    content-item-axe-lore:
+    - '&7Giá: {cost} {currency}'
+    - '&7Cấp: &e{tier}'
+    - ''
+    - '&7This is an upgradable item.'
+    - '&7It will lose 1 tier upon.'
+    - '&7death!'
+    - ''
+    - '&7You will permanently'
+    - '&7respawn with at least the'
+    - '&7lowest tier.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+  ranged-category:
+    inventory-name: '&8Cửa Hàng Cung Thủ'
+    category-item-name: '&aCung Thủ'
+    category-item-lore:
+    - '&eNhấp vào để xem!'
+    content-item-arrow-name: '{color}Mũi Tên'
+    content-item-arrow-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-bow1-name: '{color}Cung'
+    content-item-bow1-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-bow2-name: '{color}Cung (Sức Mạnh I)'
+    content-item-bow2-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-bow3-name: '{color}Cung (Sức Mạnh I, Bật Lùi I)'
+    content-item-bow3-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+  potions-category:
+    inventory-name: '&8Cửa Hàng Thuốc Men'
+    category-item-name: '&aThuốc Men'
+    category-item-lore:
+    - '&eNhấp vào để xem!'
+    content-item-speed-potion-name: '{color}Thuốc Tăng Tốc II (45 giây)'
+    content-item-speed-potion-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-jump-potion-name: '{color}Thuốc Nhảy Cao V (45 giây)'
+    content-item-jump-potion-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-invisibility-name: '{color}Thuốc Tàng Hình (30 giây)'
+    content-item-invisibility-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+  utility-category:
+    inventory-name: '&8Cửa Hàng Tiện Ích'
+    category-item-name: '&aTiện Ích'
+    category-item-lore:
+    - '&eNhấp vào để xem!'
+    content-item-golden-apple-name: '{color}Táo Vàng'
+    content-item-golden-apple-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '&7Well-rounded healing.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-bedbug-name: '{color}BedBug'
+    content-item-bedbug-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '&7Spawns silverfish where the'
+    - '&7snowball lands to distract your'
+    - '&7enemies. Lasts 15 seconds.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-dream-defender-name: '{color}Người sắt'
+    content-item-dream-defender-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '&7Iron Golem to help defend your'
+    - '&7base. Lasts 4 minutes.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-fireball-name: '{color}Quả Cầu Lửa'
+    content-item-fireball-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '&7Right-click to launch! Great to'
+    - '&7knock back enemies walking on'
+    - '&7thin bridges'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-tnt-name: '{color}TNT'
+    content-item-tnt-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '&7Instantly ignites, appropriate'
+    - '&7to explode things!'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-ender-pearl-name: '{color}Ngọc Ender'
+    content-item-ender-pearl-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '&7The quickest way to invade enemy'
+    - '&7bases.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-water-bucket-name: '{color}Xô Nước'
+    content-item-water-bucket-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '&7Great to slow down approaching'
+    - '&7enemies. Can also protect'
+    - '&7against TNT.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-bridge-egg-name: '{color}Trứng Tạo Cầu'
+    content-item-bridge-egg-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '&7This egg creates a bridge in its'
+    - '&7trial after being thrown.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-magic-milk-name: '{color}Sữa Thần Kì'
+    content-item-magic-milk-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '&7Avoid triggering traps for 60'
+    - '&7seconds after consuming.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-sponge-name: '{color}Miếng Bọt Biển'
+    content-item-sponge-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '&7Great for soaking up water.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-tower-name: '{color}Lâu Đài'
+    content-item-tower-lore:
+    - '&7Giá: {cost} {currency}'
+    - ''
+    - '&7Place a compact pop-up'
+    - '&7tower defense!'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+shop-insuff-money: '{prefix}&cBạn không đủ tài nguyên! Bạn cần thêm {amount} {currency}
+  nữa!'
+shop-new-purchase: '{prefix}&aBạn đã mua &6{item}'
+shop-already-bought: '{prefix}&cBạn đã mua nó từ trước!'
+shop-utility-silverfish: '{TeamColor}&l{TeamName} &r{TeamColor}Silverfish'
+shop-utility-iron-golem: '{TeamColor}{despawn}s &8[ {TeamColor}{health}&8]'
+shop-lore-status-can-buy: '&eNhấp vào để mua!'
+shop-lore-status-cant-afford: '&cBạn không có đủ {currency}!'
+shop-lore-status-tier-maxed: '&aTỐI ĐA!'
+shop-lore-quick-add: '&bSneak Nhấp để thêm vào Mua nhanh'
+shop-lore-quick-remove: '&bSneak Nhấp để xóa khỏi Mua nhanh!'
+lobby-items-stats-name: '&eThông Tin'
+lobby-items-stats-lore:
+- '&fRight-click to see your stats!'
+lobby-items-arena-selector-name: '&eArena Selector'
+lobby-items-arena-selector-lore:
+- '&fRight-click to choose an arena!'
+lobby-items-leave-name: '&eBack to Hub'
+lobby-items-leave-lore:
+- '&fRight-click to leave BedWars!'
+pre-game-items-stats-lore:
+- '&fRight-click to see your stats!'
+pre-game-items-leave-lore:
+- '&fNhấp chuột phải để rời khỏi trò chơi!'
+spectator-items-teleporter-lore:
+- '&7Sử dụng chức năng này để'
+- '&7dịch chuyển tới người chơi trong trò chơi'
+- '&7nếu bạn không thể tìm thấy họ.'
+spectator-items-leave-lore:
+- '&fNhấp chuột phải để rời khỏi trò chơi!'
+cmd-cooldown: '&cYou can''t do that yet! Wait {seconds} more seconds!'
+format-papi-player-team: '{TeamColor}[{TeamName}]'
+format-papi-player-shout: '&6[TỔNG]'
+format-papi-player-spectator: '&7[THEO DÕI]'
+arena-join-denied-selector: '{prefix}&cSorry but you can''t join this arena at this
+  moment. Use Right-Click to spectate!'
+arena-spectate-denied-selector: '{prefix}&cXin lỗi nhưng bạn không thể theo dõi trò
+  chơi này tại lúc này. Nhấp vào chuột trái để tham gia!'
+arena-join-denied-no-bwp: "&cSorry but you must join an arena using BedWarsProxy.\
+  \ \n&eIf you want to setup an arena make sure to give yourself the bw.setup permission\
+  \ so you can join the server directly!"
+cmd-rejoin-no-arena: '{prefix}&cKhông có trò chơi nào bạn có thể tham gia lại!'
+cmd-rejoin-denied: '{prefix}&cBạn không thể tham gia lại trò chơi nữa. Trò chơi đã
+  kết thúc hoặc giường đã bị phá hủy.'
+cmd-rejoin-allowed: '{prefix}&eĐang tham gia lại trò chơi &a{arena}&e!'
+meaning-no-trap: No trap!
+format-upgrade-trap-cost: '&7Giá: {currencyColor}{cost} {currency}'
+format-upgrade-color-can-afford: '&e'
+format-upgrade-color-cant-afford: '&c'
+format-upgrade-color-unlocked: '&a'
+format-tier-color-locked: '&7'
+format-tier-color-unlocked: '&a'
+upgrades-upgrade-name-forge-tier-1: '{color}Lò Khoáng Sản'
+upgrades-upgrade-lore-forge-tier-1:
+- '&7Nâng cấp &eLÒ SẢN XUẤT KHOÁNG SẢN'
+- '&7trên hòn đảo của bạn!'
+- ''
+- '{tierColor}Cấp 1: +50% Sắt và Vàng, &b{cost} {currency}'
+- '&7Cấp 2: +100% Sắt và Vàng, &b4 Kim Cương'
+- '&7Cấp 3: Sản xuất Lục Bảo, &b6 Kim Cương'
+- '&7Cấp 4: +200% Sắt và Vàng, &b8 Kim Cương'
+- ''
+upgrades-upgrade-name-forge-tier-2: '{color}Lò Khoáng Sản'
+upgrades-upgrade-lore-forge-tier-2:
+- '&7Nâng cấp &eLÒ SẢN XUẤT KHOÁNG SẢN'
+- '&7trên hòn đảo của bạn!'
+- ''
+- '&aCấp 1: +50% Sắt và Vàng, &b2 Kim Cương'
+- '{tierColor}Tier 2: +100% Sắt và Vàng, &b{cost} {currency}'
+- '&7Cấp 3: Sản xuất Lục Bảo, &b6 Kim Cương'
+- '&7Cấp 4: +200% Sắt và Vàng, &b8 Kim Cương'
+- ''
+upgrades-upgrade-name-forge-tier-3: '{color}Lò Khoáng Sản'
+upgrades-upgrade-lore-forge-tier-3:
+- '&7Nâng cấp &eLÒ SẢN XUẤT KHOÁNG SẢN'
+- '&7trên hòn đảo của bạn!'
+- ''
+- '&aCấp 1: +50% Sắt và Vàng, &b2 Kim Cương'
+- '&aCấp 2: +100% Sắt và Vàng, &b4 Kim Cương'
+- '{tierColor}Cấp 3: Sản xuất Lục Bảo, &b{cost} {currency}'
+- '&7Cấp 4: +200% Sắt và Vàng, &b8 Kim Cương'
+- ''
+upgrades-upgrade-name-forge-tier-4: '{color}Lò Khoáng Sản'
+upgrades-upgrade-lore-forge-tier-4:
+- '&7Nâng cấp &eLÒ SẢN XUẤT KHOÁNG SẢN'
+- '&7trên hòn đảo của bạn!'
+- ''
+- '&aCấp 1: +50% Sắt và Vàng, &b2 Kim Cương'
+- '&aCấp 2: +100% Sắt và Vàng, &b4 Kim Cương'
+- '&aCấp 3: Sản xuất Lục Bảo, &b6 Kim Cương'
+- '{tierColor}Cấp 4: +200% Sắt và Vàng, &b{cost} {currency}'
+- ''
+upgrades-upgrade-name-forge1-tier-1: '{color}Lò Khoáng Sản'
+upgrades-upgrade-lore-forge1-tier-1:
+- '&7Nâng cấp &eLÒ SẢN XUẤT KHOÁNG SẢN'
+- '&7trên hòn đảo của bạn!'
+- ''
+- '{tierColor}Cấp 1: +50% Sắt và Vàng, &b{cost} {currency}'
+- '&7Cấp 2: +100% Sắt và Vàng, &b8 Kim Cương'
+- '&7Cấp 3: Sản xuất Lục Bảo, &b12 Kim Cương'
+- '&7Cấp 4: +200% Sắt và Vàng, &b16 Kim Cương'
+- ''
+upgrades-upgrade-name-forge1-tier-2: '{color}Lò Khoáng Sản'
+upgrades-upgrade-lore-forge1-tier-2:
+- '&7Nâng cấp &eLÒ SẢN XUẤT KHOÁNG SẢN'
+- '&7trên hòn đảo của bạn!'
+- ''
+- '&aCấp 1: +50% Sắt và Vàng, &b4 Kim Cương'
+- '{tierColor}Tier 2: +100% Sắt và Vàng, &b{cost} {currency}'
+- '&7Cấp 3: Sản xuất Lục Bảo, &b12 Kim Cương'
+- '&7Cấp 4: +200% Sắt và Vàng, &b16 Kim Cương'
+- ''
+upgrades-upgrade-name-forge1-tier-3: '{color}Lò Khoáng Sản'
+upgrades-upgrade-lore-forge1-tier-3:
+- '&7Nâng cấp &eLÒ SẢN XUẤT KHOÁNG SẢN'
+- '&7trên hòn đảo của bạn!'
+- ''
+- '&aCấp 1: +50% Sắt và Vàng, &b4 Kim Cương'
+- '&aCấp 2: +100% Sắt và Vàng, &b8 Kim Cương'
+- '{tierColor}Cấp 3: Sản xuất Lục Bảo, &b{cost} {currency}'
+- '&7Cấp 4: +200% Sắt và Vàng, &b16 Kim Cương'
+- ''
+upgrades-upgrade-name-forge1-tier-4: '{color}Lò Khoáng Sản'
+upgrades-upgrade-lore-forge1-tier-4:
+- '&7Nâng cấp &eLÒ SẢN XUẤT KHOÁNG SẢN'
+- '&7trên hòn đảo của bạn!'
+- ''
+- '&aCấp 1: +50% Sắt và Vàng, &b4 Kim Cương'
+- '&aCấp 2: +100% Sắt và Vàng, &b8 Kim Cương'
+- '&aCấp 3: Sản xuất Lục Bảo, &b12 Kim Cương'
+- '{tierColor}Cấp 4: +200% Sắt và Vàng, &b{cost} {currency}'
+- ''
+upgrades-category-item-name-traps: '&eĐặt Bẫy'
+upgrades-category-item-lore-traps:
+- '&7Tất cả kẻ địch đứng gần nhà bạn'
+- '&7sẽ bị &eSẺO CHYM &7trong 5 giây!'
+- ''
+- '&eNhấp để mua!'
+upgrades-upgrade-name-swords-tier-1: '{color}Sắc Bén'
+upgrades-upgrade-lore-swords-tier-1:
+- '&7Tất cả thành viên trong đội của bạn'
+- '&7sẽ nhận được phù phép &eSẮC BÉN I&7!'
+- ''
+- '&7Giá: &b{cost} {currency}'
+- ''
+upgrades-upgrade-name-swords1-tier-1: '{color}Sắc Bén'
+upgrades-upgrade-lore-swords1-tier-1:
+- '&7Tất cả thành viên trong đội của bạn'
+- '&7sẽ nhận được phù phép &eSẮC BÉN I&7!'
+- ''
+- '&7Giá: &b{cost} {currency}'
+- ''
+upgrades-upgrade-name-armor-tier-1: '{color}Bảo Vệ I'
+upgrades-upgrade-lore-armor-tier-1:
+- '&7Tất cả thành viên trong đội của bạn'
+- '&7sẽ nhận được phù phép &eBẢO VỆ I&7!'
+- ''
+- '{tierColor}Cấp 1: Bảo Vệ I, &b{cost} {currency}'
+- '&7Cấp 2: Bảo Vệ II, &b4 Kim Cương'
+- '&7Cấp 3: Bảo Vệ III, &b8 Kim Cương'
+- '&7Cấp 4: Bảo Vệ IV, &b16 Kim Cương'
+- ''
+upgrades-upgrade-name-armor-tier-2: '{color}Bảo Vệ II'
+upgrades-upgrade-lore-armor-tier-2:
+- '&7Tất cả thành viên trong đội của bạn'
+- '&7sẽ nhận được phù phép &eBẢO VỆ II&7!'
+- ''
+- '&aCấp 1: Bảo Vệ I, &b2 Kim Cương'
+- '{tierColor}Cấp 2: Bảo Vệ II, &b{cost} {currency}'
+- '&7Cấp 3: Bảo Vệ III, &b8 Kim Cương'
+- '&7Cấp 4: Bảo Vệ IV, &b16 Kim Cương'
+- ''
+upgrades-upgrade-name-armor-tier-3: '{color}Bảo Vệ III'
+upgrades-upgrade-lore-armor-tier-3:
+- '&7Tất cả thành viên trong đội của bạn'
+- '&7sẽ nhận được phù phép &eBẢO VỆ III&7!'
+- ''
+- '&aCấp 1: Bảo Vệ I, &b2 Kim Cương'
+- '&aCấp 2: Bảo Vệ II, &b4 Kim Cương'
+- '{tierColor}Cấp 3: Bảo Vệ III, &b{cost} {currency}'
+- '&7Cấp 4: Bảo Vệ IV, &b16 Kim Cương'
+- ''
+upgrades-upgrade-name-armor-tier-4: '{color}Bảo Vệ IV'
+upgrades-upgrade-lore-armor-tier-4:
+- '&7Tất cả thành viên trong đội của bạn'
+- '&7sẽ nhận được phù phép &eBẢO VỆ IV&7!'
+- ''
+- '&aCấp 1: Bảo Vệ I, &b2 Kim Cương'
+- '&aCấp 2: Bảo Vệ II, &b4 Kim Cương'
+- '&aCấp 3: Bảo Vệ III, &b8 Kim Cương'
+- '{tierColor}Cấp 4: Bảo Vệ IV, &b{cost} {currency}'
+- ''
+upgrades-upgrade-name-armor1-tier-1: '{color}Bảo Vệ I'
+upgrades-upgrade-lore-armor1-tier-1:
+- '&7Tất cả thành viên trong đội của bạn'
+- '&7sẽ nhận được phù phép &eBẢO VỆ I&7!'
+- ''
+- '{tierColor}Cấp 1: Bảo Vệ I, &b{cost} {currency}'
+- '&7Cấp 2: Bảo Vệ II, &b10 Kim Cương'
+- '&7Cấp 3: Bảo Vệ III, &b20 Kim Cương'
+- '&7Cấp 4: Bảo Vệ IV, &b30 Kim Cương'
+- ''
+upgrades-upgrade-name-armor1-tier-2: '{color}Bảo Vệ II'
+upgrades-upgrade-lore-armor1-tier-2:
+- '&7Tất cả thành viên trong đội của bạn'
+- '&7sẽ nhận được phù phép &eBẢO VỆ II&7!'
+- ''
+- '&aCấp 1: Bảo Vệ I, &b5 Kim Cương'
+- '{tierColor}Cấp 2: Bảo Vệ II, &b{cost} {currency}'
+- '&7Cấp 3: Bảo Vệ III, &b20 Kim Cương'
+- '&7Cấp 4: Bảo Vệ IV, &b30 Kim Cương'
+- ''
+upgrades-upgrade-name-armor1-tier-3: '{color}Bảo Vệ III'
+upgrades-upgrade-lore-armor1-tier-3:
+- '&7Tất cả thành viên trong đội của bạn'
+- '&7sẽ nhận được phù phép &eBẢO VỆ III&7!'
+- ''
+- '&aCấp 1: Bảo Vệ I, &b5 Kim Cương'
+- '&aCấp 2: Bảo Vệ II, &b10 Kim Cương'
+- '{tierColor}Cấp 3: Bảo Vệ III, &b{cost} {currency}'
+- '&7Cấp 4: Bảo Vệ IV, &b30 Kim Cương'
+- ''
+upgrades-upgrade-name-armor1-tier-4: '{color}Bảo Vệ IV'
+upgrades-upgrade-lore-armor1-tier-4:
+- '&7Tất cả thành viên trong đội của bạn'
+- '&7sẽ nhận được phù phép &eBẢO VỆ IV&7!'
+- ''
+- '&aCấp 1: Bảo Vệ I, &b5 Kim Cương'
+- '&aCấp 2: Bảo Vệ II, &b10 Kim Cương'
+- '&aCấp 3: Bảo Vệ III, &b20 Kim Cương'
+- '{tierColor}Cấp 4: Bảo Vệ IV, &b{cost} {currency}'
+- ''
+upgrades-upgrade-name-miner-tier-1: '{color}Đào Nhanh I'
+upgrades-upgrade-lore-miner-tier-1:
+- '&7Tất cả thành viên trong đội của bạn'
+- '&7sẽ nhận được hiệu ứng &eĐÀO NHANH I&7!'
+- ''
+- '{tierColor}Cấp 1: Đào Nhanh I, &b{cost} {currency}'
+- '&7Cấp 2: Đào Nhanh II, &b4 Kim Cương'
+- ''
+upgrades-upgrade-name-miner-tier-2: '{color}Đào Nhanh II'
+upgrades-upgrade-lore-miner-tier-2:
+- '&7Tất cả thành viên trong đội của bạn'
+- '&7sẽ nhận được hiệu ứng &eĐÀO NHANH II&7!'
+- ''
+- '&aCấp 1: Đào Nhanh I, &b2 Kim Cương'
+- '{tierColor}Cấp 2: Đào Nhanh II, &b{cost} {currency}'
+- ''
+upgrades-upgrade-name-miner1-tier-1: '{color}Đào Nhanh I'
+upgrades-upgrade-lore-miner1-tier-1:
+- '&7Tất cả thành viên trong đội của bạn'
+- '&7sẽ nhận được hiệu ứng &eĐÀO NHANH I&7!'
+- ''
+- '{tierColor}Cấp 1: Đào Nhanh I, &b{cost} {currency}'
+- '&7Cấp 2: Đào Nhanh II, &b8 Kim Cương'
+- ''
+upgrades-upgrade-name-miner1-tier-2: '{color}Đào Nhanh II'
+upgrades-upgrade-lore-miner1-tier-2:
+- '&7Tất cả thành viên trong đội của bạn'
+- '&7sẽ nhận được hiệu ứng &eĐÀO NHANH II&7!'
+- ''
+- '&aCấp 1: Đào Nhanh I, &b4 Kim Cương'
+- '{tierColor}Cấp 2: Đào Nhanh II, &b{cost} {currency}'
+- ''
+upgrades-upgrade-name-heal-pool-tier-1: '{color}Hồi Phục'
+upgrades-upgrade-lore-heal-pool-tier-1:
+- '&7Đồng đội sẽ nhận hiệu ứng &eHỒI PHỤC I'
+- '&7khi ở gần giường của đội!'
+- ''
+- '&7Giá: &b{cost} {currency}'
+- ''
+upgrades-upgrade-name-heal-pool1-tier-1: '{color}Hồi Phục'
+upgrades-upgrade-lore-heal-pool1-tier-1:
+- '&7Đồng đội sẽ nhận hiệu ứng &eHỒI PHỤC I'
+- '&7khi ở gần giường của đội!'
+- ''
+- '&7Giá: &b{cost} {currency}'
+- ''
+upgrades-upgrade-name-dragon-tier-1: '{color}Dragon Buff'
+upgrades-upgrade-lore-dragon-tier-1:
+- '&7Đội của bạn sẽ có &e2 CON RỒNG'
+- '&7thay vì 1 trong tử chiến!'
+- ''
+- '&7Giá: &b{cost} {currency}'
+- ''
+upgrades-separator-item-name-glass: '&8⬆&7Purchasable'
+upgrades-separator-item-lore-glass:
+- '&8⬇&7Bẫy'
+upgrades-trap-slot-item-name-first: '{color}Đặt Bẫy #1: {name}'
+upgrades-trap-slot-item-lore1-first:
+- '&7The first enemy to walk'
+- '&7into your base will trigger'
+- '&7this trap!'
+upgrades-trap-slot-item-lore2-first:
+- ''
+- '&7Purchasing a trap will'
+- '&7queue it here. Its cost'
+- '&7will scale based on the'
+- '&7number of traps queued.'
+- ''
+- '&7Next trap: &b{cost} {currency}'
+upgrades-trap-slot-item-name-second: '{color}Đặt Bẫy #2: {name}'
+upgrades-trap-slot-item-lore1-second:
+- '&7The second enemy to walk'
+- '&7into your base will trigger'
+- '&7this trap!'
+upgrades-trap-slot-item-lore2-second:
+- ''
+- '&7Purchasing a trap will'
+- '&7queue it here. Its cost'
+- '&7will scale based on the'
+- '&7number of traps queued.'
+- ''
+- '&7Next trap: &b{cost} {currency}'
+upgrades-trap-slot-item-name-third: '{color}Đặt Bẫy #3: {name}'
+upgrades-trap-slot-item-lore1-third:
+- '&7The third enemy to walk'
+- '&7into your base will trigger'
+- '&7this trap!'
+upgrades-trap-slot-item-lore2-third:
+- ''
+- '&7Purchasing a trap will'
+- '&7queue it here. Its cost'
+- '&7will scale based on the'
+- '&7number of traps queued.'
+- ''
+- '&7Next trap: &b{cost} {currency}'
+upgrades-base-trap-name-1: '{color}Nó Là Một Cái Bẫy!'
+upgrades-base-trap-lore-1:
+- '&7Gây mù lòa và chậm chạp'
+- '&7trong 5 giây.'
+- ''
+upgrades-base-trap-name-2: '{color}Bẫy Phản Công'
+upgrades-base-trap-lore-2:
+- '&7Grants Speed I for 15 seconds to'
+- '&7allied players near your base.'
+- ''
+upgrades-base-trap-name-3: '{color}Bẫy Báo Động'
+upgrades-base-trap-lore-3:
+- '&7Reveales invisible players as'
+- '&7well as their name and team.'
+- ''
+upgrades-base-trap-name-4: '{color}Bẫy Đào Chậm'
+upgrades-base-trap-lore-4:
+- '&7Gây mệt mỏi trong 10 giây'
+- ''
+upgrades-separator-item-name-back: '&aQuay lại'
+upgrades-separator-item-lore-back:
+- '&7Đến Upgrades & Traps'
+upgrades-category-gui-name-traps: '&8Đặt Bẫy'
+upgrades-trap-queue-full: '&cBẫy đã đầy!'
+upgrades-trap-default-msg: '&c&l{trap} đã bị tắt!'
+upgrades-trap-default-title: '&cCÓ KẺ DÍNH BẪY!'
+upgrades-trap-default-subtitle: '&fBẫy {trap} của bạn đã có kẻ mắc phải!'
+upgrades-base-trap-msg-3: '&c&lBẫy thông báo đã bị hủy bởi &7&l{player} &c&lđến từ
+  {color}&l{team} &c&lteam!'
+upgrades-base-trap-title-3: '&c&lBÁO ĐỘNG!!!'
+upgrades-base-trap-subtitle-3: '&fBẫy thông báo đã bị tắt bởi đội {color}{team}!'
+lobby-items-language-lore:
+- '&7Yêu thích Collectibles cho phép bạn'
+- '&7để kích hoạt chúng dễ dàng.'
+- '&7Nhấp chuột phải vào một mục trong'
+- '&7chọn Collectibles trong kho đồ của bạn để'
+- '&7yêu thích nó!'
+upgrades-menu-gui-name-default: '&8Nâng Cấp'
+team-name-treenan-Yellow: Vàng
+team-name-treenan-Red: Đỏ
+team-name-treenan-Green: Lục
+team-name-treenan-Blue: Xanh
+team-name-chained-Red: Đỏ
+team-name-chained-Blue: Xanh
+team-name-chained-Yellow: Vàng
+team-name-chained-Green: Lục
+display-group-3v3v3v3: 3v3v3v3
+display-group-4v4v4v4: 4v4v4v4
+display-group-doubles: Doubles
+team-name-speedway-Gray: Xám
+team-name-speedway-Pink: Hồng
+team-name-speedway-White: Trắng
+team-name-speedway-Red: Đỏ
+team-name-speedway-Blue: Xanh
+team-name-speedway-Aqua: Lam
+team-name-speedway-Green: Lục
+team-name-speedway-Yellow: Vàng
+display-group-solo: Solo
+team-name-amazon-Gray: Xám
+team-name-amazon-Pink: Hồng
+team-name-amazon-Red: Đỏ
+team-name-amazon-White: Trắng
+team-name-amazon-Blue: Xanh
+team-name-amazon-Aqua: Lam
+team-name-amazon-Green: Lục
+team-name-amazon-Yellow: Vàng
+team-name-zarzul-Pink: Hồng
+team-name-zarzul-White: Trắng
+team-name-zarzul-Gray: Xám
+team-name-zarzul-Aqua: Lam
+team-name-zarzul-Red: Đỏ
+team-name-zarzul-Yellow: Vàng
+team-name-zarzul-Blue: Xanh
+team-name-zarzul-Green: Lục
+team-name-airshow-Gray: Xám
+team-name-airshow-Pink: Hồng
+team-name-airshow-Yellow: Vàng
+team-name-airshow-White: Trắng
+team-name-airshow-Red: Đỏ
+team-name-airshow-Green: Lục
+team-name-airshow-Aqua: Lam
+team-name-airshow-Blue: Xanh
+team-name-ashfire-Gray: Xám
+team-name-ashfire-Pink: Hồng
+team-name-ashfire-White: Trắng
+team-name-ashfire-Aqua: Lam
+team-name-ashfire-Red: Đỏ
+team-name-ashfire-Yellow: Vàng
+team-name-ashfire-Blue: Xanh
+team-name-ashfire-Green: Lục
+team-name-aquarium-Blue: Xanh
+team-name-aquarium-Red: Đỏ
+team-name-aquarium-Green: Lục
+team-name-aquarium-Yellow: Vàng
+team-name-ashore-Blue: Xanh
+team-name-ashore-Red: Đỏ
+team-name-ashore-Green: Lục
+team-name-ashore-Yellow: Vàng
+team-name-dreamgrove-Blue: Xanh
+team-name-dreamgrove-Red: Đỏ
+team-name-dreamgrove-Green: Lục
+team-name-dreamgrove-Yellow: Vàng
+team-name-temple-Blue: Xanh
+team-name-temple-Red: Đỏ
+team-name-temple-Green: Lục
+team-name-temple-Yellow: Vàng
+team-name-Aquarium-Blue: Xanh
+team-name-Aquarium-Red: Đỏ
+team-name-Aquarium-Green: Lục
+team-name-Aquarium-Yellow: Vàng
+team-name-boletum-Blue: Xanh
+team-name-boletum-Red: Đỏ
+team-name-boletum-Green: Lục
+team-name-boletum-Yellow: Vàng
+team-name-carapace-Yellow: Vàng
+team-name-carapace-Green: Lục
+team-name-carapace-Red: Đỏ
+team-name-carapace-Blue: Xanh
+team-name-lectus-Yellow: Vàng
+team-name-lectus-Red: Đỏ
+team-name-lectus-Green: Lục
+team-name-lectus-Blue: Xanh
+display-group-default: Default
+team-name-acropolis-Green: Lục
+team-name-acropolis-Blue: Xanh
+team-name-acropolis-White: Trắng
+team-name-acropolis-Yellow: Vàng
+team-name-acropolis-Red: Đỏ
+team-name-acropolis-Aqua: Lam
+team-name-acropolis-Gray: Xám
+team-name-acropolis-Pink: Hồng
+team-name-cryptic-Blue: Xanh
+team-name-cryptic-Red: Đỏ
+team-name-gardens-Blue: Xanh
+team-name-gardens-Red: Đỏ
+team-name-glacier-Gray: Xám
+team-name-glacier-Pink: Hồng
+team-name-glacier-Red: Đỏ
+team-name-glacier-White: Trắng
+team-name-glacier-Blue: Xanh
+team-name-glacier-Aqua: Lam
+team-name-glacier-Green: Lục
+team-name-glacier-Yellow: Vàng
+team-name-inca-Gray: Xám
+team-name-inca-Pink: Hồng
+team-name-inca-Red: Đỏ
+team-name-inca-White: Trắng
+team-name-inca-Blue: Xanh
+team-name-inca-Aqua: Lam
+team-name-inca-Green: Lục
+team-name-inca-Yellow: Vàng
+team-name-lighthouse-Gray: Xám
+team-name-lighthouse-Pink: Hồng
+team-name-lighthouse-Red: Đỏ
+team-name-lighthouse-White: Trắng
+team-name-lighthouse-Blue: Xanh
+team-name-lighthouse-Aqua: Lam
+team-name-lighthouse-Green: Lục
+team-name-lighthouse-Yellow: Vàng
+team-name-lightstone-Gray: Xám
+team-name-lightstone-Pink: Hồng
+team-name-lightstone-Aqua: Lam
+team-name-lightstone-Red: Đỏ
+team-name-lightstone-White: Trắng
+team-name-lightstone-Blue: Xanh
+team-name-lightstone-Green: Lục
+team-name-lightstone-Yellow: Vàng
+team-name-lionstemple-Blue: Xanh
+team-name-lionstemple-Red: Đỏ
+team-name-nutcracker-Gray: Xám
+team-name-nutcracker-Pink: Hồng
+team-name-nutcracker-Red: Đỏ
+team-name-nutcracker-Yellow: Vàng
+team-name-nutcracker-White: Trắng
+team-name-nutcracker-Blue: Xanh
+team-name-nutcracker-Aqua: Lam
+team-name-nutcracker-Green: Lục
+team-name-orchestra-Gray: Xám
+team-name-orchestra-Pink: Hồng
+team-name-orchestra-White: Trắng
+team-name-orchestra-Red: Đỏ
+team-name-orchestra-Blue: Xanh
+team-name-orchestra-Aqua: Lam
+team-name-orchestra-Green: Lục
+team-name-orchestra-Yellow: Vàng
+team-name-pernicious-Yellow: Vàng
+team-name-pernicious-Green: Lục
+team-name-pernicious-Aqua: Lam
+team-name-pernicious-Blue: Xanh
+team-name-pernicious-White: Trắng
+team-name-pernicious-Red: Đỏ
+team-name-pernicious-Pink: Hồng
+team-name-pernicious-Gray: Xám
+team-name-picnic-Blue: Xanh
+team-name-picnic-Red: Đỏ
+team-name-ruins-Blue: Xanh
+team-name-ruins-Red: Đỏ
+team-name-siege-Gray: Xám
+team-name-siege-Pink: Hồng
+team-name-siege-Red: Đỏ
+team-name-siege-White: Trắng
+team-name-siege-Blue: Xanh
+team-name-siege-Aqua: Lam
+team-name-siege-Green: Lục
+team-name-siege-Yellow: Vàng
+team-name-waterfall-Gray: Xám
+team-name-waterfall-Pink: Hồng
+team-name-waterfall-White: Trắng
+team-name-waterfall-Red: Đỏ
+team-name-waterfall-Aqua: Lam
+team-name-waterfall-Blue: Xanh
+team-name-waterfall-Green: Lục
+team-name-waterfall-Yellow: Vàng
+team-name-sandcastle-Yellow: Vàng
+team-name-sandcastle-Green: Lục
+team-name-sandcastle-Red: Đỏ
+team-name-sandcastle-Blue: Xanh
+team-name-submerged-Gray: Xám
+team-name-submerged-Pink: Hồng
+team-name-submerged-White: Trắng
+team-name-submerged-Red: Đỏ
+team-name-submerged-Green: Lục
+team-name-submerged-Blue: Xanh
+team-name-submerged-Aqua: Lam
+team-name-submerged-Yellow: Vàng
+team-name-cauldron-Green: Lục
+team-name-cauldron-Blue: Xanh
+team-name-cauldron-Red: Đỏ
+team-name-cauldron-Yellow: Vàng
+team-name-eggrun-Yellow: Vàng
+team-name-eggrun-Green: Lục
+team-name-eggrun-Blue: Xanh
+team-name-eggrun-Red: Đỏ
+team-name-fortdoon-Blue: Xanh
+team-name-fortdoon-Green: Lục
+team-name-fortdoon-Yellow: Vàng
+team-name-fortdoon-Red: Đỏ
+team-name-helltemple-Red: Đỏ
+team-name-helltemple-Yellow: Vàng
+team-name-helltemple-Green: Lục
+team-name-helltemple-Blue: Xanh
+team-name-invasion-Red: Đỏ
+team-name-invasion-Yellow: Vàng
+team-name-invasion-Blue: Xanh
+team-name-invasion-Green: Lục
+team-name-swashbuckle-Yellow: Vàng
+team-name-swashbuckle-Red: Đỏ
+team-name-swashbuckle-Green: Lục
+team-name-swashbuckle-Blue: Xanh
+team-name-unchained-Yellow: Vàng
+team-name-unchained-Red: Đỏ
+team-name-unchained-Green: Lục
+team-name-unchained-Blue: Xanh
+team-name-aquarium3v3v3v3-Blue: Xanh
+team-name-aquarium3v3v3v3-Red: Đỏ
+team-name-aquarium3v3v3v3-Green: Lục
+team-name-aquarium3v3v3v3-Yellow: Vàng
+team-name-aquarium4v4v4v4-Blue: Xanh
+team-name-aquarium4v4v4v4-Red: Đỏ
+team-name-aquarium4v4v4v4-Green: Lục
+team-name-aquarium4v4v4v4-Yellow: Vàng
+team-name-ashore3v3v3v3-Blue: Xanh
+team-name-ashore3v3v3v3-Red: Đỏ
+team-name-ashore3v3v3v3-Green: Lục
+team-name-ashore3v3v3v3-Yellow: Vàng
+team-name-ashore4v4v4v4-Blue: Xanh
+team-name-ashore4v4v4v4-Red: Đỏ
+team-name-ashore4v4v4v4-Green: Lục
+team-name-ashore4v4v4v4-Yellow: Vàng
+team-name-boletum3v3v3v3-Blue: Xanh
+team-name-boletum3v3v3v3-Red: Đỏ
+team-name-boletum3v3v3v3-Green: Lục
+team-name-boletum3v3v3v3-Yellow: Vàng
+team-name-boletum4v4v4v4-Blue: Xanh
+team-name-boletum4v4v4v4-Red: Đỏ
+team-name-boletum4v4v4v4-Green: Lục
+team-name-boletum4v4v4v4-Yellow: Vàng
+team-name-carapace3v3v3v3-Yellow: Vàng
+team-name-carapace3v3v3v3-Green: Lục
+team-name-carapace3v3v3v3-Red: Đỏ
+team-name-carapace3v3v3v3-Blue: Xanh
+team-name-carapace4v4v4v4-Yellow: Vàng
+team-name-carapace4v4v4v4-Green: Lục
+team-name-carapace4v4v4v4-Red: Đỏ
+team-name-carapace4v4v4v4-Blue: Xanh
+team-name-cauldron3v3v3v3-Green: Lục
+team-name-cauldron3v3v3v3-Blue: Xanh
+team-name-cauldron3v3v3v3-Red: Đỏ
+team-name-cauldron3v3v3v3-Yellow: Vàng
+team-name-cauldron4v4v4v4-Green: Lục
+team-name-cauldron4v4v4v4-Blue: Xanh
+team-name-cauldron4v4v4v4-Red: Đỏ
+team-name-cauldron4v4v4v4-Yellow: Vàng
+team-name-chained3v3v3v3-Blue: Xanh
+team-name-chained3v3v3v3-Red: Đỏ
+team-name-chained3v3v3v3-Green: Lục
+team-name-chained3v3v3v3-Yellow: Vàng
+team-name-chained4v4v4v4-Blue: Xanh
+team-name-chained4v4v4v4-Red: Đỏ
+team-name-chained4v4v4v4-Green: Lục
+team-name-chained4v4v4v4-Yellow: Vàng
+team-name-dreamgrove3v3v3v3-Blue: Xanh
+team-name-dreamgrove3v3v3v3-Red: Đỏ
+team-name-dreamgrove3v3v3v3-Green: Lục
+team-name-dreamgrove3v3v3v3-Yellow: Vàng
+team-name-dreamgrove4v4v4v4-Blue: Xanh
+team-name-dreamgrove4v4v4v4-Red: Đỏ
+team-name-dreamgrove4v4v4v4-Green: Lục
+team-name-dreamgrove4v4v4v4-Yellow: Vàng
+team-name-eggrun3v3v3v3-Yellow: Vàng
+team-name-eggrun3v3v3v3-Green: Lục
+team-name-eggrun3v3v3v3-Blue: Xanh
+team-name-eggrun3v3v3v3-Red: Đỏ
+team-name-eggrun4v4v4v4-Yellow: Vàng
+team-name-eggrun4v4v4v4-Green: Lục
+team-name-eggrun4v4v4v4-Blue: Xanh
+team-name-eggrun4v4v4v4-Red: Đỏ
+team-name-fortdoon3v3v3v3-Blue: Xanh
+team-name-fortdoon3v3v3v3-Green: Lục
+team-name-fortdoon3v3v3v3-Yellow: Vàng
+team-name-fortdoon3v3v3v3-Red: Đỏ
+team-name-fortdoon4v4v4v4-Blue: Xanh
+team-name-fortdoon4v4v4v4-Green: Lục
+team-name-fortdoon4v4v4v4-Yellow: Vàng
+team-name-fortdoon4v4v4v4-Red: Đỏ
+team-name-helltemple3v3v3v3-Red: Đỏ
+team-name-helltemple3v3v3v3-Yellow: Vàng
+team-name-helltemple3v3v3v3-Green: Lục
+team-name-helltemple3v3v3v3-Blue: Xanh
+team-name-helltemple4v4v4v4-Red: Đỏ
+team-name-helltemple4v4v4v4-Yellow: Vàng
+team-name-helltemple4v4v4v4-Green: Lục
+team-name-helltemple4v4v4v4-Blue: Xanh
+team-name-invasion3v3v3v3-Red: Đỏ
+team-name-invasion3v3v3v3-Yellow: Vàng
+team-name-invasion3v3v3v3-Blue: Xanh
+team-name-invasion3v3v3v3-Green: Lục
+team-name-invasion4v4v4v4-Red: Đỏ
+team-name-invasion4v4v4v4-Yellow: Vàng
+team-name-invasion4v4v4v4-Blue: Xanh
+team-name-invasion4v4v4v4-Green: Lục
+team-name-lectus3v3v3v3-Yellow: Vàng
+team-name-lectus3v3v3v3-Red: Đỏ
+team-name-lectus3v3v3v3-Green: Lục
+team-name-lectus3v3v3v3-Blue: Xanh
+team-name-lectus4v4v4v4-Yellow: Vàng
+team-name-lectus4v4v4v4-Red: Đỏ
+team-name-lectus4v4v4v4-Green: Lục
+team-name-lectus4v4v4v4-Blue: Xanh
+team-name-sandcastle3v3v3v3-Yellow: Vàng
+team-name-sandcastle3v3v3v3-Green: Lục
+team-name-sandcastle3v3v3v3-Red: Đỏ
+team-name-sandcastle3v3v3v3-Blue: Xanh
+team-name-sandcastle4v4v4v4-Yellow: Vàng
+team-name-sandcastle4v4v4v4-Green: Lục
+team-name-sandcastle4v4v4v4-Red: Đỏ
+team-name-sandcastle4v4v4v4-Blue: Xanh
+team-name-swashbuckle3v3v3v3-Yellow: Vàng
+team-name-swashbuckle3v3v3v3-Red: Đỏ
+team-name-swashbuckle3v3v3v3-Green: Lục
+team-name-swashbuckle3v3v3v3-Blue: Xanh
+team-name-swashbuckle4v4v4v4-Yellow: Vàng
+team-name-swashbuckle4v4v4v4-Red: Đỏ
+team-name-swashbuckle4v4v4v4-Green: Lục
+team-name-swashbuckle4v4v4v4-Blue: Xanh
+team-name-temple3v3v3v3-Blue: Xanh
+team-name-temple3v3v3v3-Red: Đỏ
+team-name-temple3v3v3v3-Green: Lục
+team-name-temple3v3v3v3-Yellow: Vàng
+team-name-temple4v4v4v4-Blue: Xanh
+team-name-temple4v4v4v4-Red: Đỏ
+team-name-temple4v4v4v4-Green: Lục
+team-name-temple4v4v4v4-Yellow: Vàng
+team-name-treenan3v3v3v3-Blue: Xanh
+team-name-treenan3v3v3v3-Red: Đỏ
+team-name-treenan3v3v3v3-Green: Lục
+team-name-treenan3v3v3v3-Yellow: Vàng
+team-name-treenan4v4v4v4-Blue: Xanh
+team-name-treenan4v4v4v4-Red: Đỏ
+team-name-treenan4v4v4v4-Green: Lục
+team-name-treenan4v4v4v4-Yellow: Vàng
+team-name-unchained3v3v3v3-Yellow: Vàng
+team-name-unchained3v3v3v3-Red: Đỏ
+team-name-unchained3v3v3v3-Green: Lục
+team-name-unchained3v3v3v3-Blue: Xanh
+team-name-unchained4v4v4v4-Yellow: Vàng
+team-name-unchained4v4v4v4-Red: Đỏ
+team-name-unchained4v4v4v4-Green: Lục
+team-name-unchained4v4v4v4-Blue: Xanh
+upgrades-menu-gui-name-4v4v4v4: '&8Nâng Cấp'
+upgrades-menu-gui-name-3v3v3v3: '&8Nâng Cấp'
+team-name-acropolis1v1-Green: Lục
+team-name-acropolis1v1-Blue: Xanh
+team-name-acropolis1v1-White: Trắng
+team-name-acropolis1v1-Yellow: Vàng
+team-name-acropolis1v1-Red: Đỏ
+team-name-acropolis1v1-Aqua: Lam
+team-name-acropolis1v1-Gray: Xám
+team-name-acropolis1v1-Pink: Hồng
+team-name-acropolis2v2-Green: Lục
+team-name-acropolis2v2-Blue: Xanh
+team-name-acropolis2v2-White: Trắng
+team-name-acropolis2v2-Yellow: Vàng
+team-name-acropolis2v2-Red: Đỏ
+team-name-acropolis2v2-Aqua: Lam
+team-name-acropolis2v2-Gray: Xám
+team-name-acropolis2v2-Pink: Hồng
+team-name-amazon1v1-Gray: Xám
+team-name-amazon1v1-Pink: Hồng
+team-name-amazon1v1-Red: Đỏ
+team-name-amazon1v1-White: Trắng
+team-name-amazon1v1-Blue: Xanh
+team-name-amazon1v1-Aqua: Lam
+team-name-amazon1v1-Green: Lục
+team-name-amazon1v1-Yellow: Vàng
+team-name-amazon2v2-Gray: Xám
+team-name-amazon2v2-Pink: Hồng
+team-name-amazon2v2-Red: Đỏ
+team-name-amazon2v2-White: Trắng
+team-name-amazon2v2-Blue: Xanh
+team-name-amazon2v2-Aqua: Lam
+team-name-amazon2v2-Green: Lục
+team-name-amazon2v2-Yellow: Vàng
+team-name-ashfire1v1-Gray: Xám
+team-name-ashfire1v1-Pink: Hồng
+team-name-ashfire1v1-White: Trắng
+team-name-ashfire1v1-Aqua: Lam
+team-name-ashfire1v1-Red: Đỏ
+team-name-ashfire1v1-Yellow: Vàng
+team-name-ashfire1v1-Blue: Xanh
+team-name-ashfire1v1-Green: Lục
+team-name-ashfire2v2-Gray: Xám
+team-name-ashfire2v2-Pink: Hồng
+team-name-ashfire2v2-White: Trắng
+team-name-ashfire2v2-Aqua: Lam
+team-name-ashfire2v2-Red: Đỏ
+team-name-ashfire2v2-Yellow: Vàng
+team-name-ashfire2v2-Blue: Xanh
+team-name-ashfire2v2-Green: Lục
+team-name-glacier1v1-Gray: Xám
+team-name-glacier1v1-Pink: Hồng
+team-name-glacier1v1-Red: Đỏ
+team-name-glacier1v1-White: Trắng
+team-name-glacier1v1-Blue: Xanh
+team-name-glacier1v1-Aqua: Lam
+team-name-glacier1v1-Green: Lục
+team-name-glacier1v1-Yellow: Vàng
+team-name-glacier2v2-Gray: Xám
+team-name-glacier2v2-Pink: Hồng
+team-name-glacier2v2-Red: Đỏ
+team-name-glacier2v2-White: Trắng
+team-name-glacier2v2-Blue: Xanh
+team-name-glacier2v2-Aqua: Lam
+team-name-glacier2v2-Green: Lục
+team-name-glacier2v2-Yellow: Vàng
+team-name-inca1v1-Gray: Xám
+team-name-inca1v1-Pink: Hồng
+team-name-inca1v1-Red: Đỏ
+team-name-inca1v1-White: Trắng
+team-name-inca1v1-Blue: Xanh
+team-name-inca1v1-Aqua: Lam
+team-name-inca1v1-Green: Lục
+team-name-inca1v1-Yellow: Vàng
+team-name-inca2v2-Gray: Xám
+team-name-inca2v2-Pink: Hồng
+team-name-inca2v2-Red: Đỏ
+team-name-inca2v2-White: Trắng
+team-name-inca2v2-Blue: Xanh
+team-name-inca2v2-Aqua: Lam
+team-name-inca2v2-Green: Lục
+team-name-inca2v2-Yellow: Vàng
+team-name-lighthouse1v1-Gray: Xám
+team-name-lighthouse1v1-Pink: Hồng
+team-name-lighthouse1v1-Red: Đỏ
+team-name-lighthouse1v1-White: Trắng
+team-name-lighthouse1v1-Blue: Xanh
+team-name-lighthouse1v1-Aqua: Lam
+team-name-lighthouse1v1-Green: Lục
+team-name-lighthouse1v1-Yellow: Vàng
+team-name-lighthouse2v2-Gray: Xám
+team-name-lighthouse2v2-Pink: Hồng
+team-name-lighthouse2v2-Red: Đỏ
+team-name-lighthouse2v2-White: Trắng
+team-name-lighthouse2v2-Blue: Xanh
+team-name-lighthouse2v2-Aqua: Lam
+team-name-lighthouse2v2-Green: Lục
+team-name-lighthouse2v2-Yellow: Vàng
+team-name-lightstone1v1-Gray: Xám
+team-name-lightstone1v1-Pink: Hồng
+team-name-lightstone1v1-Aqua: Lam
+team-name-lightstone1v1-Red: Đỏ
+team-name-lightstone1v1-White: Trắng
+team-name-lightstone1v1-Blue: Xanh
+team-name-lightstone1v1-Green: Lục
+team-name-lightstone1v1-Yellow: Vàng
+team-name-lightstone2v2-Gray: Xám
+team-name-lightstone2v2-Pink: Hồng
+team-name-lightstone2v2-Aqua: Lam
+team-name-lightstone2v2-Red: Đỏ
+team-name-lightstone2v2-White: Trắng
+team-name-lightstone2v2-Blue: Xanh
+team-name-lightstone2v2-Green: Lục
+team-name-lightstone2v2-Yellow: Vàng
+team-name-nutcracker1v1-Gray: Xám
+team-name-nutcracker1v1-Pink: Hồng
+team-name-nutcracker1v1-Red: Đỏ
+team-name-nutcracker1v1-Yellow: Vàng
+team-name-nutcracker1v1-White: Trắng
+team-name-nutcracker1v1-Blue: Xanh
+team-name-nutcracker1v1-Aqua: Lam
+team-name-nutcracker1v1-Green: Lục
+team-name-nutcracker2v2-Gray: Xám
+team-name-nutcracker2v2-Pink: Hồng
+team-name-nutcracker2v2-Red: Đỏ
+team-name-nutcracker2v2-Yellow: Vàng
+team-name-nutcracker2v2-White: Trắng
+team-name-nutcracker2v2-Blue: Xanh
+team-name-nutcracker2v2-Aqua: Lam
+team-name-nutcracker2v2-Green: Lục
+team-name-orchestra1v1-Gray: Xám
+team-name-orchestra1v1-Pink: Hồng
+team-name-orchestra1v1-White: Trắng
+team-name-orchestra1v1-Red: Đỏ
+team-name-orchestra1v1-Blue: Xanh
+team-name-orchestra1v1-Aqua: Lam
+team-name-orchestra1v1-Green: Lục
+team-name-orchestra1v1-Yellow: Vàng
+team-name-orchestra2v2-Gray: Xám
+team-name-orchestra2v2-Pink: Hồng
+team-name-orchestra2v2-White: Trắng
+team-name-orchestra2v2-Red: Đỏ
+team-name-orchestra2v2-Blue: Xanh
+team-name-orchestra2v2-Aqua: Lam
+team-name-orchestra2v2-Green: Lục
+team-name-orchestra2v2-Yellow: Vàng
+team-name-pernicious1v1-Yellow: Vàng
+team-name-pernicious1v1-Green: Lục
+team-name-pernicious1v1-Aqua: Lam
+team-name-pernicious1v1-Blue: Xanh
+team-name-pernicious1v1-White: Trắng
+team-name-pernicious1v1-Red: Đỏ
+team-name-pernicious1v1-Pink: Hồng
+team-name-pernicious1v1-Gray: Xám
+team-name-pernicious2v2-Yellow: Vàng
+team-name-pernicious2v2-Green: Lục
+team-name-pernicious2v2-Aqua: Lam
+team-name-pernicious2v2-Blue: Xanh
+team-name-pernicious2v2-White: Trắng
+team-name-pernicious2v2-Red: Đỏ
+team-name-pernicious2v2-Pink: Hồng
+team-name-pernicious2v2-Gray: Xám
+team-name-siege1v1-Gray: Xám
+team-name-siege1v1-Pink: Hồng
+team-name-siege1v1-Red: Đỏ
+team-name-siege1v1-White: Trắng
+team-name-siege1v1-Blue: Xanh
+team-name-siege1v1-Aqua: Lam
+team-name-siege1v1-Green: Lục
+team-name-siege1v1-Yellow: Vàng
+team-name-siege2v2-Gray: Xám
+team-name-siege2v2-Pink: Hồng
+team-name-siege2v2-Red: Đỏ
+team-name-siege2v2-White: Trắng
+team-name-siege2v2-Blue: Xanh
+team-name-siege2v2-Aqua: Lam
+team-name-siege2v2-Green: Lục
+team-name-siege2v2-Yellow: Vàng
+team-name-speedway1v1-Gray: Xám
+team-name-speedway1v1-Pink: Hồng
+team-name-speedway1v1-White: Trắng
+team-name-speedway1v1-Red: Đỏ
+team-name-speedway1v1-Blue: Xanh
+team-name-speedway1v1-Aqua: Lam
+team-name-speedway1v1-Green: Lục
+team-name-speedway1v1-Yellow: Vàng
+team-name-speedway2v2-Gray: Xám
+team-name-speedway2v2-Pink: Hồng
+team-name-speedway2v2-White: Trắng
+team-name-speedway2v2-Red: Đỏ
+team-name-speedway2v2-Blue: Xanh
+team-name-speedway2v2-Aqua: Lam
+team-name-speedway2v2-Green: Lục
+team-name-speedway2v2-Yellow: Vàng
+team-name-submerged1v1-Gray: Xám
+team-name-submerged1v1-Pink: Hồng
+team-name-submerged1v1-White: Trắng
+team-name-submerged1v1-Red: Đỏ
+team-name-submerged1v1-Green: Lục
+team-name-submerged1v1-Blue: Xanh
+team-name-submerged1v1-Aqua: Lam
+team-name-submerged1v1-Yellow: Vàng
+team-name-submerged2v2-Gray: Xám
+team-name-submerged2v2-Pink: Hồng
+team-name-submerged2v2-White: Trắng
+team-name-submerged2v2-Red: Đỏ
+team-name-submerged2v2-Green: Lục
+team-name-submerged2v2-Blue: Xanh
+team-name-submerged2v2-Aqua: Lam
+team-name-submerged2v2-Yellow: Vàng
+team-name-waterfall1v1-Gray: Xám
+team-name-waterfall1v1-Pink: Hồng
+team-name-waterfall1v1-White: Trắng
+team-name-waterfall1v1-Red: Đỏ
+team-name-waterfall1v1-Aqua: Lam
+team-name-waterfall1v1-Blue: Xanh
+team-name-waterfall1v1-Green: Lục
+team-name-waterfall1v1-Yellow: Vàng
+team-name-waterfall2v2-Gray: Xám
+team-name-waterfall2v2-Pink: Hồng
+team-name-waterfall2v2-White: Trắng
+team-name-waterfall2v2-Red: Đỏ
+team-name-waterfall2v2-Aqua: Lam
+team-name-waterfall2v2-Blue: Xanh
+team-name-waterfall2v2-Green: Lục
+team-name-waterfall2v2-Yellow: Vàng
+team-name-zarzul1v1-Pink: Hồng
+team-name-zarzul1v1-White: Trắng
+team-name-zarzul1v1-Gray: Xám
+team-name-zarzul1v1-Aqua: Lam
+team-name-zarzul1v1-Red: Đỏ
+team-name-zarzul1v1-Yellow: Vàng
+team-name-zarzul1v1-Blue: Xanh
+team-name-zarzul1v1-Green: Lục
+team-name-zarzul2v2-Pink: Hồng
+team-name-zarzul2v2-White: Trắng
+team-name-zarzul2v2-Gray: Xám
+team-name-zarzul2v2-Aqua: Lam
+team-name-zarzul2v2-Red: Đỏ
+team-name-zarzul2v2-Yellow: Vàng
+team-name-zarzul2v2-Blue: Xanh
+team-name-zarzul2v2-Green: Lục
+display-group-daugiai: Cần câu
+team-name-rooted-Red: Đỏ
+team-name-rooted-Blue: Xanh
+team-name-rooted-Yellow: Vàng
+team-name-rooted-Green: Lục
+team-name-rooted-Aqua: Lam
+team-name-rooted-White: Trắng
+team-name-rooted-Pink: Hồng
+team-name-rooted-Gray: Xám
+team-name-orbit-Red: Đỏ
+team-name-orbit-Blue: Xanh
+team-name-orbit-Green: Lục
+team-name-orbit-Yellow: Vàng
+team-name-orbit-Pink: Hồng
+team-name-orbit-Gray: Xám
+team-name-orbit-Aqua: Lam
+team-name-orbit-White: Trắng
+team-name-toro-Red: Đỏ
+team-name-toro-Blue: Xanh
+team-name-toro-Green: Lục
+team-name-toro-Yellow: Vàng
+team-name-toro-Pink: Hồng
+team-name-toro-White: Trắng
+team-name-toro-Gray: Xám
+team-name-toro-Aqua: Lam
+team-name-graveship-Red: Đỏ
+team-name-graveship-Blue: Xanh
+team-name-graveship-Green: Lục
+team-name-graveship-Yellow: Vàng
+team-name-archway3v3v3v3-Yellow: Vàng
+team-name-archway3v3v3v3-Red: Đỏ
+team-name-archway3v3v3v3-Green: Lục
+team-name-archway3v3v3v3-Blue: Xanh
+team-name-archway4v4v4v4-Yellow: Vàng
+team-name-archway4v4v4v4-Red: Đỏ
+team-name-archway4v4v4v4-Green: Lục
+team-name-archway4v4v4v4-Blue: Xanh
+team-name-catalyst3v3v3v3-Red: Đỏ
+team-name-catalyst3v3v3v3-Blue: Xanh
+team-name-catalyst3v3v3v3-Yellow: Vàng
+team-name-catalyst3v3v3v3-Green: Lục
+team-name-catalyst4v4v4v4-Red: Đỏ
+team-name-catalyst4v4v4v4-Blue: Xanh
+team-name-catalyst4v4v4v4-Yellow: Vàng
+team-name-catalyst4v4v4v4-Green: Lục
+team-name-jurassic3v3v3v3-Yellow: Vàng
+team-name-jurassic3v3v3v3-Green: Lục
+team-name-jurassic3v3v3v3-Red: Đỏ
+team-name-jurassic3v3v3v3-Blue: Xanh
+team-name-jurassic4v4v4v4-Yellow: Vàng
+team-name-jurassic4v4v4v4-Green: Lục
+team-name-jurassic4v4v4v4-Red: Đỏ
+team-name-jurassic4v4v4v4-Blue: Xanh
+team-name-pharoah3v3v3v3-Red: Đỏ
+team-name-pharoah3v3v3v3-Blue: Xanh
+team-name-pharoah3v3v3v3-Yellow: Vàng
+team-name-pharoah3v3v3v3-Green: Lục
+team-name-pharoah4v4v4v4-Red: Đỏ
+team-name-pharoah4v4v4v4-Blue: Xanh
+team-name-pharoah4v4v4v4-Yellow: Vàng
+team-name-pharoah4v4v4v4-Green: Lục
+display-group-cancau: Cần câu
+team-name-graveship3v3v3v3-Red: Đỏ
+team-name-graveship3v3v3v3-Blue: Xanh
+team-name-graveship3v3v3v3-Green: Lục
+team-name-graveship3v3v3v3-Yellow: Vàng
+team-name-graveship4v4v4v4-Red: Đỏ
+team-name-graveship4v4v4v4-Blue: Xanh
+team-name-graveship4v4v4v4-Green: Lục
+team-name-graveship4v4v4v4-Yellow: Vàng
+display-group-4v4: 4v4
+team-name-cryptic4v4-Blue: Xanh
+team-name-cryptic4v4-Red: Đỏ
+team-name-gardens4v4-Blue: Xanh
+team-name-gardens4v4-Red: Đỏ
+team-name-lionstemple4v4-Blue: Xanh
+team-name-lionstemple4v4-Red: Đỏ
+team-name-picnic4v4-Blue: Xanh
+team-name-picnic4v4-Red: Đỏ
+team-name-rootedcancau-Red: Đỏ
+team-name-rootedcancau-Blue: Xanh
+team-name-rootedcancau-Yellow: Vàng
+team-name-rootedcancau-Green: Lục
+team-name-rootedcancau-Aqua: Lam
+team-name-rootedcancau-White: Trắng
+team-name-rootedcancau-Pink: Hồng
+team-name-rootedcancau-Gray: Xám
+team-name-ruins4v4-Blue: Xanh
+team-name-ruins4v4-Red: Đỏ
+team-name-torocancau-Red: Đỏ
+team-name-torocancau-Blue: Xanh
+team-name-torocancau-Green: Lục
+team-name-torocancau-Yellow: Vàng
+team-name-torocancau-Pink: Hồng
+team-name-torocancau-White: Trắng
+team-name-torocancau-Gray: Xám
+team-name-torocancau-Aqua: Lam
+upgrades-menu-gui-name-4v4: '&8Nâng Cấp'
+team-name-rooted1v1-Gray: Xám
+team-name-rooted1v1-Pink: Hồng
+team-name-rooted1v1-Red: Đỏ
+team-name-rooted1v1-White: Trắng
+team-name-rooted1v1-Blue: Xanh
+team-name-rooted1v1-Aqua: Lam
+team-name-rooted1v1-Green: Lục
+team-name-rooted1v1-Yellow: Vàng
+team-name-rooted2v2-Gray: Xám
+team-name-rooted2v2-Pink: Hồng
+team-name-rooted2v2-Red: Đỏ
+team-name-rooted2v2-White: Trắng
+team-name-rooted2v2-Blue: Xanh
+team-name-rooted2v2-Aqua: Lam
+team-name-rooted2v2-Green: Lục
+team-name-rooted2v2-Yellow: Vàng
+team-name-toro1v1-Gray: Xám
+team-name-toro1v1-Pink: Hồng
+team-name-toro1v1-Red: Đỏ
+team-name-toro1v1-White: Trắng
+team-name-toro1v1-Blue: Xanh
+team-name-toro1v1-Aqua: Lam
+team-name-toro1v1-Green: Lục
+team-name-toro1v1-Yellow: Vàng
+team-name-toro2v2-Gray: Xám
+team-name-toro2v2-Pink: Hồng
+team-name-toro2v2-Red: Đỏ
+team-name-toro2v2-White: Trắng
+team-name-toro2v2-Blue: Xanh
+team-name-toro2v2-Aqua: Lam
+team-name-toro2v2-Green: Lục
+team-name-toro2v2-Yellow: Vàng
+team-name-congress3v3v3v3-Red: Red
+team-name-congress3v3v3v3-Blue: Blue
+team-name-congress3v3v3v3-Green: Green
+team-name-congress3v3v3v3-Yellow: Yellow
+team-name-congress4v4v4v4-Red: Red
+team-name-congress4v4v4v4-Blue: Blue
+team-name-congress4v4v4v4-Green: Green
+team-name-congress4v4v4v4-Yellow: Yellow
+team-name-mystic1v1-Red: Red
+team-name-mystic1v1-Blue: Blue
+team-name-mystic1v1-Green: Green
+team-name-mystic1v1-Yellow: Yellow
+team-name-mystic1v1-Aqua: Aqua
+team-name-mystic1v1-White: White
+team-name-mystic1v1-Pink: Pink
+team-name-mystic1v1-Gray: Gray
+team-name-mystic2v2-Red: Red
+team-name-mystic2v2-Blue: Blue
+team-name-mystic2v2-Green: Green
+team-name-mystic2v2-Yellow: Yellow
+team-name-mystic2v2-Aqua: Aqua
+team-name-mystic2v2-White: White
+team-name-mystic2v2-Pink: Pink
+team-name-mystic2v2-Gray: Gray
+team-name-crogorm1v1-Pink: Pink
+team-name-crogorm1v1-White: White
+team-name-crogorm1v1-Aqua: Aqua
+team-name-crogorm1v1-Gray: Gray
+team-name-crogorm1v1-Red: Red
+team-name-crogorm1v1-Yellow: Yellow
+team-name-crogorm1v1-Green: Green
+team-name-crogorm1v1-Blue: Blue
+team-name-crogorm2v2-Pink: Pink
+team-name-crogorm2v2-White: White
+team-name-crogorm2v2-Aqua: Aqua
+team-name-crogorm2v2-Gray: Gray
+team-name-crogorm2v2-Red: Red
+team-name-crogorm2v2-Yellow: Yellow
+team-name-crogorm2v2-Green: Green
+team-name-crogorm2v2-Blue: Blue
+team-name-rooftop1v1-White: White
+team-name-rooftop1v1-Gray: Gray
+team-name-rooftop1v1-Pink: Pink
+team-name-rooftop1v1-Red: Red
+team-name-rooftop1v1-Blue: Blue
+team-name-rooftop1v1-Aqua: Aqua
+team-name-rooftop1v1-Green: Green
+team-name-rooftop1v1-Yellow: Yellow
+team-name-rooftop2v2-White: White
+team-name-rooftop2v2-Gray: Gray
+team-name-rooftop2v2-Pink: Pink
+team-name-rooftop2v2-Red: Red
+team-name-rooftop2v2-Blue: Blue
+team-name-rooftop2v2-Aqua: Aqua
+team-name-rooftop2v2-Green: Green
+team-name-rooftop2v2-Yellow: Yellow
+team-name-solace1v1-Gray: Gray
+team-name-solace1v1-Pink: Pink
+team-name-solace1v1-Red: Red
+team-name-solace1v1-White: White
+team-name-solace1v1-Blue: Blue
+team-name-solace1v1-Aqua: Aqua
+team-name-solace1v1-Green: Green
+team-name-solace1v1-Yellow: Yellow
+team-name-solace2v2-Gray: Gray
+team-name-solace2v2-Pink: Pink
+team-name-solace2v2-Red: Red
+team-name-solace2v2-White: White
+team-name-solace2v2-Blue: Blue
+team-name-solace2v2-Aqua: Aqua
+team-name-solace2v2-Green: Green
+team-name-solace2v2-Yellow: Yellow

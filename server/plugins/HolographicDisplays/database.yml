@@ -1,0 +1,124 @@
+stats:
+  location: crmapin, -5.597, 66.500, 27.506
+  lines:
+  - '&6&lYour Bed Wars Profile'
+  - '&fYour Level: %bw1058_player_level%'
+  - '&fProgress: &b%bw1058_player_xp_formatted%&7/&a%bw1058_player_rerq_xp_formatted%'
+  - '%bw1058_player_progress%'
+  - '&fTotal Wins: &a%bw1058_stats_wins%'
+  - '&fTotal Losses: &a%bw1058_stats_losses%'
+  - '&fCurrent WinStreak: &a%bw1058win_streak%'
+  - ''
+levels:
+  location: crmapin, -16.680, 69.000, 13.415
+  lines:
+  - '&b&lBed Wars Levels'
+  - ''
+  - '&e1. &f%ajlb_lb_bw1058_player_level_raw_1_suffix%%ajlb_lb_bw1058_player_level_raw_1_name%%ajlb_lb_bw1058_player_level_raw_1_suffix%
+    &7- &e%ajlb_lb_bw1058_player_level_raw_1_value%'
+  - '&e2. &f%ajlb_lb_bw1058_player_level_raw_2_suffix%%ajlb_lb_bw1058_player_level_raw_2_name%%ajlb_lb_bw1058_player_level_raw_1_suffix%
+    &7- &e%ajlb_lb_bw1058_player_level_raw_2_value%'
+  - '&e3. &f%ajlb_lb_bw1058_player_level_raw_3_suffix%%ajlb_lb_bw1058_player_level_raw_3_name%%ajlb_lb_bw1058_player_level_raw_1_suffix%
+    &7- &e%ajlb_lb_bw1058_player_level_raw_3_value%'
+  - '&e4. &f%ajlb_lb_bw1058_player_level_raw_4_suffix%%ajlb_lb_bw1058_player_level_raw_4_name%%ajlb_lb_bw1058_player_level_raw_1_suffix%
+    &7- &e%ajlb_lb_bw1058_player_level_raw_4_value%'
+  - '&e5. &f%ajlb_lb_bw1058_player_level_raw_5_suffix%%ajlb_lb_bw1058_player_level_raw_5_name%%ajlb_lb_bw1058_player_level_raw_1_suffix%
+    &7- &e%ajlb_lb_bw1058_player_level_raw_5_value%'
+  - '&e6. &f%ajlb_lb_bw1058_player_level_raw_6_suffix%%ajlb_lb_bw1058_player_level_raw_6_name%%ajlb_lb_bw1058_player_level_raw_1_suffix%
+    &7- &e%ajlb_lb_bw1058_player_level_raw_6_value%'
+  - '&e7. &f%ajlb_lb_bw1058_player_level_raw_7_suffix%%ajlb_lb_bw1058_player_level_raw_7_name%%ajlb_lb_bw1058_player_level_raw_1_suffix%
+    &7- &e%ajlb_lb_bw1058_player_level_raw_7_value%'
+  - '&e8. &f%ajlb_lb_bw1058_player_level_raw_8_suffix%%ajlb_lb_bw1058_player_level_raw_8_name%%ajlb_lb_bw1058_player_level_raw_1_suffix%
+    &7- &e%ajlb_lb_bw1058_player_level_raw_8_value%'
+  - '&e9. &f%ajlb_lb_bw1058_player_level_raw_9_suffix%%ajlb_lb_bw1058_player_level_raw_9_name%%ajlb_lb_bw1058_player_level_raw_1_suffix%
+    &7- &e%ajlb_lb_bw1058_player_level_raw_9_value%'
+  - '&e10. &f%ajlb_lb_bw1058_player_level_raw_10_suffix%%ajlb_lb_bw1058_player_level_raw_10_name%%ajlb_lb_bw1058_player_level_raw_1_suffix%
+    &7- &e%ajlb_lb_bw1058_player_level_raw_10_value%'
+  - ''
+  - '&eYour Level: &b{fastest}%bw1058_player_level%'
+wins:
+  location: crmapin, -13.397, 69.000, 10.576
+  lines:
+  - '&b&lLifetime Wins'
+  - ''
+  - '&e1. &f%ajlb_lb_bw1058_stats_wins_1_suffix%%ajlb_lb_bw1058_stats_wins_1_name%%ajlb_lb_bw1058_stats_wins_1_suffix%
+    &7- &e%ajlb_lb_bw1058_stats_wins_1_value%'
+  - '&e2. &f%ajlb_lb_bw1058_stats_wins_2_suffix%%ajlb_lb_bw1058_stats_wins_2_name%%ajlb_lb_bw1058_stats_wins_2_suffix%
+    &7- &e%ajlb_lb_bw1058_stats_wins_2_value%'
+  - '&e3. &f%ajlb_lb_bw1058_stats_wins_3_suffix%%ajlb_lb_bw1058_stats_wins_3_name%%ajlb_lb_bw1058_stats_wins_3_suffix%
+    &7- &e%ajlb_lb_bw1058_stats_wins_3_value%'
+  - '&e4. &f%ajlb_lb_bw1058_stats_wins_4_suffix%%ajlb_lb_bw1058_stats_wins_4_name%%ajlb_lb_bw1058_stats_wins_4_suffix%
+    &7- &e%ajlb_lb_bw1058_stats_wins_4_value%'
+  - '&e5. &f%ajlb_lb_bw1058_stats_wins_5_suffix%%ajlb_lb_bw1058_stats_wins_5_name%%ajlb_lb_bw1058_stats_wins_5_suffix%
+    &7- &e%ajlb_lb_bw1058_stats_wins_5_value%'
+  - '&e6. &f%ajlb_lb_bw1058_stats_wins_6_suffix%%ajlb_lb_bw1058_stats_wins_6_name%%ajlb_lb_bw1058_stats_wins_6_suffix%
+    &7- &e%ajlb_lb_bw1058_stats_wins_6_value%'
+  - '&e7. &f%ajlb_lb_bw1058_stats_wins_7_suffix%%ajlb_lb_bw1058_stats_wins_7_name%%ajlb_lb_bw1058_stats_wins_7_suffix%
+    &7- &e%ajlb_lb_bw1058_stats_wins_7_value%'
+  - '&e8. &f%ajlb_lb_bw1058_stats_wins_8_suffix%%ajlb_lb_bw1058_stats_wins_8_name%%ajlb_lb_bw1058_stats_wins_8_suffix%
+    &7- &e%ajlb_lb_bw1058_stats_wins_8_value%'
+  - '&e9. &f%ajlb_lb_bw1058_stats_wins_9_suffix%%ajlb_lb_bw1058_stats_wins_9_name%%ajlb_lb_bw1058_stats_wins_9_suffix%
+    &7- &e%ajlb_lb_bw1058_stats_wins_9_value%'
+  - '&e10. &f%ajlb_lb_bw1058_stats_wins_10_suffix%%ajlb_lb_bw1058_stats_wins_10_name%%ajlb_lb_bw1058_stats_wins_10_suffix%
+    &7- &e%ajlb_lb_bw1058_stats_wins_10_value%'
+  - ''
+  - '&eYour Wins: {fastest}&a%bw1058_stats_wins%'
+solo:
+  location: crmapin, 7.468, 66.000, 38.495
+  lines:
+  - '&e&lCLICK TO PLAY'
+  - ''
+  - '&bSolo &7[1.7]'
+  - '{fastest}&e&l%bw1058_group_count_Solo% Players'
+2v2:
+  location: crmapin, 4.548, 66.000, 40.503
+  lines:
+  - '&e&lCLICK TO PLAY'
+  - ''
+  - '&bDoubles &7[1.7]'
+  - '{fastest}&e&l%bw1058_group_count_Doubles% Players'
+3v3v3v3:
+  location: crmapin, 0.530, 66.000, 41.522
+  lines:
+  - '&e&lCLICK TO PLAY'
+  - ''
+  - '&b3v3v3v3 &7[1.7]'
+  - '{fastest}&e&l%bw1058_group_count_3v3v3v3% Players'
+4v4v4v4:
+  location: crmapin, -3.454, 66.000, 40.522
+  lines:
+  - '&e&lCLICK TO PLAY'
+  - ''
+  - '&b4v4v4v4 &7[1.7]'
+  - '{fastest}&e&l%bw1058_group_count_4v4v4v4% Players'
+lblock:
+  location: crmapin, -6.523, 66.000, 38.508
+  lines:
+  - '&e&lCLICK TO PLAY'
+  - ''
+  - '&bLuckyBlock &7[1.7]'
+  - '{fastest}&e&l%bw1058_group_count_Luckyblock% Players'
+w1:
+  location: crmapin, 15.504, 67.000, 15.517
+  lines:
+  - ''
+  - ''
+  - ''
+  - '&a%ajlb_lb_bw1058_stats_wins_1_name% &7- &6%ajlb_lb_bw1058_stats_wins_1_value%
+    Wins'
+w2:
+  location: crmapin, 13.518, 66.000, 13.450
+  lines:
+  - ''
+  - ''
+  - ''
+  - '&a%ajlb_lb_bw1058_stats_wins_2_name% &7- &6%ajlb_lb_bw1058_stats_wins_2_value%
+    Wins'
+w3:
+  location: crmapin, 11.361, 65.000, 11.456
+  lines:
+  - ''
+  - ''
+  - ''
+  - '&a%ajlb_lb_bw1058_stats_wins_3_name% &7- &6%ajlb_lb_bw1058_stats_wins_3_value%
+    Wins'

@@ -1,0 +1,19 @@
+JumpPads:
+  crmapin, 0, 64, 10:
+    owners:
+    - ab0fb946-c4be-3ec9-a0a4-b0e3beaad8a3
+    plate: GOLD_PLATE
+    power: 10.0
+    angle: 45.0
+  crmapin, 1, 64, 10:
+    owners:
+    - ab0fb946-c4be-3ec9-a0a4-b0e3beaad8a3
+    plate: GOLD_PLATE
+    power: 10.0
+    angle: 45.0
+  crmapin, -1, 64, 10:
+    owners:
+    - ab0fb946-c4be-3ec9-a0a4-b0e3beaad8a3
+    plate: GOLD_PLATE
+    power: 10.0
+    angle: 45.0

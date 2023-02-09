@@ -1,0 +1,25 @@
+#########################################
+#FB-Knockback by MetallicGoat
+#########################################
+
+#Note: The damage config will effect both the thrower, and the target
+#Whereas MBedwars's will only effect the target player
+
+Knockback:
+  enabled: true
+  damage: 0
+  radius: 3
+  radius-force: 3
+  height-force: 1.5
+
+#Cooldown time in ticks
+#(20 ticks = 1 second)
+Cooldown:
+  enabled: false
+  time: 20
+
+#Default is like hypixel
+Throw-Effects:
+  enabled: true
+  effects:
+  - 'SLOW:25:1'

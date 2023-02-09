@@ -1,0 +1,62 @@
+texture: f171a0c0572824da80366d71c5413a7e3355abec79b8f529f1dc9dad2632f485
+name: '&8Gray LuckyBlock'
+lore:
+- '&7Place me :D'
+eco: true
+shop: true
+price: 250
+animation: true
+animation_type: MOBSPAWNER_FLAMES
+craft:
+  default: true
+  custom: false
+drop:
+  '0':
+  - 'ITEM : SNOW_BLOCK : 52 : 64'
+  - 'ITEM : ACACIA_DOOR_ITEM : 14 : 0'
+  - 'ITEM : CROPS : 57 : 0'
+  - 'ITEM : EMERALD_ORE : 39 : 0'
+  '1':
+  - 'ITEM : BOWL : 49 : 64'
+  - 'ITEM : DAYLIGHT_DETECTOR_INVERTED : 25 : 0'
+  - 'ITEM : BOW : 1 : 1'
+  - 'ITEM : TRAPPED_CHEST : 1 : 0'
+  '2':
+  - 'SPECIAL : LIGHTNING : 3'
+  '3':
+  - 'ITEM : EYE_OF_ENDER : 61 : 64'
+  '4':
+  - 'ITEM : ENDER_STONE : 7 : 64'
+  '5':
+  - 'SPECIAL : WATER_BUCKET : 66'
+  '6':
+  - 'ITEM : ENDER_CHEST : 18 : 64'
+  '7':
+  - 'ITEM : GOLD_LEGGINGS : 1 : 72'
+  - 'ITEM : DOUBLE_STEP : 37 : 64'
+  - 'ITEM : BIRCH_DOOR_ITEM : 47 : 0'
+  - 'ITEM : CAKE_BLOCK : 33 : 0'
+  '8':
+  - 'ITEM : BROWN_MUSHROOM : 3 : 64'
+  - 'ITEM : HUGE_MUSHROOM_1 : 57 : 0'
+  '9':
+  - 'ITEM : STATIONARY_WATER : 50 : 64'
+  - 'ITEM : FLINT_AND_STEEL : 1 : 1'
+  '10':
+  - 'ITEM : WOOD : 8 : 64'
+  - 'ITEM : GOLD_SPADE : 1 : 1'
+  - 'ITEM : DOUBLE_PLANT : 38 : 64'
+  '11':
+  - 'ITEM : DIAMOND_SWORD : 1 : 1089'
+  '12':
+  - 'ITEM : STONE_SWORD : 1 : 1'
+  - 'ITEM : SADDLE : 1 : 0'
+  '13':
+  - 'ITEM : COMMAND_MINECART : 1 : 1'
+  '14':
+  - 'ITEM : REDSTONE_COMPARATOR_ON : 20 : 64'
+  - 'ITEM : STONE_AXE : 1 : 1'
+  - 'ITEM : WOODEN_DOOR : 33 : 64'
+  - 'ITEM : SIGN : 6 : 0'
+  '15':
+  - 'ITEM : CHAINMAIL_HELMET : 1 : 112'

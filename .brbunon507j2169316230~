@@ -1,0 +1,121 @@
+game-end:
+  sound: FIREWORK_LAUNCH
+  volume: 1
+  pitch: 1
+rejoin-denied:
+  sound: ENDERMAN_TELEPORT
+  volume: 1
+  pitch: 1
+rejoin-allowed:
+  sound: SLIME_WALK
+  volume: 0
+  pitch: 1
+spectate-denied:
+  sound: ENDERMAN_TELEPORT
+  volume: 1
+  pitch: 1
+spectate-allowed:
+  sound: SLIME_WALK
+  volume: 0
+  pitch: 1
+join-denied:
+  sound: ENDERMAN_TELEPORT
+  volume: 1
+  pitch: 1
+join-allowed:
+  sound: SLIME_WALK
+  volume: 0
+  pitch: 1
+spectator-gui-click:
+  sound: SLIME_WALK
+  volume: 0
+  pitch: 1
+game-countdown-others:
+  sound: NOTE_STICKS
+  volume: 1
+  pitch: 5
+game-countdown-s5:
+  sound: NOTE_STICKS
+  volume: 1
+  pitch: 5
+game-countdown-s4:
+  sound: NOTE_STICKS
+  volume: 1
+  pitch: 5
+game-countdown-s3:
+  sound: NOTE_STICKS
+  volume: 1
+  pitch: 5
+game-countdown-s2:
+  sound: NOTE_STICKS
+  volume: 1
+  pitch: 5
+game-countdown-s1:
+  sound: NOTE_STICKS
+  volume: 1
+  pitch: 5
+game-countdown-start:
+  sound: SLIME_ATTACK
+  volume: 0
+  pitch: 1
+bed-destroy:
+  sound: ENDERDRAGON_GROWL
+  volume: 1
+  pitch: 1
+shop-insufficient-money:
+  sound: ENDERMAN_TELEPORT
+  volume: 1
+  pitch: 1
+shop-bought:
+  sound: NOTE_PLING
+  volume: 1
+  pitch: 100
+next-event:
+  beds-destroy:
+    sound: WITHER_DEATH
+    volume: 1
+    pitch: 1
+  diamond-II:
+    sound: LEVEL_UP
+    volume: 0
+    pitch: 1
+  diamond-III:
+    sound: LEVEL_UP
+    volume: 0
+    pitch: 1
+  emerald-II:
+    sound: GHAST_MOAN
+    volume: 0
+    pitch: 1
+  emerald-III:
+    sound: GHAST_MOAN
+    volume: 0
+    pitch: 1
+  dragons-spawn:
+    sound: WITHER_SPAWN
+    volume: 1
+    pitch: 1
+player-re-spawn:
+  sound: SLIME_ATTACK
+  volume: 0
+  pitch: 1
+arena-selector-open:
+  sound: CHICKEN_EGG_POP
+  volume: 0
+  pitch: 1
+stats-gui-open:
+  sound: CHICKEN_EGG_POP
+  volume: 0
+  pitch: 1
+trap-sound:
+  sound: ENDERMAN_TELEPORT
+  volume: 1
+  pitch: 1
+shop-auto-equip:
+  sound: HORSE_ARMOR
+  volume: 0
+  pitch: 1
+egg-bridge-block:
+  sound: CHICKEN_EGG_POP
+  volume: 1
+  pitch: 1

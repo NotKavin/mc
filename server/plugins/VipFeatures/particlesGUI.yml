@@ -1,0 +1,30 @@
+particlesGUI:
+  invSize: 27
+  SPIRAL:
+    material: REDSTONE
+    data: 0
+    slot: 10
+  ANGRY_VILLAGER:
+    material: GLOWSTONE_DUST
+    data: 0
+    slot: 11
+  DOUBLE_WITCH:
+    material: ANVIL
+    data: 0
+    slot: 12
+  NOTES:
+    material: JUKEBOX
+    data: 0
+    slot: 14
+  MAGIC:
+    material: ENCHANTMENT_TABLE
+    data: 0
+    slot: 15
+  HAPPY_VILLAGER:
+    material: EMERALD
+    data: 0
+    slot: 16
+  backItemSPIRAL:
+    material: ARROW
+    data: 0
+    slot: 22

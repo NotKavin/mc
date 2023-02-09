@@ -1,0 +1,2584 @@
+lobby-items-compass-name: '&c&l➲ &bArena Selector &c➛ &7Right Click'
+lobby-items-skull-name: '&c&l➲ &bPlayer Menu &c➛ &7Right Click'
+lobby-items-emerald-name: '&c&l➲ &bShop &c➛ &7Right Click'
+lobby-items-language-name: '&aFavorite Collectibles'
+lobby-items-selector-name: '&c&l➲ &bLobby Switcher &c➛ &7Right Click'
+spectator-items-teleporter-name: '&eTeleporter &7(Right Click)'
+spectator-items-leave-name: '&c&lReturn to Lobby &7(Right Click)'
+pre-game-items-leave-name: '&c&lReturn to Lobby &7(Right Click)'
+addons:
+  compass:
+    messages:
+      not-all-beds-destroyed: '&cNot all enemy beds are destroyed yet!'
+      purchase-message: '&cYou will lose the ability to track this team when you die!'
+      not-enough-resource: '&cYou don''t have enough resources!'
+      already-tracking: '&cYou are already tracking this team!'
+    tracker-status:
+      not-enough: '&cYou don''t have enough resource!'
+      locked: '&cUnlocks when all enemy beds are destroyed!'
+      unlocked: '&eClick to purchase!'
+    action-bar:
+      tracking-format: '&fTracking: {teamColor}&l{target} &f- Distance: &a&l{distance}m'
+    team-message-format: '&a&lTEAM > &7{player}: {message}'
+    compass-item:
+      display-name: '&aCompass &7(Right Click)'
+      lore: []
+    menus:
+      main-menu:
+        title: '&8Tracker & Communications'
+        tracker:
+          display-name: '&aTracker Shop'
+          lore:
+          - '&7Purchase tracking upgrade'
+          - '&7for your compass which will'
+          - '&7track each player on a'
+          - '&7specific team until you'
+          - '&7die.'
+          - ''
+          - '&eClick to open!'
+        tracker-team:
+          display-name: '&aTracker Shop'
+          lore:
+          - '&7Purchase tracking upgrade'
+          - '&7for your compass which will'
+          - '&7track each player on a'
+          - '&7specific team until you'
+          - '&7die.'
+          - ''
+          - '&eClick to open!'
+        communications:
+          display-name: '&aQuick Communications'
+          lore:
+          - '&7Send highlighted chat'
+          - '&7messages to your teammates!'
+          - ''
+          - '&eClick to open!'
+      tracker-menu:
+        title: '&8Purchase Enemy Tracker'
+        team-item:
+          display-name: '&cTrack Team {team}'
+          lore:
+          - '&7Purchase tracking upgrade'
+          - '&7for your compass which will'
+          - '&7track each player on a'
+          - '&7specific team until you'
+          - '&7die.'
+          - ''
+          - '&7Cost: &22 Emeralds'
+          - ''
+          - '{status}'
+        back-item:
+          display-name: '&aGo Back'
+          lore:
+          - '&7To Tracker & Communication'
+      communications:
+        title: '&8Quick Communications'
+        back-item:
+          display-name: '&aGo Back'
+          lore:
+          - '&7To Tracker & Communication'
+        items:
+          '1':
+            message: '&aHello ( ﾟ◡ﾟ)/!'
+            display-name: '&aHello ( ﾟ◡ﾟ)/!'
+            lore:
+            - ''
+            - '&eClick to send!'
+          '2':
+            message: '&aI''m coming back to base!'
+            display-name: '&aI''m coming back to base!'
+            lore:
+            - ''
+            - '&eClick to send!'
+          '3':
+            message: '&aI''m defending!'
+            display-name: '&aI''m defending!'
+            lore:
+            - ''
+            - '&eClick to send!'
+          '4':
+            message: '&aI''''m attacking {team}'
+            display-name: '&aI''m attacking!'
+            lore:
+            - '&7You will be able to select'
+            - '&7the Team'
+            - ''
+            - '&eClick to send!'
+          '5':
+            message: '&aI''m collecting {resource}'
+            display-name: '&aI''m collecting resources!'
+            lore:
+            - '&7You will be able to select'
+            - '&7the Resource'
+            - ''
+            - '&eClick to send!'
+          '6':
+            message: '&aI have {resource}'
+            display-name: '&aI have resources!'
+            lore:
+            - '&7You will be able to select'
+            - '&7the Resource'
+            - ''
+            - '&eClick to send!'
+          '7':
+            message: '&aThank You'
+            display-name: '&aThank You!'
+            lore:
+            - ''
+            - '&eClick to send!'
+          '8':
+            message: '&aGet back to base'
+            display-name: '&aGet back to base!'
+            lore:
+            - ''
+            - '&eClick to send!'
+          '9':
+            message: '&aPlease defend!'
+            display-name: '&aPlease defend!'
+            lore:
+            - ''
+            - '&eClick to send!'
+          '10':
+            message: '&aLet''s attack {team}'
+            display-name: '&aLet''s attack!'
+            lore:
+            - '&7You will be able to select'
+            - '&7the Team'
+            - ''
+            - '&eClick to send!'
+          '11':
+            message: '&aWe need {resource}'
+            display-name: '&aWe need resources!'
+            lore:
+            - '&7You will be able to select'
+            - '&7the Resource'
+            - ''
+            - '&eClick to send!'
+          '12':
+            message: '&aPlayer incoming!'
+            display-name: '&aPlayer incoming!!'
+            lore:
+            - ''
+            - '&eClick to send!'
+    communication-menus:
+      lore:
+      - '&7Click to send message: ''{message}&7'''
+      - '&7to your teammates!'
+      - ''
+      - '&eClick to send!'
+      teams:
+        title: '&8Select an option:'
+        back-item:
+          display-name: '&aGo Back'
+          lore:
+          - '&7To Quick Communications'
+      resources:
+        title: '&8Select an option:'
+        back-item:
+          display-name: '&aGo Back'
+          lore:
+          - '&7To Quick Communications'
+        iron:
+          resource-name: '&f&lIRON'
+        gold:
+          resource-name: '&6&lGOLD'
+        diamond:
+          resource-name: '&b&lDIAMOND'
+        emerald:
+          resource-name: '&2&lEMERALD'
+  private-games:
+    cmd-admin-no-permission: '&cYou must be admin or higher to use this command.'
+    cmd-private-no-permission: |-
+      &9&l&m----------------------------
+      &cYou do not have permission to use this command! You need
+      &fYOUTUBE &crank or &6MVP&c++.
+      &9&l&m----------------------------
+    not-in-party: |-
+      &9&l&m----------------------------
+      &cYou are not currently in a party.
+      &9&l&m----------------------------
+    party-private-enable: |-
+      &9&l&m----------------------------
+      &7{player} &aenabled Private Game
+      &9&l&m----------------------------
+    party-private-disable: |-
+      &9&l&m----------------------------
+      &7{player} &cdisabled Private Game
+      &9&l&m----------------------------
+    arena-start:
+      message:
+      - '{player} &a&lhas enabled private game modifiers!'
+      - '{modifiers}'
+      - '&6-----------------------------------------------------'
+      normal-modifier-format: ' &6- {modifier}'
+      with-option-modifier-format: ' &6- {modifier}: &e{selected}'
+    in-game-settings: |-
+      &9&l&m----------------------------
+      &cYou can not modify game settings in the game!
+      &9&l&m----------------------------
+    message-currently-selected: '&aCurrently Selected!'
+    message-click-to-select: '&eClick to select!'
+    format-currently-selected: '&aCurrently Selected: &7{selected}'
+    scoreboard-placeholder: '&7[P]'
+    menus:
+      private-game-settings:
+        settings:
+          title: '&8Private Game Settings'
+        contents:
+          one-hit-one-kill:
+            display-name: '&aOne Hit, One Kill'
+            lore:
+            - '&7Select which items should'
+            - '&7instantly kill enemies.'
+            - ''
+            - '{status}'
+          health-buff:
+            display-name: '&aHealth Buff'
+            lore:
+            - '&7Buff All Players Health.'
+            - ''
+            - '{status}'
+          low-gravity:
+            display-name: '&aLow Gravity'
+            lore:
+            - '&7Experience low gravity... also'
+            - '&7known as jump boost.'
+            - ''
+            - '{status}'
+          speed:
+            display-name: '&aSpeed'
+            lore:
+            - '&7Gotta go fast!'
+            - ''
+            - '{status}'
+          respawn-time:
+            display-name: '&aRespawn Time'
+            lore:
+            - '&8Game Specific'
+            - ''
+            - '&7Modify player respawn time.'
+            - ''
+            - '{status}'
+          event-times:
+            display-name: '&aEvent Times'
+            lore:
+            - '&8Game Specific'
+            - ''
+            - '&7Modify the time for events.'
+            - ''
+            - '{status}'
+          no-emeralds:
+            display-name: '&aNo Emeralds'
+            lore:
+            - '&8Game Specific'
+            - ''
+            - '&7Get rif of em hasty emeralds.'
+            - ''
+            - '{status}'
+          no-diamonds:
+            display-name: '&aNo Diamonds'
+            lore:
+            - '&8Game Specific'
+            - ''
+            - '&7To hell with those shiny things.'
+            - ''
+            - '{status}'
+          disable-block-protection:
+            display-name: '&aDisable Block Protection'
+            lore:
+            - '&8Game Specific'
+            - ''
+            - '&7Allow players to break any'
+            - '&7blocks, excluding blocks around'
+            - '&7generators and spawns.'
+            - ''
+            - '{status}'
+          bed-instabreak:
+            display-name: '&aBed Instabreak'
+            lore:
+            - '&8Game Specific'
+            - ''
+            - '&7Beds break with a single punch.'
+            - ''
+            - '{status}'
+          max-team-upgrades:
+            display-name: '&aMax Team Upgrades'
+            lore:
+            - '&8Game Specific'
+            - ''
+            - '&7All teams will start with maxed'
+            - '&7out team upgrades.'
+            - ''
+            - '{status}'
+          go-back:
+            display-name: '&aGo Back'
+            lore:
+            - '&7To Play Bed Wars'
+      health-buff:
+        settings:
+          title: '&8Health Buff'
+        contents:
+          normal-health:
+            display-name: '&aNormal Health'
+            lore:
+            - '{status}'
+          double-health:
+            display-name: '&aDouble Health'
+            lore:
+            - '{status}'
+          triple-health:
+            display-name: '&aTriple Health'
+            lore:
+            - '{status}'
+          go-back:
+            display-name: '&aGo Back'
+      speed:
+        settings:
+          title: '&8Speed'
+        contents:
+          no-speed:
+            display-name: '&aNo Speed'
+            lore:
+            - '{status}'
+          speed-I:
+            display-name: '&aSpeed I'
+            lore:
+            - '{status}'
+          speed-II:
+            display-name: '&aSpeed II'
+            lore:
+            - '{status}'
+          speed-III:
+            display-name: '&aSpeed III'
+            lore:
+            - '{status}'
+          go-back:
+            display-name: '&aGo Back'
+      respawn-time:
+        settings:
+          title: '&8Respawn Time'
+        contents:
+          one-second:
+            display-name: '&a1 Second'
+            lore:
+            - '{status}'
+          five-seconds:
+            display-name: '&a5 Seconds'
+            lore:
+            - '{status}'
+          ten-seconds:
+            display-name: '&a10 Seconds'
+            lore:
+            - '{status}'
+          go-back:
+            display-name: '&aGo Back'
+      event-times:
+        settings:
+          title: '&8Event Times'
+        contents:
+          half-slower:
+            display-name: '&a0.5x - Slower'
+            lore:
+            - '{status}'
+          normal-time:
+            display-name: '&a1x - Normal'
+            lore:
+            - '{status}'
+          double-faster:
+            display-name: '&a2x - Faster'
+            lore:
+            - '{status}'
+          quadruple-faster:
+            display-name: '&a4x - Faster'
+            lore:
+            - '{status}'
+          go-back:
+            display-name: '&aGo Back'
+    game-settings-item:
+      display-name: '&aPrivate Game Settings &7(Right Click)'
+      lore:
+      - '&7Right click to manage private'
+      - '&7game settings.'
+    meaning-one-hit-one-kill: One Hit, One Kill
+    meaning-health-buff: Health Buff
+    meaning-low-gravity: Low Gravity
+    meaning-speed: Speed
+    meaning-respawn-time: Respawn Time
+    meaning-event-times: Event Times
+    meaning-no-emeralds: No Emeralds
+    meaning-no-diamonds: No Diamonds
+    meaning-disable-block-protection: Disable Block Protection
+    meaning-bed-instabreak: Bed Instabreak
+    meaning-max-team-upgrades: Max Team Upgrades
+    meaning-normal-health: Normal Health
+    meaning-double-health: Double Health
+    meaning-triple-health: Triple Health
+    meaning-no-speed: No Speed
+    meaning-speed-I: Speed I
+    meaning-speed-II: Speed II
+    meaning-speed-III: Speed III
+    meaning-one-second: 1 Second
+    meaning-five-seconds: 5 Seconds
+    meaning-ten-seconds: 10 Seconds
+    meaning-half-slower: 0.5x - Slower
+    meaning-normal-time: 1x - Normal
+    meaning-double-faster: 2x - Faster
+    meaning-quadruple-faster: 4x - Faster
+  team-selector:
+    inventory-name: '&8Team Selector'
+    selector-name: '&9Team Selector'
+    selector-lore:
+    - '&7Right-Click to to open!'
+    choice:
+      lore:
+      - ''
+      - '&7&o{members}'
+      - ''
+      - '&eClick to join!'
+      name: '{color}{team} &f({selected}&7/&f{total})'
+    switch-disabled: '{prefix}&cYou cannot change your team!'
+    team-join: '{prefix}&eYou joined the {color}{team} &eteam!'
+    team-full: '{prefix}{color}{team} &c Team is full!'
+    teams-not-balanced: '{prefix}&cTeams are not balanced! Try joining another team!'
+    party-deny: '{prefix}&cYou can''t choose your team because you''re in a party!'
+    cant-join-while-starting: '{prefix}&cYou cannot join this team at this moment.
+      The game is starting!'
+    already-in-team: '{prefix}&cYou are already in this team!'
+  leave-delay-name: '&c&lReturn to Lobby &7(Right Click)'
+  leave-delay-lore:
+  - '&7Right-click to leave to the lobby!'
+  leave-delay:
+    start: '&a&lTeleporting you to the lobby in 3 seconds... Right-click again to
+      cancel the teleport!'
+    cancel: '&c&lTeleport cancelled!'
+prefix: ''
+name: BedWars
+cmd-main-list:
+- '&6&lcxBEDWARS - &bSetup by BijjuXD'
+- '&2▪ &7/bw stats'
+- '&2▪ &7/bw join &o<arena/group>'
+- '&2▪ &7/bw leave'
+- '&2▪ &7/bw lang'
+- '&2▪ &7/bw gui'
+- '&2▪ &7/bw start &3(vip)'
+cmd-lang-list-header: '{prefix} &2Available languages:'
+cmd-lang-list-format: '&a▪  &7{iso} - &f{name}'
+cmd-lang-usage: '{prefix}&7Usage: /lang &f&o<iso>'
+cmd-lang-not-exist: '{prefix}&cThis language doesn''t exist!'
+cmd-lang-set: '{prefix}&aLanguage changed!'
+cmd-lang-not-set: '{prefix}&cYou can''t change the language during the game.'
+cmd-join-usage: '§a▪ §7Usage: /bw join §o<arena/group>'
+cmd-join-not-found: '{prefix}&cThere isn''t any arena or arena group called: {name}'
+cmd-join-arena-full: |-
+  {prefix}&cThis arena is full!
+  &aPlease consider donating for more features. &7&o(click)
+cmd-join-arenas-full: '{prefix}&cThere isn''t any arena available right now ;('
+cmd-join-arena-full-vips: |-
+  {prefix}&cWe apologise but this arena is full.
+  &cWe know you're a donor but actually this arena is full of staff or/and donors.
+cmd-join-party-big: '{prefix}&cYour party is too big for joining this arena as a team
+  :('
+cmd-join-not-leader: '{prefix}&cOnly the leader can choose the arena.'
+cmd-join-success: '{prefix}&7{player} &ehas joined (&b{on}&e/&b{max}&e)!'
+cmd-join-spectate: |-
+  {prefix}§6You are now spectating §9{arena}§6.
+  {prefix}§eYou can leave the arena at any time doing §c/leave§e.
+cmd-join-spectate-denied: '&cSpectators are not allowed in this arena!'
+cmd-tp-player-not-found: '{prefix}&cPlayer not found!'
+cmd-tp-not-in-arena: '{prefix}&cThis player is not in a bedwars arena!'
+cmd-tp-not-started: '{prefix}&cThe arena where the player is didn''t start yet!'
+cmd-tp-usage: '{prefix}&cUsage: /bw tp <username>'
+cmd-rejoin-no-arena: '{prefix}&cThere is no arena to rejoin!'
+cmd-rejoin-denied: '{prefix}&cYou can''t rejoin the arena anymore. Game ended or bed
+  destroyed.'
+cmd-rejoin-allowed: '{prefix}&eJoining arena &a{arena}&e!'
+cmd-rejoin-player-reconnected: '{prefix}&7{player} &ehas reconnected!'
+cmd-not-in-arena: '{prefix}&cYou''re not in arena!'
+cmd-leave: '{prefix}&7{player} &ehas quit!'
+cmd-blocked-in-game: '{prefix}&cYou can''t do this during the game.'
+cmd-not-found: '{prefix}&cCommand not found or you don''t have permission!'
+cmd-party-help:
+- '&6▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+- '&aParty Commands:'
+- '&e/party help &7- &bPrints this help message'
+- '&e/party invite <player> &7- &bInvites the player to your party'
+- '&e/party leave &7- &bLeaves the current party'
+- '&e/party remove <player> &7- &bRemove the player from the party'
+- '&e/party accept <player> &7- &bAccept a party invite'
+- '&e/party disband &7- &bDisbands the party'
+cmd-party-invite-usage: '{prefix}&eUsage: &7/party invite <player>'
+cmd-party-offline: '{prefix}&7{player} &eis offline!'
+cmd-party-invite: '{prefix}&eInvite sent to &7{player}&6.'
+cmd-party-invite-received: '{prefix}&b{player} &ehas invited you to a party! &o&7(Click
+  to accept)'
+cmd-party-invite-self: '{prefix}&cYou cannot invite yourself!'
+cmd-party-no-invite: '{prefix}&cThere''s no party requests to accept'
+cmd-party-already-in: '{prefix}&eYou''re already in a party!'
+cmd-party-no-perm: '{prefix}&cOnly the party owner can do this!'
+cmd-party-accept-usage: '{prefix}&eUsage: &7/party accept <player>'
+cmd-party-join: '{prefix}&7{player} &ehas joined the party!'
+cmd-party-not-in: '{prefix}&cYou''re not in a party!'
+cmd-party-cant-leave: |-
+  {prefix}&cYou can't leave your own party!
+  &eTry using: &b/party disband
+cmd-party-leave: '{prefix}&7{player} &ehas leaved the party!'
+cmd-party-disband: '{prefix}&eParty disbanded!'
+cmd-party-remove-usage: '{prefix}&7Usage: &e/party remove <player>'
+cmd-party-remove: '{prefix}&7{player} &ewas removed from the party,'
+cmd-party-remove-not-in: '{prefix}&7{player} &eis not in your party!'
+cmd-start-no-game: §c▪ §7You're not playing!
+cmd-start: §c▪ §7Countdown shortened!
+cmd-start-no-perm: |-
+  {prefix}&7You can't forcestart the arena.
+  §7Please consider donating for VIP features.
+cmd-cooldown: '&cYou can''t do that yet! Wait {seconds} more seconds!'
+arena-kicked-by-vip: |-
+  {prefix}&cSorry, but you were kicked out because a donor joined the arena.
+  &aPlease consider donating for more features. &7&o(click)
+arena-countdown-stopped: '{prefix}§cThere aren''t enough players! Countdown stopped!'
+arena-restart-kick: '{prefix}&eThe arena you were in is restarting.'
+arena-status-playing: '&cPlaying'
+arena-status-restarting: '&4Restarting'
+arena-status-waiting: '&2Waiting §c{full}'
+arena-status-starting: '&6Starting §c{full}'
+arena-selector-gui-name: '&8Click to join'
+arena-selector-content-name: '&a&l{name}'
+arena-selector-content-lore:
+- ''
+- '&7Status: {status}'
+- '&7Players: &f{on}&7/&f{max}'
+- '&7Type: &a{group}'
+- ''
+- '&aLeft-Click to join.'
+- '&eRight-Click to spectate.'
+arena-start-countdown: '{prefix}&eThe game starts in &6{time} &eseconds!'
+arena-start-countdown-title: '&a{second}'
+arena-start-countdown-subtitle: ' '
+arena-start-countdown-title-5: '&e5'
+arena-start-countdown-title-4: '&e4'
+arena-start-countdown-title-3: '&c3'
+arena-start-countdown-title-2: '&c2'
+arena-start-countdown-title-1: '&c1'
+arena-countdown-stopped-title: '&cWaiting for more players..'
+arena-start-title: '&aGO'
+arena-start-subtitle: ''
+arena-start-tutorial:
+- '&a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+- '&f                                   &lBedWars'
+- ''
+- '&e&l    Protect your bed and destroy the enemy beds.'
+- '&e&l      Upgrade yourself and your team by collecting'
+- '&e&l   Iron, Gold, Emerald, and Diamond from generators'
+- '&e&l             to access powerful upgrades.'
+- ''
+- '&a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+arena-join-denied-selector: '{prefix}&cSorry but you can''t join this arena at this
+  moment. Use Right-Click to spectate!'
+arena-spectate-denied-selector: '{prefix}&cSorry but you can''t spectate this arena
+  at this moment. Use Left-Click to join!'
+arena-join-denied-no-bwp: "&cSorry but you must join an arena using BedWarsProxy.\
+  \ \n&eIf you want to setup an arena make sure to give yourself the bw.setup permission\
+  \ so you can join the server directly!"
+spectator-tp-gui-name: '&8Teleporter'
+spectator-tp-gui-head-name: '{prefix}{player}'
+spectator-tp-gui-head-lore:
+- '&7Health: &f{health}%'
+- '&7Food: &f{food}'
+- ''
+- '&7Left-click to spectate'
+spectator-tp-name: '&c&lReturn to Lobby'
+spectator-tp-lore:
+- '&7Right-click to leave to the lobby!'
+spectator-first-person-enter-title: '&aSpectating &7{player}'
+spectator-first-person-enter-subtitle: '&cSNEAK to exit'
+spectator-first-person-quit-title: '&eExiting Spectator mode'
+spectator-first-person-quit-subtitle: ''
+arena-leave-party-disbanded: '{prefix}§cThe party owner has left and the party was
+  disbanded!'
+generator-tier: '&eTier &c{tier}'
+generator-diamond: '&b&lDiamond'
+generator-emerald: '&a&lEmerald'
+generator-timer: '&eSpawns in &c{seconds} &eseconds'
+generator-upgrade-announce: '{prefix}{generatorType} Generators &ehave been upgraded
+  to Tier &c{tier}'
+format-chat-lobby: '{level} {vPrefix}{player}&f: {message}'
+format-chat-waiting: '&7{vPrefix}{player}&f: {message}'
+format-chat-global: '&3[SHOUT] {level} {vPrefix}{team} {player}&f: {message}'
+format-chat-team: '{level} &f{team} {vPrefix}{player}&f: {message}'
+format-chat-spectator: '&7[SPECTATOR] {vPrefix}{player}&f: {message}'
+format-sb-health:
+- '&c❤'
+format-spectator-team: SPECT
+format-spectator-color: '&7'
+format-sb-tab-prefix:
+  restarting:
+  - '{teamColor}&l{teamLetter} &r{teamColor}'
+  playing:
+  - '{teamColor}&l{teamLetter} &r{teamColor}'
+  starting:
+  - '{vSuffix}'
+  waiting:
+  - '{vSuffix}'
+  lobby:
+  - '{vPrefix}'
+format-sb-tab-suffix:
+  restarting: []
+  playing: []
+  starting: []
+  waiting: []
+  lobby: []
+format-sb-date: dd/MM/yy
+format-sb-team-generic: '{TeamColor}{TeamLetter}&f {TeamName}: {TeamStatus}'
+format-sb-team-eliminated: '&c&l✘'
+format-sb-bed-destroyed: '&a{remainingPlayers}'
+format-sb-team-alive: '&a&l✓'
+format-sb-generator-timer: mm:ss
+format-sb-you: '&7 YOU'
+format-action-tracking: '&fTracking: {team} &f- Distance: {distance}m'
+format-winner-team: '      {TeamColor}{TeamName} &7- {members}'
+format-winner-solo: '                 {TeamColor}{TeamName} &7- {members}'
+format-tier1: I
+format-tier2: II
+format-tier3: III
+format-despawnable-health: '▮ '
+format-stats-time: yyyy/MM/dd HH:mm
+format-papi-player-team: '{TeamColor}[{TeamName}]'
+format-papi-player-shout: '&6[SHOUT]'
+format-papi-player-spectator: '&7[SPECTATOR]'
+meaning-full: Full
+meaning-shout: shout
+meaning-nobody: Nobody
+meaning-never: Never
+meaning-iron-singular: Iron
+meaning-iron-plural: Iron
+meaning-gold-singular: Gold
+meaning-gold-plural: Gold
+meaning-emerald-singular: Emerald
+meaning-emerald-plural: Emeralds
+meaning-diamond-singular: Diamond
+meaning-diamond-plural: Diamonds
+meaning-vault-singular: $
+meaning-vault-plural: $
+interact-cant-place: '{prefix}&cYou can''t place blocks here!'
+interact-cant-break: '{prefix}&cYou can only break blocks placed by a player!'
+interact-cant-destroy-bed: '&cYou can''t destroy your own bed!'
+interact-bed-destroy-chat: |2
+
+  &f&lBED DESTRUCTION > {TeamColor}{TeamName} Bed &7was deep fried by {PlayerColor}{PlayerName}&7!
+interact-bed-destroy-title: '&cBED DESTROYED!'
+interact-bed-destroy-subtitle: '&fYou will no longer respawn!'
+interact-bed-destroy-team: '&f&lBED DESTRUCTION > &7Your bed was iced by {PlayerColor}{PlayerName}&7!'
+interact-cant-open-chest: '&cYou can''t open this chest because this team wasn''t
+  eliminated!'
+player-die-void-regular: '{PlayerColor}{PlayerName} &7fell into the void.'
+player-die-void-final: '{PlayerColor}{PlayerName} &7fell into the void. &b&lFINAL
+  KILL!'
+player-die-knocked-void-regular: '{PlayerColor}{PlayerName} &7was knocked into the
+  void by {KillerColor}{KillerName}&7.'
+player-die-knocked-void-final: '{PlayerColor}{PlayerName} &7was knocked into the void
+  by {KillerColor}{KillerName}&7. &b&lFINAL KILL!'
+player-die-pvp-log-out-regular: '{PlayerColor}{PlayerName} &7disconnected while fighting
+  with {KillerColor}{KillerName}&7.'
+player-die-pvp-log-out-final: '{PlayerColor}{PlayerName} &7disconnected while fighting
+  with {KillerColor}{KillerName}&7. &b&lFINAL KILL!'
+player-die-knocked-fall-regular: '{PlayerColor}{PlayerName} &7was pushed by {KillerColor}{KillerName}&7.'
+player-die-knocked-fall-final: '{PlayerColor}{PlayerName} &7was pushed by {KillerColor}{KillerName}&7.
+  &b&lFINAL KILL!'
+player-die-bomb-regular: '{PlayerColor}{PlayerName} &7was hit off by a love bomb from
+  {KillerColor}{KillerName}&7.'
+player-die-bomb-final: '{PlayerColor}{PlayerName} &7was hit off by a love bomb from
+  {KillerColor}{KillerName}&7. &b&lFINAL KILL!'
+player-die-bomb2-regular: '{PlayerColor}{PlayerName} &7was hit off by a bomb.'
+player-die-bomb2-final: '{PlayerColor}{PlayerName} &7was hit off by a bomb. &b&lFINAL
+  KILL!'
+player-die-attack-regular: '{PlayerColor}{PlayerName} &7was killed by {KillerColor}{KillerName}&7.'
+player-die-attack-final: '{PlayerColor}{PlayerName} &7was killed by {KillerColor}{KillerName}&7.
+  &b&lFINAL KILL!'
+player-die-unknown-regular: '{PlayerColor}{PlayerName} &7died.'
+player-die-unknown-final: '{PlayerColor}{PlayerName} &7died. &b&lFINAL KILL!'
+player-die-shoot-regular: '{PlayerColor}{PlayerName} &7was shoot by {KillerColor}{KillerName}&7!'
+player-die-shoot-final: '{PlayerColor}{PlayerName} &7was shoot by {KillerColor}{KillerName}&7!
+  &b&lFINAL KILL!'
+player-die-bedbug-regular: '{PlayerColor}{PlayerName} &7was killed by {KillerColor}{KillerTeamName}''s
+  &7BedBug!'
+player-die-bedbug-final: '{PlayerColor}{PlayerName} &7was killed by {KillerColor}{KillerTeamName}''s
+  &7BedBug! &b&lFINAL KILL!'
+player-die-golem-regular: '{PlayerColor}{PlayerName} &7was killed by {KillerColor}{KillerTeamName}''s
+  &7Iron Golem!'
+player-die-golem-final: '{PlayerColor}{PlayerName} &7was killed by {KillerColor}{KillerTeamName}''s
+  &7Iron Golem! &b&lFINAL KILL!'
+player-loot-diamond: '{prefix}&b+{amount} {meaning}'
+player-loot-emerald: '{prefix}&a+{amount} {meaning}'
+player-loot-iron: '{prefix}&f+{amount} {meaning}'
+player-loot-gold: '{prefix}&6+{amount} {meaning}'
+player-respawn-title: '&cYOU DIED!'
+player-respawn-subtitle: '&eYou will respawn in &c{time} &eseconds!'
+player-respawn-timer-chat: '{prefix}&eYou will respawn in &c{time} &eseconds!'
+player-respawned-title: '&aRESPAWNED!'
+player-eliminated-chat: '{prefix}&cYou have been eliminated!'
+player-hit-bow: '{prefix}{TeamColor}{PlayerName} &7is on &c{amount} &7HP!'
+game-end-game-over-title: '&c&lGAME OVER!'
+game-end-victory-title: '&6&lVICTORY!'
+game-end-winner-team: '{prefix}{TeamColor}{TeamName} &ahas won the game!'
+game-end-top-chat:
+- '&a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+- '&f                                   &lBedWars'
+- ''
+- '{winnerFormat}'
+- ''
+- ''
+- '&e                          &l1st Killer &7- {firstName} - {firstKills}'
+- '&6                          &l2nd Killer &7- {secondName} - {secondKills}'
+- '&c                          &l3rd Killer &7- {thirdName} - {thirdKills}'
+- ''
+- '&a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+bed-hologram-defend: '&c&lDefend your bed!'
+bed-hologram-destroyed: '&c&lYour bed was destroyed!'
+npc-team-upgrades: '&bTEAM UPGRADES,&e&lRIGHT CLICK'
+npc-solo-upgrades: '&bSOLO UPGRADES,&e&lRIGHT CLICK'
+npc-team-shop: '&bTEAM SHOP,&e&lRIGHT CLICK'
+npc-solo-shop: '&bITEM SHOP,&e&lRIGHT CLICK'
+team-eliminated: |2
+
+  &f&lTEAM ELIMINATED > {TeamColor}{TeamName} Team &chas been eliminated!
+next-event-beds-destroy: '&cBeds Destruction'
+next-event-diamondII: '&fDiamond II'
+next-event-diamondIII: '&fDiamond III'
+next-event-dragon-spawn: '&fSudden Death'
+next-event-emeraldII: '&fEmerald II'
+next-event-emeraldIII: '&fEmerald III'
+next-event-game-end: '&4Game End'
+next-event-beds-destroy-title: '&cBED DESTROYED!'
+next-event-beds-destroy-sub-title: '&fAll beds have been destroyed!'
+next-event-beds-destroy-chat: '&c&lAll beds have been destroyed!'
+next-event-sudden-death-title: '&cSudden Death'
+next-event-sudden-death-sub-title: ''
+next-event-sudden-death-chat: '&cSUDDEN DEATH: &6&b{TeamDragons} {TeamColor}{TeamName}
+  Dragon!'
+xp-reward-per-minute: '{prefix}&6+{xp} BedWars Experience Received (Play Time).'
+xp-reward-game-win: '{prefix}&6+{xp} BedWars Experience Received (Game Win).'
+xp-reward-per-teammate: '{prefix}&6+{xp} BedWars Experience Received (Team Support).'
+lobby-items-stats-name: '&eStats'
+lobby-items-stats-lore:
+- '&fRight-click to see your stats!'
+lobby-items-arena-selector-name: '&eArena Selector'
+lobby-items-arena-selector-lore:
+- '&fRight-click to choose an arena!'
+lobby-items-leave-name: '&c&lReturn to Lobby'
+lobby-items-leave-lore:
+- '&fRight-click to leave BedWars!'
+pre-game-items-stats-name: '&eStats'
+pre-game-items-stats-lore:
+- '&fRight-click to see your stats!'
+pre-game-items-leave-lore:
+- '&fRight-click to leave the arena!'
+spectator-items-leave-lore:
+- '&fRight-click to leave the arena!'
+stats-inv-name: '&8{player} Stats'
+stats-wins-name: '&6Wins'
+stats-wins-lore:
+- '&f{wins}'
+stats-losses-name: '&6Losses'
+stats-losses-lore:
+- '&f{losses}'
+stats-kills-name: '&6Kills'
+stats-kills-lore:
+- '&f{kills}'
+stats-deaths-name: '&6Deaths'
+stats-deaths-lore:
+- '&f{deaths}'
+stats-final-kills-name: '&6Final Kills'
+stats-final-kills-lore:
+- '&f{finalKills}'
+stats-final-deaths-name: '&6Final Deaths'
+stats-final-deaths-lore:
+- '&f{finalDeaths}'
+stats-beds-destroyed-name: '&6Beds Destroyed'
+stats-beds-destroyed-lore:
+- '&f{bedsDestroyed}'
+stats-first-play-name: '&6First Play'
+stats-first-play-lore:
+- '&f{firstPlay}'
+stats-last-play-name: '&6Last Play'
+stats-last-play-lore:
+- '&f{lastPlay}'
+stats-games-played-name: '&6Games Played'
+stats-games-played-lore:
+- '&f{gamesPlayed}'
+scoreboard:
+  Default:
+    waiting:
+    - '&e&lBED WARS'
+    - '&7{date} CX-DEV'
+    - ''
+    - '&fMap: &a{map}'
+    - ''
+    - '&fPlayers: &a{on}/{max}'
+    - ''
+    - '&fWaiting...'
+    - ''
+    - '§fMode: &a{group}'
+    - '&fVersion: &71.7'
+    - ''
+    - '&e{server_ip}'
+    starting:
+    - '&e&lBED WARS'
+    - '&7{date} CX-DEV'
+    - ''
+    - '&fMap: &a{map}'
+    - ''
+    - '&fPlayers: &a{on}/{max}'
+    - ''
+    - '&fStarting in &a{time}s'
+    - ''
+    - '§fMode: &a{group}'
+    - '&fVersion: &71.7'
+    - ''
+    - '&e{server_ip}'
+    playing:
+    - '&e&lBED WARS'
+    - '&7{date} CX-DEV'
+    - ''
+    - '&f{nextEvent} in &a{time}'
+    - ''
+    - '{TeamRedColor}R&f {TeamRedName}&f&f: {TeamRedStatus}'
+    - '{TeamBlueColor}B&f {TeamBlueName}&f: {TeamBlueStatus}'
+    - '{TeamGreenColor}G&f {TeamGreenName}&f: {TeamGreenStatus}'
+    - '{TeamYellowColor}Y &f{TeamYellowName}&f: {TeamYellowStatus}'
+    - '{TeamAquaColor}A &f{TeamAquaName}&f: {TeamAquaStatus}'
+    - '{TeamWhiteColor}W &f{TeamWhiteName}&f: {TeamWhiteStatus}'
+    - '{TeamPinkColor}P &f{TeamPinkName}&f: {TeamPinkStatus}'
+    - '{TeamGrayColor}S &f{TeamGrayName}&f: {TeamGrayStatus}'
+    - ''
+    - '&e{server_ip}'
+  Doubles:
+    playing:
+    - '&e&lBED WARS'
+    - '&7{date} CX-DEV'
+    - ''
+    - '&f{nextEvent} in &a{time}'
+    - ''
+    - '{TeamRedColor}R&f {TeamRedName}&f&f: {TeamRedStatus}'
+    - '{TeamBlueColor}B&f {TeamBlueName}&f: {TeamBlueStatus}'
+    - '{TeamGreenColor}G&f {TeamGreenName}&f: {TeamGreenStatus}'
+    - '{TeamYellowColor}Y &f{TeamYellowName}&f: {TeamYellowStatus}'
+    - '{TeamAquaColor}A &f{TeamAquaName}&f: {TeamAquaStatus}'
+    - '{TeamWhiteColor}W &f{TeamWhiteName}&f: {TeamWhiteStatus}'
+    - '{TeamPinkColor}P &f{TeamPinkName}&f: {TeamPinkStatus}'
+    - '{TeamGrayColor}S &f{TeamGrayName}&f: {TeamGrayStatus}'
+    - ''
+    - '&e{server_ip}'
+  3v3v3v3:
+    playing:
+    - '&e&lBED WARS'
+    - '&7{date} CX-DEV'
+    - ''
+    - '&f{nextEvent} in &a{time}'
+    - ''
+    - '{TeamRedColor}R&f {TeamRedName}&f&f: {TeamRedStatus}'
+    - '{TeamBlueColor}B&f {TeamBlueName}&f: {TeamBlueStatus}'
+    - '{TeamGreenColor}G&f {TeamGreenName}&f: {TeamGreenStatus}'
+    - '{TeamYellowColor}Y &f{TeamYellowName}&f: {TeamYellowStatus}'
+    - ''
+    - '&fKills: &a{kills}'
+    - '&fFinal Kills: &a{finalKills}'
+    - '&fBeds Broken: &a{beds}'
+    - ''
+    - '&e{server_ip}'
+  4v4v4v4:
+    playing:
+    - '&e&lBED WARS'
+    - '&7{date} CX-DEV'
+    - ''
+    - '&f{nextEvent} in &a{time}'
+    - ''
+    - '{TeamRedColor}R&f {TeamRedName}&f&f: {TeamRedStatus}'
+    - '{TeamBlueColor}B&f {TeamBlueName}&f: {TeamBlueStatus}'
+    - '{TeamGreenColor}G&f {TeamGreenName}&f: {TeamGreenStatus}'
+    - '{TeamYellowColor}Y &f{TeamYellowName}&f: {TeamYellowStatus}'
+    - ''
+    - '&fKills: &a{kills}'
+    - '&fFinal Kills: &a{finalKills}'
+    - '&fBeds Broken: &a{beds}'
+    - ''
+    - '&e{server_ip}'
+  lobby:
+  - '&e&lBED WARS'
+  - '&7{date} &8CXBW'
+  - ''
+  - '&fLevel: {level}'
+  - ''
+  - '&fProgress: &a{currentXp}&7/&b{requiredXp}'
+  - '  {progress}'
+  - ''
+  - '&fLoot Chests: &6%gadgetsmenu_mystery_boxes%'
+  - ''
+  - '&fCoins: &a%vault_eco_balance_commas%'
+  - ''
+  - '&fTotal Wins: &a{wins}'
+  - '&fTotal Kills: &a{kills}'
+  - ''
+  - '&e{server_ip}'
+shop-items-messages:
+  inventory-name: '&8Quick Buy'
+  separator-item-name: '&8⇧ Categories'
+  separator-item-lore:
+  - '&8⇩ Items'
+  quick-buy-item-name: '&bQuick Buy'
+  quick-buy-item-lore: []
+  quick-buy-empty-item-name: '&cEmpty slot!'
+  quick-buy-empty-item-lore:
+  - '&7This is a Quick Buy Slot!'
+  - '&bSneak Click &7any item in'
+  - '&7the shop to add it here.'
+  can-buy-color: '&a'
+  cant-buy-color: '&c'
+  blocks-category:
+    inventory-name: '&8Blocks'
+    category-item-name: '&aBlocks'
+    category-item-lore:
+    - '&eClick to view!'
+    content-item-wool-name: '{color}Wool'
+    content-item-wool-lore:
+    - '&7Cost: &f{cost} {currency}'
+    - ''
+    - '&7Great for bridging across'
+    - '&7islands. Turns into your team''s'
+    - '&7color.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-clay-name: '{color}Hardened Clay'
+    content-item-clay-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '&7Basic block to defend your bed.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-glass-name: '{color}Blast-Proof Glass'
+    content-item-glass-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '&7Immune to explosions.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-stone-name: '{color}End Stone'
+    content-item-stone-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '&7Solid block to defend your bed.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-ladder-name: '{color}Ladder'
+    content-item-ladder-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '&7Useful to save cats stuck in'
+    - '&7trees.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-obsidian-name: '{color}Obsidian'
+    content-item-obsidian-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '&7Extreme protection for your bed.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-wood-name: '{color}Wood'
+    content-item-wood-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '&7Solid block to defend your bed'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+  melee-category:
+    inventory-name: '&8Melee'
+    category-item-name: '&aMelee'
+    category-item-lore:
+    - '&eClick to view!'
+    content-item-stone-sword-name: '{color}Stone Sword'
+    content-item-stone-sword-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-iron-sword-name: '{color}Iron Sword'
+    content-item-iron-sword-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-diamond-sword-name: '{color}Diamond Sword'
+    content-item-diamond-sword-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-stick-name: '{color}Stick (KnockBack I)'
+    content-item-stick-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+  armor-category:
+    inventory-name: '&8Armor'
+    category-item-name: '&aArmor'
+    category-item-lore:
+    - '&eClick to view!'
+    content-item-chainmail-name: '{color}Permanent Chainmail Armor'
+    content-item-chainmail-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '&7Chainmail leggings and boots'
+    - '&7which you will always spawn'
+    - '&7with.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-iron-armor-name: '{color}Permanent Iron Armor'
+    content-item-iron-armor-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '&7Iron leggings and boots which'
+    - '&7you will always spawn with.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-diamond-armor-name: '{color}Permanent Diamond Armor'
+    content-item-diamond-armor-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '&7Diamond leggings and boots which'
+    - '&7you will always crush with.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+  tools-category:
+    inventory-name: '&8Tools'
+    category-item-name: '&aTools'
+    category-item-lore:
+    - '&eClick to view!'
+    content-item-shears-name: '{color}Permanent Shears'
+    content-item-shears-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '&7Great to get rid of wool. You'
+    - '&7will always spawn with these shears.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-pickaxe-name: '{color}Pickaxe {tier}'
+    content-item-pickaxe-lore:
+    - '&7Cost: {cost} {currency}'
+    - '&7Tier: &e{tier}'
+    - ''
+    - '&7This is an upgradable item.'
+    - '&7It will lose 1 tier upon.'
+    - '&7death!'
+    - ''
+    - '&7You will permanently'
+    - '&7respawn with at least the'
+    - '&7lowest tier.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-axe-name: '{color}Axe {tier}'
+    content-item-axe-lore:
+    - '&7Cost: {cost} {currency}'
+    - '&7Tier: &e{tier}'
+    - ''
+    - '&7This is an upgradable item.'
+    - '&7It will lose 1 tier upon.'
+    - '&7death!'
+    - ''
+    - '&7You will permanently'
+    - '&7respawn with at least the'
+    - '&7lowest tier.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+  ranged-category:
+    inventory-name: '&8Ranged'
+    category-item-name: '&aRanged'
+    category-item-lore:
+    - '&eClick to view!'
+    content-item-arrow-name: '{color}Arrow'
+    content-item-arrow-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-bow1-name: '{color}Bow'
+    content-item-bow1-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-bow2-name: '{color}Bow (Power I)'
+    content-item-bow2-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-bow3-name: '{color}Bow (Power I, Punch I)'
+    content-item-bow3-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+  potions-category:
+    inventory-name: '&8Potions'
+    category-item-name: '&aPotions'
+    category-item-lore:
+    - '&eClick to view!'
+    content-item-speed-potion-name: '{color}Speed II Potion (45 seconds)'
+    content-item-speed-potion-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-jump-potion-name: '{color}Jump V Potion (45 seconds)'
+    content-item-jump-potion-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-invisibility-name: '{color}Invisibility Potion (30 seconds)'
+    content-item-invisibility-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+  utility-category:
+    inventory-name: '&8Utility'
+    category-item-name: '&aUtility'
+    category-item-lore:
+    - '&eClick to view!'
+    content-item-golden-apple-name: '{color}Golden Apple'
+    content-item-golden-apple-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '&7Well-rounded healing.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-bedbug-name: '{color}BedBug'
+    content-item-bedbug-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '&7Spawns silverfish where the'
+    - '&7snowball lands to distract your'
+    - '&7enemies. Lasts 15 seconds.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-dream-defender-name: '{color}Dream Defender'
+    content-item-dream-defender-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '&7Iron Golem to help defend your'
+    - '&7base. Lasts 4 minutes.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-fireball-name: '{color}Fireball'
+    content-item-fireball-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '&7Right-click to launch! Great to'
+    - '&7knock back enemies walking on'
+    - '&7thin bridges'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-tnt-name: '{color}TNT'
+    content-item-tnt-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '&7Instantly ignites, appropriate'
+    - '&7to explode things!'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-ender-pearl-name: '{color}Ender Pearl'
+    content-item-ender-pearl-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '&7The quickest way to invade enemy'
+    - '&7bases.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-water-bucket-name: '{color}Water Bucket'
+    content-item-water-bucket-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '&7Great to slow down approaching'
+    - '&7enemies. Can also protect'
+    - '&7against TNT.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-bridge-egg-name: '{color}Bridge Egg'
+    content-item-bridge-egg-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '&7This egg creates a bridge in its'
+    - '&7trial after being thrown.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-magic-milk-name: '{color}Magic Milk'
+    content-item-magic-milk-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '&7Avoid triggering traps for 60'
+    - '&7seconds after consuming.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-sponge-name: '{color}Sponge'
+    content-item-sponge-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '&7Great for soaking up water.'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+    content-item-tower-name: '{color}Compact Pop-up Tower'
+    content-item-tower-lore:
+    - '&7Cost: {cost} {currency}'
+    - ''
+    - '&7Place a compact pop-up'
+    - '&7tower defense!'
+    - ''
+    - '{quick_buy}'
+    - '{buy_status}'
+shop-insuff-money: '{prefix}&cYou don''t have enough {currency}! Need {amount} more!'
+shop-new-purchase: '{prefix}&aYou purchased &6{item}'
+shop-already-bought: '{prefix}&cYou''ve already bought that!'
+shop-utility-silverfish: '{TeamColor}&l{TeamName} &r{TeamColor}Silverfish'
+shop-utility-iron-golem: '{TeamColor}{despawn}s &8[ {TeamColor}{health}&8]'
+shop-lore-status-can-buy: '&eClick to purchase!'
+shop-lore-status-cant-afford: '&cYou don''t have enough {currency}!'
+shop-lore-status-tier-maxed: '&aMAXED!'
+shop-lore-quick-add: '&bSneak Click to add to Quick Buy'
+shop-lore-quick-remove: '&bSneak Click to remove from Quick Buy!'
+meaning-no-trap: No trap!
+format-upgrade-trap-cost: '&7Cost: {currencyColor}{cost} {currency}'
+format-upgrade-color-can-afford: '&e'
+format-upgrade-color-cant-afford: '&c'
+format-upgrade-color-unlocked: '&a'
+format-tier-color-locked: '&7'
+format-tier-color-unlocked: '&a'
+upgrades-lore-click-buy: '{color}Click to purchase!'
+upgrades-lore-insuff-money: '{color}You don''t have enough {currency}'
+upgrades-lore-locked: '&cLOCKED'
+upgrades-lore-unlocked: '{color}UNLOCKED'
+upgrades-new-purchase: '&a{player} purchased &6{upgradeName}'
+upgrades-upgrade-name-forge-tier-1: '{color}Iron Forge'
+upgrades-upgrade-lore-forge-tier-1:
+- '&7Upgrade resource spawning on'
+- '&7your island.'
+- ''
+- '{tierColor}Tier 1: +50% Resources, &b{cost} {currency}'
+- '&7Tier 2: +100% Resources, &b4 Diamonds'
+- '&7Tier 3: Spawn emeralds, &b6 Diamonds'
+- '&7Tier 4: +200% Resources, &b8 Diamonds'
+- ''
+upgrades-upgrade-name-forge-tier-2: '{color}Golden Forge'
+upgrades-upgrade-lore-forge-tier-2:
+- '&7Upgrade resource spawning on'
+- '&7your island.'
+- ''
+- '&aTier 1: +50% Resources, &b2 Diamonds'
+- '{tierColor}Tier 2: +100% Resources, &b{cost} {currency}'
+- '&7Tier 3: Spawn emeralds, &b6 Diamonds'
+- '&7Tier 4: +200% Resources, &b8 Diamonds'
+- ''
+upgrades-upgrade-name-forge-tier-3: '{color}Emerald Forge'
+upgrades-upgrade-lore-forge-tier-3:
+- '&7Upgrade resource spawning on'
+- '&7your island.'
+- ''
+- '&aTier 1: +50% Resources, &b2 Diamonds'
+- '&aTier 2: +100% Resources, &b4 Diamonds'
+- '{tierColor}Tier 3: Spawn emeralds, &b{cost} {currency}'
+- '&7Tier 4: +200% Resources, &b8 Diamonds'
+- ''
+upgrades-upgrade-name-forge-tier-4: '{color}Molten Forge'
+upgrades-upgrade-lore-forge-tier-4:
+- '&7Upgrade resource spawning on'
+- '&7your island.'
+- ''
+- '&aTier 1: +50% Resources, &b2 Diamonds'
+- '&aTier 2: +100% Resources, &b4 Diamonds'
+- '&aTier 3: Spawn emeralds, &b6 Diamonds'
+- '{tierColor}Tier 4: +200% Resources, &b{cost} {currency}'
+- ''
+upgrades-category-item-name-traps: '&eBuy a trap'
+upgrades-category-item-lore-traps:
+- '&7Purchased traps will be'
+- '&7queued on the right.'
+- ''
+- '&eClick to browse!'
+upgrades-upgrade-name-swords-tier-1: '{color}Sharpened Swords'
+upgrades-upgrade-lore-swords-tier-1:
+- '&7Your team permanently gains'
+- '&7Sharpness I on all swords and'
+- '&7axes!'
+- ''
+- '&7Cost: &b{cost} {currency}'
+- ''
+upgrades-upgrade-name-armor-tier-1: '{color}Reinforced Armor I'
+upgrades-upgrade-lore-armor-tier-1:
+- '&7Your team permanently gains'
+- '&7Protection on all armor pieces!'
+- ''
+- '{tierColor}Tier 1: Protection I, &b{cost} {currency}'
+- '&7Tier 2: Protection II, &b4 Diamonds'
+- '&7Tier 3: Protection III, &b8 Diamonds'
+- '&7Tier 4: Protection IV, &b16 Diamonds'
+- ''
+upgrades-upgrade-name-armor-tier-2: '{color}Reinforced Armor II'
+upgrades-upgrade-lore-armor-tier-2:
+- '&7Your team permanently gains'
+- '&7Protection on all armor pieces!'
+- ''
+- '&aTier 1: Protection I, &b2 Diamonds'
+- '{tierColor}Tier 2: Protection II, &b{cost} {currency}'
+- '&7Tier 3: Protection III, &b8 Diamonds'
+- '&7Tier 4: Protection IV, &b16 Diamonds'
+- ''
+upgrades-upgrade-name-armor-tier-3: '{color}Reinforced Armor III'
+upgrades-upgrade-lore-armor-tier-3:
+- '&7Your team permanently gains'
+- '&7Protection on all armor pieces!'
+- ''
+- '&aTier 1: Protection I, &b2 Diamonds'
+- '&aTier 2: Protection II, &b4 Diamonds'
+- '{tierColor}Tier 3: Protection III, &b{cost} {currency}'
+- '&7Tier 4: Protection IV, &b16 Diamonds'
+- ''
+upgrades-upgrade-name-armor-tier-4: '{color}Reinforced Armor IV'
+upgrades-upgrade-lore-armor-tier-4:
+- '&7Your team permanently gains'
+- '&7Protection on all armor pieces!'
+- ''
+- '&aTier 1: Protection I, &b2 Diamonds'
+- '&aTier 2: Protection II, &b4 Diamonds'
+- '&aTier 3: Protection III, &b8 Diamonds'
+- '{tierColor}Tier 4: Protection IV, &b{cost} {currency}'
+- ''
+upgrades-upgrade-name-miner-tier-1: '{color}Maniac Miner I'
+upgrades-upgrade-lore-miner-tier-1:
+- '&7All players on your team'
+- '&7permanently gain Haste.'
+- ''
+- '{tierColor}Tier 1: Haste I, &b{cost} {currency}'
+- '&7Tier 2: Haste II, &b4 Diamonds'
+- ''
+upgrades-upgrade-name-miner-tier-2: '{color}Maniac Miner II'
+upgrades-upgrade-lore-miner-tier-2:
+- '&7All players on your team'
+- '&7permanently gain Haste.'
+- ''
+- '&aTier 1: Haste I, &b2 Diamonds'
+- '{tierColor}Tier 2: Haste II, &b{cost} {currency}'
+- ''
+upgrades-upgrade-name-heal-pool-tier-1: '{color}Heal Pool'
+upgrades-upgrade-lore-heal-pool-tier-1:
+- '&7Creates a Regeneration field'
+- '&7around yor base!'
+- ''
+- '&7Giá: &b{cost} {currency}'
+- ''
+upgrades-upgrade-name-dragon-tier-1: '{color}Dragon Buff'
+upgrades-upgrade-lore-dragon-tier-1:
+- '&7Your team will have 2 dragons'
+- '&7instead of 1 during deathmatch!'
+- ''
+- '&7Cost: &b{cost} {currency}'
+- ''
+upgrades-separator-item-name-glass: '&8⬆&7Purchasable'
+upgrades-separator-item-lore-glass:
+- '&8⬇&7Traps Queue'
+upgrades-trap-slot-item-name-first: '{color}Trap #1: {name}'
+upgrades-trap-slot-item-lore1-first:
+- '&7The first enemy to walk'
+- '&7into your base will trigger'
+- '&7this trap!'
+upgrades-trap-slot-item-lore2-first:
+- ''
+- '&7Purchasing a trap will'
+- '&7queue it here. Its cost'
+- '&7will scale based on the'
+- '&7number of traps queued.'
+- ''
+- '&7Next trap: &b{cost} {currency}'
+upgrades-trap-slot-item-name-second: '{color}Trap #2: {name}'
+upgrades-trap-slot-item-lore1-second:
+- '&7The second enemy to walk'
+- '&7into your base will trigger'
+- '&7this trap!'
+upgrades-trap-slot-item-lore2-second:
+- ''
+- '&7Purchasing a trap will'
+- '&7queue it here. Its cost'
+- '&7will scale based on the'
+- '&7number of traps queued.'
+- ''
+- '&7Next trap: &b{cost} {currency}'
+upgrades-trap-slot-item-name-third: '{color}Trap #3: {name}'
+upgrades-trap-slot-item-lore1-third:
+- '&7The third enemy to walk'
+- '&7into your base will trigger'
+- '&7this trap!'
+upgrades-trap-slot-item-lore2-third:
+- ''
+- '&7Purchasing a trap will'
+- '&7queue it here. Its cost'
+- '&7will scale based on the'
+- '&7number of traps queued.'
+- ''
+- '&7Next trap: &b{cost} {currency}'
+upgrades-base-trap-name-1: '{color}It''s a trap!'
+upgrades-base-trap-lore-1:
+- '&7Inflicts Blindness and Slowness'
+- '&7for 5 seconds.'
+- ''
+upgrades-base-trap-name-2: '{color}Counter-Offensive Trap'
+upgrades-base-trap-lore-2:
+- '&7Grants Speed I for 15 seconds to'
+- '&7allied players near your base.'
+- ''
+upgrades-base-trap-name-3: '{color}Alarm Trap'
+upgrades-base-trap-lore-3:
+- '&7Reveales invisible players as'
+- '&7well as their name and team.'
+- ''
+upgrades-base-trap-name-4: '{color}Miner Fatigue Trap'
+upgrades-base-trap-lore-4:
+- '&7Inflict Mining Fatigue for 10'
+- '&7seconds.'
+- ''
+upgrades-separator-item-name-back: '&aBack'
+upgrades-separator-item-lore-back:
+- '&7To Upgrades & Traps'
+upgrades-category-gui-name-traps: '&8Queue a trap'
+upgrades-trap-queue-full: '&cTrap queue full!'
+upgrades-trap-default-msg: '&c&l{trap} was set off!'
+upgrades-trap-default-title: '&cTRAP TRIGGERED!'
+upgrades-trap-default-subtitle: '&fYour {trap} has been triggered!'
+upgrades-base-trap-msg-3: '&c&lAlarm trap set off by &7&l{player} &c&lfrom {color}&l{team}
+  &c&lteam!'
+upgrades-base-trap-title-3: '&c&lALARM!!!'
+upgrades-base-trap-subtitle-3: '&fAlarm trap set off by {color}{team} &fteam!'
+upgrades-upgrade-name-forge1-tier-1: '{color}Iron Forge'
+upgrades-upgrade-lore-forge1-tier-1:
+- '&7Upgrade resource spawning on'
+- '&7your island.'
+- ''
+- '{tierColor}Tier 1: +50% Resources, &b{cost} {currency}'
+- '&7Tier 2: +100% Resources, &b8 Diamonds'
+- '&7Tier 3: Spawn emeralds, &b12 Diamonds'
+- '&7Tier 4: +200% Resources, &b16 Diamonds'
+- ''
+upgrades-upgrade-name-forge1-tier-2: '{color}Golden Forge'
+upgrades-upgrade-lore-forge1-tier-2:
+- '&7Upgrade resource spawning on'
+- '&7your island.'
+- ''
+- '&aTier 1: +50% Resources, &b4 {currency}'
+- '{tierColor}Tier 2: +100% Resources, &b{cost} Diamonds'
+- '&7Tier 3: Spawn emeralds, &b12 Diamonds'
+- '&7Tier 4: +200% Resources, &b16 Diamonds'
+- ''
+upgrades-upgrade-name-forge1-tier-3: '{color}Emerald Forge'
+upgrades-upgrade-lore-forge1-tier-3:
+- '&7Upgrade resource spawning on'
+- '&7your island.'
+- ''
+- '&aTier 1: +50% Resources, &b4 {currency}'
+- '&aTier 2: +100% Resources, &b8 Diamonds'
+- '{tierColor}Tier 3: Spawn emeralds, &b{cost} Diamonds'
+- '&7Tier 4: +200% Resources, &b16 Diamonds'
+- ''
+upgrades-upgrade-name-forge1-tier-4: '{color}Molten Forge'
+upgrades-upgrade-lore-forge1-tier-4:
+- '&7Upgrade resource spawning on'
+- '&7your island.'
+- ''
+- '&aTier 1: +50% Resources, &b4 {currency}'
+- '&aTier 2: +100% Resources, &b8 Diamonds'
+- '&aTier 3: Spawn emeralds, &b12 Diamonds'
+- '{tierColor}Tier 4: +200% Resources, &b{cost} Diamonds'
+- ''
+upgrades-upgrade-name-swords1-tier-1: '{color}Sharpened Swords'
+upgrades-upgrade-lore-swords1-tier-1:
+- '&7Your team permanently gains'
+- '&7Sharpness I on all swords and'
+- '&7axes!'
+- ''
+- '&7Cost: &b{cost} {currency}'
+- ''
+upgrades-upgrade-name-armor1-tier-1: '{color}Reinforced Armor I'
+upgrades-upgrade-lore-armor1-tier-1:
+- '&7Your team permanently gains'
+- '&7Protection on all armor pieces!'
+- ''
+- '{tierColor}Tier 1: Protection I, &b{cost} {currency}'
+- '&7Tier 2: Protection II, &b10 Diamonds'
+- '&7Tier 3: Protection III, &b20 Diamonds'
+- '&7Tier 4: Protection IV, &b30 Diamonds'
+- ''
+upgrades-upgrade-name-armor1-tier-2: '{color}Reinforced Armor II'
+upgrades-upgrade-lore-armor1-tier-2:
+- '&7Your team permanently gains'
+- '&7Protection on all armor pieces!'
+- ''
+- '&aTier 1: Protection I, &b5 Diamonds'
+- '{tierColor}Tier 2: Protection II, &b{cost} {currency}'
+- '&7Tier 3: Protection III, &b20 Diamonds'
+- '&7Tier 4: Protection IV, &b30 Diamonds'
+- ''
+upgrades-upgrade-name-armor1-tier-3: '{color}Reinforced Armor III'
+upgrades-upgrade-lore-armor1-tier-3:
+- '&7Your team permanently gains'
+- '&7Protection on all armor pieces!'
+- ''
+- '&aTier 1: Protection I, &b5 Diamonds'
+- '&aTier 2: Protection II, &b10 Diamonds'
+- '{tierColor}Tier 3: Protection III, &b{cost} {currency}'
+- '&7Tier 4: Protection IV, &b30 Diamonds'
+- ''
+upgrades-upgrade-name-armor1-tier-4: '{color}Reinforced Armor IV'
+upgrades-upgrade-lore-armor1-tier-4:
+- '&7Your team permanently gains'
+- '&7Protection on all armor pieces!'
+- ''
+- '&aTier 1: Protection I, &b5 Diamonds'
+- '&aTier 2: Protection II, &b10 Diamonds'
+- '&aTier 3: Protection III, &b20 Diamonds'
+- '{tierColor}Tier 4: Protection IV, &b{cost} {currency}'
+- ''
+upgrades-upgrade-name-miner1-tier-1: '{color}Maniac Miner I'
+upgrades-upgrade-lore-miner1-tier-1:
+- '&7All players on your team'
+- '&7permanently gain Haste.'
+- ''
+- '{tierColor}Tier 1: Haste I, &b{cost} {currency}'
+- '&7Tier 2: Haste II, &b8 Diamonds'
+- ''
+upgrades-upgrade-name-miner1-tier-2: '{color}Maniac Miner II'
+upgrades-upgrade-lore-miner1-tier-2:
+- '&7All players on your team'
+- '&7permanently gain Haste.'
+- ''
+- '&aTier 1: Haste I, &b4 Diamonds'
+- '{tierColor}Tier 2: Haste II, &b{cost} {currency}'
+- ''
+upgrades-upgrade-name-heal-pool1-tier-1: '{color}Heal Pool'
+upgrades-upgrade-lore-heal-pool1-tier-1:
+- '&7Creates a Regeneration field'
+- '&7around yor base!'
+- ''
+- '&7Cost: &b{cost} {currency}'
+- ''
+lobby-items-test-name: '&aCollectibles &7(Right Click)'
+upgrades-menu-gui-name-default: '&8Upgrades & Traps'
+display-group-solo: Solo
+team-name-zarzul-Pink: Pink
+team-name-zarzul-White: White
+team-name-zarzul-Gray: Gray
+team-name-zarzul-Aqua: Aqua
+team-name-zarzul-Red: Red
+team-name-zarzul-Yellow: Yellow
+team-name-zarzul-Blue: Blue
+team-name-zarzul-Green: Green
+display-group-doubles: Doubles
+team-name-airshow-Gray: Gray
+team-name-airshow-Pink: Pink
+team-name-airshow-Yellow: Yellow
+team-name-airshow-White: White
+team-name-airshow-Red: Red
+team-name-airshow-Green: Green
+team-name-airshow-Aqua: Aqua
+team-name-airshow-Blue: Blue
+team-name-ashfire-Gray: Gray
+team-name-ashfire-Pink: Pink
+team-name-ashfire-White: White
+team-name-ashfire-Aqua: Aqua
+team-name-ashfire-Red: Red
+team-name-ashfire-Yellow: Yellow
+team-name-ashfire-Blue: Blue
+team-name-ashfire-Green: Green
+display-group-4v4v4v4: 4v4v4v4
+team-name-aquarium-Blue: Blue
+team-name-aquarium-Red: Red
+team-name-aquarium-Green: Green
+team-name-aquarium-Yellow: Yellow
+team-name-ashore-Blue: Blue
+team-name-ashore-Red: Red
+team-name-ashore-Green: Green
+team-name-ashore-Yellow: Yellow
+team-name-chained-Blue: Blue
+team-name-chained-Red: Red
+team-name-chained-Green: Green
+team-name-chained-Yellow: Yellow
+team-name-dreamgrove-Blue: Blue
+team-name-dreamgrove-Red: Red
+team-name-dreamgrove-Green: Green
+team-name-dreamgrove-Yellow: Yellow
+team-name-temple-Blue: Blue
+team-name-temple-Red: Red
+team-name-temple-Green: Green
+team-name-temple-Yellow: Yellow
+team-name-treenan-Blue: Blue
+team-name-treenan-Red: Red
+team-name-treenan-Green: Green
+team-name-treenan-Yellow: Yellow
+team-name-Aquarium-Blue: Blue
+team-name-Aquarium-Red: Red
+team-name-Aquarium-Green: Green
+team-name-Aquarium-Yellow: Yellow
+team-name-boletum-Blue: Blue
+team-name-boletum-Red: Red
+team-name-boletum-Green: Green
+team-name-boletum-Yellow: Yellow
+team-name-carapace-Yellow: Yellow
+team-name-carapace-Green: Green
+team-name-carapace-Red: Red
+team-name-carapace-Blue: Blue
+team-name-lectus-Yellow: Yellow
+team-name-lectus-Red: Red
+team-name-lectus-Green: Green
+team-name-lectus-Blue: Blue
+display-group-default: Default
+team-name-acropolis-Green: Green
+team-name-acropolis-Blue: Blue
+team-name-acropolis-White: White
+team-name-acropolis-Yellow: Yellow
+team-name-acropolis-Red: Red
+team-name-acropolis-Aqua: Aqua
+team-name-acropolis-Gray: Gray
+team-name-acropolis-Pink: Pink
+team-name-amazon-Gray: Gray
+team-name-amazon-Pink: Pink
+team-name-amazon-Red: Red
+team-name-amazon-White: White
+team-name-amazon-Blue: Blue
+team-name-amazon-Aqua: Aqua
+team-name-amazon-Green: Green
+team-name-amazon-Yellow: Yellow
+team-name-cryptic-Blue: Blue
+team-name-cryptic-Red: Red
+team-name-gardens-Blue: Blue
+team-name-gardens-Red: Red
+team-name-glacier-Gray: Gray
+team-name-glacier-Pink: Pink
+team-name-glacier-Red: Red
+team-name-glacier-White: White
+team-name-glacier-Blue: Blue
+team-name-glacier-Aqua: Aqua
+team-name-glacier-Green: Green
+team-name-glacier-Yellow: Yellow
+team-name-inca-Gray: Gray
+team-name-inca-Pink: Pink
+team-name-inca-Red: Red
+team-name-inca-White: White
+team-name-inca-Blue: Blue
+team-name-inca-Aqua: Aqua
+team-name-inca-Green: Green
+team-name-inca-Yellow: Yellow
+team-name-lighthouse-Gray: Gray
+team-name-lighthouse-Pink: Pink
+team-name-lighthouse-Red: Red
+team-name-lighthouse-White: White
+team-name-lighthouse-Blue: Blue
+team-name-lighthouse-Aqua: Aqua
+team-name-lighthouse-Green: Green
+team-name-lighthouse-Yellow: Yellow
+team-name-lightstone-Gray: Gray
+team-name-lightstone-Pink: Pink
+team-name-lightstone-Aqua: Aqua
+team-name-lightstone-Red: Red
+team-name-lightstone-White: White
+team-name-lightstone-Blue: Blue
+team-name-lightstone-Green: Green
+team-name-lightstone-Yellow: Yellow
+team-name-lionstemple-Blue: Blue
+team-name-lionstemple-Red: Red
+team-name-nutcracker-Gray: Gray
+team-name-nutcracker-Pink: Pink
+team-name-nutcracker-Red: Red
+team-name-nutcracker-Yellow: Yellow
+team-name-nutcracker-White: White
+team-name-nutcracker-Blue: Blue
+team-name-nutcracker-Aqua: Aqua
+team-name-nutcracker-Green: Green
+team-name-orchestra-Gray: Gray
+team-name-orchestra-Pink: Pink
+team-name-orchestra-White: White
+team-name-orchestra-Red: Red
+team-name-orchestra-Blue: Blue
+team-name-orchestra-Aqua: Aqua
+team-name-orchestra-Green: Green
+team-name-orchestra-Yellow: Yellow
+team-name-pernicious-Yellow: Yellow
+team-name-pernicious-Green: Green
+team-name-pernicious-Aqua: Aqua
+team-name-pernicious-Blue: Blue
+team-name-pernicious-White: White
+team-name-pernicious-Red: Red
+team-name-pernicious-Pink: Pink
+team-name-pernicious-Gray: Gray
+team-name-picnic-Blue: Blue
+team-name-picnic-Red: Red
+team-name-ruins-Blue: Blue
+team-name-ruins-Red: Red
+team-name-siege-Gray: Gray
+team-name-siege-Pink: Pink
+team-name-siege-Red: Red
+team-name-siege-White: White
+team-name-siege-Blue: Blue
+team-name-siege-Aqua: Aqua
+team-name-siege-Green: Green
+team-name-siege-Yellow: Yellow
+team-name-speedway-Gray: Gray
+team-name-speedway-Pink: Pink
+team-name-speedway-White: White
+team-name-speedway-Red: Red
+team-name-speedway-Blue: Blue
+team-name-speedway-Aqua: Aqua
+team-name-speedway-Green: Green
+team-name-speedway-Yellow: Yellow
+team-name-waterfall-Gray: Gray
+team-name-waterfall-Pink: Pink
+team-name-waterfall-White: White
+team-name-waterfall-Red: Red
+team-name-waterfall-Aqua: Aqua
+team-name-waterfall-Blue: Blue
+team-name-waterfall-Green: Green
+team-name-waterfall-Yellow: Yellow
+team-name-sandcastle-Yellow: Yellow
+team-name-sandcastle-Green: Green
+team-name-sandcastle-Red: Red
+team-name-sandcastle-Blue: Blue
+team-name-submerged-Gray: Gray
+team-name-submerged-Pink: Pink
+team-name-submerged-White: White
+team-name-submerged-Red: Red
+team-name-submerged-Green: Green
+team-name-submerged-Blue: Blue
+team-name-submerged-Aqua: Aqua
+team-name-submerged-Yellow: Yellow
+team-name-cauldron-Green: Green
+team-name-cauldron-Blue: Blue
+team-name-cauldron-Red: Red
+team-name-cauldron-Yellow: Yellow
+team-name-eggrun-Yellow: Yellow
+team-name-eggrun-Green: Green
+team-name-eggrun-Blue: Blue
+team-name-eggrun-Red: Red
+team-name-fortdoon-Blue: Blue
+team-name-fortdoon-Green: Green
+team-name-fortdoon-Yellow: Yellow
+team-name-fortdoon-Red: Red
+team-name-helltemple-Red: Red
+team-name-helltemple-Yellow: Yellow
+team-name-helltemple-Green: Green
+team-name-helltemple-Blue: Blue
+team-name-invasion-Red: Red
+team-name-invasion-Yellow: Yellow
+team-name-invasion-Blue: Blue
+team-name-invasion-Green: Green
+team-name-swashbuckle-Yellow: Yellow
+team-name-swashbuckle-Red: Red
+team-name-swashbuckle-Green: Green
+team-name-swashbuckle-Blue: Blue
+team-name-unchained-Yellow: Yellow
+team-name-unchained-Red: Red
+team-name-unchained-Green: Green
+team-name-unchained-Blue: Blue
+display-group-3v3v3v3: 3v3v3v3
+team-name-aquarium3v3v3v3-Blue: Blue
+team-name-aquarium3v3v3v3-Red: Red
+team-name-aquarium3v3v3v3-Green: Green
+team-name-aquarium3v3v3v3-Yellow: Yellow
+team-name-aquarium4v4v4v4-Blue: Blue
+team-name-aquarium4v4v4v4-Red: Red
+team-name-aquarium4v4v4v4-Green: Green
+team-name-aquarium4v4v4v4-Yellow: Yellow
+team-name-ashore3v3v3v3-Blue: Blue
+team-name-ashore3v3v3v3-Red: Red
+team-name-ashore3v3v3v3-Green: Green
+team-name-ashore3v3v3v3-Yellow: Yellow
+team-name-ashore4v4v4v4-Blue: Blue
+team-name-ashore4v4v4v4-Red: Red
+team-name-ashore4v4v4v4-Green: Green
+team-name-ashore4v4v4v4-Yellow: Yellow
+team-name-boletum3v3v3v3-Blue: Blue
+team-name-boletum3v3v3v3-Red: Red
+team-name-boletum3v3v3v3-Green: Green
+team-name-boletum3v3v3v3-Yellow: Yellow
+team-name-boletum4v4v4v4-Blue: Blue
+team-name-boletum4v4v4v4-Red: Red
+team-name-boletum4v4v4v4-Green: Green
+team-name-boletum4v4v4v4-Yellow: Yellow
+team-name-carapace3v3v3v3-Yellow: Yellow
+team-name-carapace3v3v3v3-Green: Green
+team-name-carapace3v3v3v3-Red: Red
+team-name-carapace3v3v3v3-Blue: Blue
+team-name-carapace4v4v4v4-Yellow: Yellow
+team-name-carapace4v4v4v4-Green: Green
+team-name-carapace4v4v4v4-Red: Red
+team-name-carapace4v4v4v4-Blue: Blue
+team-name-cauldron3v3v3v3-Green: Green
+team-name-cauldron3v3v3v3-Blue: Blue
+team-name-cauldron3v3v3v3-Red: Red
+team-name-cauldron3v3v3v3-Yellow: Yellow
+team-name-cauldron4v4v4v4-Green: Green
+team-name-cauldron4v4v4v4-Blue: Blue
+team-name-cauldron4v4v4v4-Red: Red
+team-name-cauldron4v4v4v4-Yellow: Yellow
+team-name-chained3v3v3v3-Blue: Blue
+team-name-chained3v3v3v3-Red: Red
+team-name-chained3v3v3v3-Green: Green
+team-name-chained3v3v3v3-Yellow: Yellow
+team-name-chained4v4v4v4-Blue: Blue
+team-name-chained4v4v4v4-Red: Red
+team-name-chained4v4v4v4-Green: Green
+team-name-chained4v4v4v4-Yellow: Yellow
+team-name-dreamgrove3v3v3v3-Blue: Blue
+team-name-dreamgrove3v3v3v3-Red: Red
+team-name-dreamgrove3v3v3v3-Green: Green
+team-name-dreamgrove3v3v3v3-Yellow: Yellow
+team-name-dreamgrove4v4v4v4-Blue: Blue
+team-name-dreamgrove4v4v4v4-Red: Red
+team-name-dreamgrove4v4v4v4-Green: Green
+team-name-dreamgrove4v4v4v4-Yellow: Yellow
+team-name-eggrun3v3v3v3-Yellow: Yellow
+team-name-eggrun3v3v3v3-Green: Green
+team-name-eggrun3v3v3v3-Blue: Blue
+team-name-eggrun3v3v3v3-Red: Red
+team-name-eggrun4v4v4v4-Yellow: Yellow
+team-name-eggrun4v4v4v4-Green: Green
+team-name-eggrun4v4v4v4-Blue: Blue
+team-name-eggrun4v4v4v4-Red: Red
+team-name-fortdoon3v3v3v3-Blue: Blue
+team-name-fortdoon3v3v3v3-Green: Green
+team-name-fortdoon3v3v3v3-Yellow: Yellow
+team-name-fortdoon3v3v3v3-Red: Red
+team-name-fortdoon4v4v4v4-Blue: Blue
+team-name-fortdoon4v4v4v4-Green: Green
+team-name-fortdoon4v4v4v4-Yellow: Yellow
+team-name-fortdoon4v4v4v4-Red: Red
+team-name-helltemple3v3v3v3-Red: Red
+team-name-helltemple3v3v3v3-Yellow: Yellow
+team-name-helltemple3v3v3v3-Green: Green
+team-name-helltemple3v3v3v3-Blue: Blue
+team-name-helltemple4v4v4v4-Red: Red
+team-name-helltemple4v4v4v4-Yellow: Yellow
+team-name-helltemple4v4v4v4-Green: Green
+team-name-helltemple4v4v4v4-Blue: Blue
+team-name-invasion3v3v3v3-Red: Red
+team-name-invasion3v3v3v3-Yellow: Yellow
+team-name-invasion3v3v3v3-Blue: Blue
+team-name-invasion3v3v3v3-Green: Green
+team-name-invasion4v4v4v4-Red: Red
+team-name-invasion4v4v4v4-Yellow: Yellow
+team-name-invasion4v4v4v4-Blue: Blue
+team-name-invasion4v4v4v4-Green: Green
+team-name-lectus3v3v3v3-Yellow: Yellow
+team-name-lectus3v3v3v3-Red: Red
+team-name-lectus3v3v3v3-Green: Green
+team-name-lectus3v3v3v3-Blue: Blue
+team-name-lectus4v4v4v4-Yellow: Yellow
+team-name-lectus4v4v4v4-Red: Red
+team-name-lectus4v4v4v4-Green: Green
+team-name-lectus4v4v4v4-Blue: Blue
+team-name-sandcastle3v3v3v3-Yellow: Yellow
+team-name-sandcastle3v3v3v3-Green: Green
+team-name-sandcastle3v3v3v3-Red: Red
+team-name-sandcastle3v3v3v3-Blue: Blue
+team-name-sandcastle4v4v4v4-Yellow: Yellow
+team-name-sandcastle4v4v4v4-Green: Green
+team-name-sandcastle4v4v4v4-Red: Red
+team-name-sandcastle4v4v4v4-Blue: Blue
+team-name-swashbuckle3v3v3v3-Yellow: Yellow
+team-name-swashbuckle3v3v3v3-Red: Red
+team-name-swashbuckle3v3v3v3-Green: Green
+team-name-swashbuckle3v3v3v3-Blue: Blue
+team-name-swashbuckle4v4v4v4-Yellow: Yellow
+team-name-swashbuckle4v4v4v4-Red: Red
+team-name-swashbuckle4v4v4v4-Green: Green
+team-name-swashbuckle4v4v4v4-Blue: Blue
+team-name-temple3v3v3v3-Blue: Blue
+team-name-temple3v3v3v3-Red: Red
+team-name-temple3v3v3v3-Green: Green
+team-name-temple3v3v3v3-Yellow: Yellow
+team-name-temple4v4v4v4-Blue: Blue
+team-name-temple4v4v4v4-Red: Red
+team-name-temple4v4v4v4-Green: Green
+team-name-temple4v4v4v4-Yellow: Yellow
+team-name-treenan3v3v3v3-Blue: Blue
+team-name-treenan3v3v3v3-Red: Red
+team-name-treenan3v3v3v3-Green: Green
+team-name-treenan3v3v3v3-Yellow: Yellow
+team-name-treenan4v4v4v4-Blue: Blue
+team-name-treenan4v4v4v4-Red: Red
+team-name-treenan4v4v4v4-Green: Green
+team-name-treenan4v4v4v4-Yellow: Yellow
+team-name-unchained3v3v3v3-Yellow: Yellow
+team-name-unchained3v3v3v3-Red: Red
+team-name-unchained3v3v3v3-Green: Green
+team-name-unchained3v3v3v3-Blue: Blue
+team-name-unchained4v4v4v4-Yellow: Yellow
+team-name-unchained4v4v4v4-Red: Red
+team-name-unchained4v4v4v4-Green: Green
+team-name-unchained4v4v4v4-Blue: Blue
+upgrades-menu-gui-name-4v4v4v4: '&8Upgrades & Traps'
+upgrades-menu-gui-name-3v3v3v3: '&8Upgrades & Traps'
+team-name-acropolis1v1-Green: Green
+team-name-acropolis1v1-Blue: Blue
+team-name-acropolis1v1-White: White
+team-name-acropolis1v1-Yellow: Yellow
+team-name-acropolis1v1-Red: Red
+team-name-acropolis1v1-Aqua: Aqua
+team-name-acropolis1v1-Gray: Gray
+team-name-acropolis1v1-Pink: Pink
+team-name-acropolis2v2-Green: Green
+team-name-acropolis2v2-Blue: Blue
+team-name-acropolis2v2-White: White
+team-name-acropolis2v2-Yellow: Yellow
+team-name-acropolis2v2-Red: Red
+team-name-acropolis2v2-Aqua: Aqua
+team-name-acropolis2v2-Gray: Gray
+team-name-acropolis2v2-Pink: Pink
+team-name-amazon1v1-Gray: Gray
+team-name-amazon1v1-Pink: Pink
+team-name-amazon1v1-Red: Red
+team-name-amazon1v1-White: White
+team-name-amazon1v1-Blue: Blue
+team-name-amazon1v1-Aqua: Aqua
+team-name-amazon1v1-Green: Green
+team-name-amazon1v1-Yellow: Yellow
+team-name-amazon2v2-Gray: Gray
+team-name-amazon2v2-Pink: Pink
+team-name-amazon2v2-Red: Red
+team-name-amazon2v2-White: White
+team-name-amazon2v2-Blue: Blue
+team-name-amazon2v2-Aqua: Aqua
+team-name-amazon2v2-Green: Green
+team-name-amazon2v2-Yellow: Yellow
+team-name-ashfire1v1-Gray: Gray
+team-name-ashfire1v1-Pink: Pink
+team-name-ashfire1v1-White: White
+team-name-ashfire1v1-Aqua: Aqua
+team-name-ashfire1v1-Red: Red
+team-name-ashfire1v1-Yellow: Yellow
+team-name-ashfire1v1-Blue: Blue
+team-name-ashfire1v1-Green: Green
+team-name-ashfire2v2-Gray: Gray
+team-name-ashfire2v2-Pink: Pink
+team-name-ashfire2v2-White: White
+team-name-ashfire2v2-Aqua: Aqua
+team-name-ashfire2v2-Red: Red
+team-name-ashfire2v2-Yellow: Yellow
+team-name-ashfire2v2-Blue: Blue
+team-name-ashfire2v2-Green: Green
+team-name-glacier1v1-Gray: Gray
+team-name-glacier1v1-Pink: Pink
+team-name-glacier1v1-Red: Red
+team-name-glacier1v1-White: White
+team-name-glacier1v1-Blue: Blue
+team-name-glacier1v1-Aqua: Aqua
+team-name-glacier1v1-Green: Green
+team-name-glacier1v1-Yellow: Yellow
+team-name-glacier2v2-Gray: Gray
+team-name-glacier2v2-Pink: Pink
+team-name-glacier2v2-Red: Red
+team-name-glacier2v2-White: White
+team-name-glacier2v2-Blue: Blue
+team-name-glacier2v2-Aqua: Aqua
+team-name-glacier2v2-Green: Green
+team-name-glacier2v2-Yellow: Yellow
+team-name-inca1v1-Gray: Gray
+team-name-inca1v1-Pink: Pink
+team-name-inca1v1-Red: Red
+team-name-inca1v1-White: White
+team-name-inca1v1-Blue: Blue
+team-name-inca1v1-Aqua: Aqua
+team-name-inca1v1-Green: Green
+team-name-inca1v1-Yellow: Yellow
+team-name-inca2v2-Gray: Gray
+team-name-inca2v2-Pink: Pink
+team-name-inca2v2-Red: Red
+team-name-inca2v2-White: White
+team-name-inca2v2-Blue: Blue
+team-name-inca2v2-Aqua: Aqua
+team-name-inca2v2-Green: Green
+team-name-inca2v2-Yellow: Yellow
+team-name-lighthouse1v1-Gray: Gray
+team-name-lighthouse1v1-Pink: Pink
+team-name-lighthouse1v1-Red: Red
+team-name-lighthouse1v1-White: White
+team-name-lighthouse1v1-Blue: Blue
+team-name-lighthouse1v1-Aqua: Aqua
+team-name-lighthouse1v1-Green: Green
+team-name-lighthouse1v1-Yellow: Yellow
+team-name-lighthouse2v2-Gray: Gray
+team-name-lighthouse2v2-Pink: Pink
+team-name-lighthouse2v2-Red: Red
+team-name-lighthouse2v2-White: White
+team-name-lighthouse2v2-Blue: Blue
+team-name-lighthouse2v2-Aqua: Aqua
+team-name-lighthouse2v2-Green: Green
+team-name-lighthouse2v2-Yellow: Yellow
+team-name-lightstone1v1-Gray: Gray
+team-name-lightstone1v1-Pink: Pink
+team-name-lightstone1v1-Aqua: Aqua
+team-name-lightstone1v1-Red: Red
+team-name-lightstone1v1-White: White
+team-name-lightstone1v1-Blue: Blue
+team-name-lightstone1v1-Green: Green
+team-name-lightstone1v1-Yellow: Yellow
+team-name-lightstone2v2-Gray: Gray
+team-name-lightstone2v2-Pink: Pink
+team-name-lightstone2v2-Aqua: Aqua
+team-name-lightstone2v2-Red: Red
+team-name-lightstone2v2-White: White
+team-name-lightstone2v2-Blue: Blue
+team-name-lightstone2v2-Green: Green
+team-name-lightstone2v2-Yellow: Yellow
+team-name-nutcracker1v1-Gray: Gray
+team-name-nutcracker1v1-Pink: Pink
+team-name-nutcracker1v1-Red: Red
+team-name-nutcracker1v1-Yellow: Yellow
+team-name-nutcracker1v1-White: White
+team-name-nutcracker1v1-Blue: Blue
+team-name-nutcracker1v1-Aqua: Aqua
+team-name-nutcracker1v1-Green: Green
+team-name-nutcracker2v2-Gray: Gray
+team-name-nutcracker2v2-Pink: Pink
+team-name-nutcracker2v2-Red: Red
+team-name-nutcracker2v2-Yellow: Yellow
+team-name-nutcracker2v2-White: White
+team-name-nutcracker2v2-Blue: Blue
+team-name-nutcracker2v2-Aqua: Aqua
+team-name-nutcracker2v2-Green: Green
+team-name-orchestra1v1-Gray: Gray
+team-name-orchestra1v1-Pink: Pink
+team-name-orchestra1v1-White: White
+team-name-orchestra1v1-Red: Red
+team-name-orchestra1v1-Blue: Blue
+team-name-orchestra1v1-Aqua: Aqua
+team-name-orchestra1v1-Green: Green
+team-name-orchestra1v1-Yellow: Yellow
+team-name-orchestra2v2-Gray: Gray
+team-name-orchestra2v2-Pink: Pink
+team-name-orchestra2v2-White: White
+team-name-orchestra2v2-Red: Red
+team-name-orchestra2v2-Blue: Blue
+team-name-orchestra2v2-Aqua: Aqua
+team-name-orchestra2v2-Green: Green
+team-name-orchestra2v2-Yellow: Yellow
+team-name-pernicious1v1-Yellow: Yellow
+team-name-pernicious1v1-Green: Green
+team-name-pernicious1v1-Aqua: Aqua
+team-name-pernicious1v1-Blue: Blue
+team-name-pernicious1v1-White: White
+team-name-pernicious1v1-Red: Red
+team-name-pernicious1v1-Pink: Pink
+team-name-pernicious1v1-Gray: Gray
+team-name-pernicious2v2-Yellow: Yellow
+team-name-pernicious2v2-Green: Green
+team-name-pernicious2v2-Aqua: Aqua
+team-name-pernicious2v2-Blue: Blue
+team-name-pernicious2v2-White: White
+team-name-pernicious2v2-Red: Red
+team-name-pernicious2v2-Pink: Pink
+team-name-pernicious2v2-Gray: Gray
+team-name-siege1v1-Gray: Gray
+team-name-siege1v1-Pink: Pink
+team-name-siege1v1-Red: Red
+team-name-siege1v1-White: White
+team-name-siege1v1-Blue: Blue
+team-name-siege1v1-Aqua: Aqua
+team-name-siege1v1-Green: Green
+team-name-siege1v1-Yellow: Yellow
+team-name-siege2v2-Gray: Gray
+team-name-siege2v2-Pink: Pink
+team-name-siege2v2-Red: Red
+team-name-siege2v2-White: White
+team-name-siege2v2-Blue: Blue
+team-name-siege2v2-Aqua: Aqua
+team-name-siege2v2-Green: Green
+team-name-siege2v2-Yellow: Yellow
+team-name-speedway1v1-Gray: Gray
+team-name-speedway1v1-Pink: Pink
+team-name-speedway1v1-White: White
+team-name-speedway1v1-Red: Red
+team-name-speedway1v1-Blue: Blue
+team-name-speedway1v1-Aqua: Aqua
+team-name-speedway1v1-Green: Green
+team-name-speedway1v1-Yellow: Yellow
+team-name-speedway2v2-Gray: Gray
+team-name-speedway2v2-Pink: Pink
+team-name-speedway2v2-White: White
+team-name-speedway2v2-Red: Red
+team-name-speedway2v2-Blue: Blue
+team-name-speedway2v2-Aqua: Aqua
+team-name-speedway2v2-Green: Green
+team-name-speedway2v2-Yellow: Yellow
+team-name-submerged1v1-Gray: Gray
+team-name-submerged1v1-Pink: Pink
+team-name-submerged1v1-White: White
+team-name-submerged1v1-Red: Red
+team-name-submerged1v1-Green: Green
+team-name-submerged1v1-Blue: Blue
+team-name-submerged1v1-Aqua: Aqua
+team-name-submerged1v1-Yellow: Yellow
+team-name-submerged2v2-Gray: Gray
+team-name-submerged2v2-Pink: Pink
+team-name-submerged2v2-White: White
+team-name-submerged2v2-Red: Red
+team-name-submerged2v2-Green: Green
+team-name-submerged2v2-Blue: Blue
+team-name-submerged2v2-Aqua: Aqua
+team-name-submerged2v2-Yellow: Yellow
+team-name-waterfall1v1-Gray: Gray
+team-name-waterfall1v1-Pink: Pink
+team-name-waterfall1v1-White: White
+team-name-waterfall1v1-Red: Red
+team-name-waterfall1v1-Aqua: Aqua
+team-name-waterfall1v1-Blue: Blue
+team-name-waterfall1v1-Green: Green
+team-name-waterfall1v1-Yellow: Yellow
+team-name-waterfall2v2-Gray: Gray
+team-name-waterfall2v2-Pink: Pink
+team-name-waterfall2v2-White: White
+team-name-waterfall2v2-Red: Red
+team-name-waterfall2v2-Aqua: Aqua
+team-name-waterfall2v2-Blue: Blue
+team-name-waterfall2v2-Green: Green
+team-name-waterfall2v2-Yellow: Yellow
+team-name-zarzul1v1-Pink: Pink
+team-name-zarzul1v1-White: White
+team-name-zarzul1v1-Gray: Gray
+team-name-zarzul1v1-Aqua: Aqua
+team-name-zarzul1v1-Red: Red
+team-name-zarzul1v1-Yellow: Yellow
+team-name-zarzul1v1-Blue: Blue
+team-name-zarzul1v1-Green: Green
+team-name-zarzul2v2-Pink: Pink
+team-name-zarzul2v2-White: White
+team-name-zarzul2v2-Gray: Gray
+team-name-zarzul2v2-Aqua: Aqua
+team-name-zarzul2v2-Red: Red
+team-name-zarzul2v2-Yellow: Yellow
+team-name-zarzul2v2-Blue: Blue
+team-name-zarzul2v2-Green: Green
+display-group-daugiai: Daugiai
+team-name-rooted-Red: Red
+team-name-rooted-Blue: Blue
+team-name-rooted-Yellow: Yellow
+team-name-rooted-Green: Green
+team-name-rooted-Aqua: Aqua
+team-name-rooted-White: White
+team-name-rooted-Pink: Pink
+team-name-rooted-Gray: Gray
+team-name-orbit-Red: Red
+team-name-orbit-Blue: Blue
+team-name-orbit-Green: Green
+team-name-orbit-Yellow: Yellow
+team-name-orbit-Pink: Pink
+team-name-orbit-Gray: Gray
+team-name-orbit-Aqua: Aqua
+team-name-orbit-White: White
+team-name-toro-Red: Red
+team-name-toro-Blue: Blue
+team-name-toro-Green: Green
+team-name-toro-Yellow: Yellow
+team-name-toro-Pink: Pink
+team-name-toro-White: White
+team-name-toro-Gray: Gray
+team-name-toro-Aqua: Aqua
+team-name-archway3v3v3v3-Yellow: Yellow
+team-name-archway3v3v3v3-Red: Red
+team-name-archway3v3v3v3-Green: Green
+team-name-archway3v3v3v3-Blue: Blue
+team-name-archway4v4v4v4-Yellow: Yellow
+team-name-archway4v4v4v4-Red: Red
+team-name-archway4v4v4v4-Green: Green
+team-name-archway4v4v4v4-Blue: Blue
+team-name-catalyst3v3v3v3-Red: Red
+team-name-catalyst3v3v3v3-Blue: Blue
+team-name-catalyst3v3v3v3-Yellow: Yellow
+team-name-catalyst3v3v3v3-Green: Green
+team-name-catalyst4v4v4v4-Red: Red
+team-name-catalyst4v4v4v4-Blue: Blue
+team-name-catalyst4v4v4v4-Yellow: Yellow
+team-name-catalyst4v4v4v4-Green: Green
+display-group-4v4: 4v4
+display-group-cancau: Grappling Hook
+upgrades-menu-gui-name-4v4: '&8Upgrades & Traps'
+team-name-congress3v3v3v3-Red: Red
+team-name-congress3v3v3v3-Blue: Blue
+team-name-congress3v3v3v3-Green: Green
+team-name-congress3v3v3v3-Yellow: Yellow
+team-name-congress4v4v4v4-Red: Red
+team-name-congress4v4v4v4-Blue: Blue
+team-name-congress4v4v4v4-Green: Green
+team-name-congress4v4v4v4-Yellow: Yellow
+team-name-crogorm1v1-Pink: Pink
+team-name-crogorm1v1-White: White
+team-name-crogorm1v1-Aqua: Aqua
+team-name-crogorm1v1-Gray: Gray
+team-name-crogorm1v1-Red: Red
+team-name-crogorm1v1-Yellow: Yellow
+team-name-crogorm1v1-Green: Green
+team-name-crogorm1v1-Blue: Blue
+team-name-crogorm2v2-Pink: Pink
+team-name-crogorm2v2-White: White
+team-name-crogorm2v2-Aqua: Aqua
+team-name-crogorm2v2-Gray: Gray
+team-name-crogorm2v2-Red: Red
+team-name-crogorm2v2-Yellow: Yellow
+team-name-crogorm2v2-Green: Green
+team-name-crogorm2v2-Blue: Blue
+team-name-cryptic4v4-Blue: Blue
+team-name-cryptic4v4-Red: Red
+team-name-gardens4v4-Blue: Blue
+team-name-gardens4v4-Red: Red
+team-name-graveship3v3v3v3-Green: Green
+team-name-graveship3v3v3v3-Yellow: Yellow
+team-name-graveship3v3v3v3-Blue: Blue
+team-name-graveship3v3v3v3-Red: Red
+team-name-graveship4v4v4v4-Green: Green
+team-name-graveship4v4v4v4-Yellow: Yellow
+team-name-graveship4v4v4v4-Blue: Blue
+team-name-graveship4v4v4v4-Red: Red
+team-name-jurassic3v3v3v3-Yellow: Yellow
+team-name-jurassic3v3v3v3-Green: Green
+team-name-jurassic3v3v3v3-Red: Red
+team-name-jurassic3v3v3v3-Blue: Blue
+team-name-jurassic4v4v4v4-Yellow: Yellow
+team-name-jurassic4v4v4v4-Green: Green
+team-name-jurassic4v4v4v4-Red: Red
+team-name-jurassic4v4v4v4-Blue: Blue
+team-name-lionstemple4v4-Blue: Blue
+team-name-lionstemple4v4-Red: Red
+team-name-mystic1v1-Red: Red
+team-name-mystic1v1-Blue: Blue
+team-name-mystic1v1-Green: Green
+team-name-mystic1v1-Yellow: Yellow
+team-name-mystic1v1-Aqua: Aqua
+team-name-mystic1v1-White: White
+team-name-mystic1v1-Pink: Pink
+team-name-mystic1v1-Gray: Gray
+team-name-mystic2v2-Red: Red
+team-name-mystic2v2-Blue: Blue
+team-name-mystic2v2-Green: Green
+team-name-mystic2v2-Yellow: Yellow
+team-name-mystic2v2-Aqua: Aqua
+team-name-mystic2v2-White: White
+team-name-mystic2v2-Pink: Pink
+team-name-mystic2v2-Gray: Gray
+team-name-pharoah3v3v3v3-Red: Red
+team-name-pharoah3v3v3v3-Blue: Blue
+team-name-pharoah3v3v3v3-Yellow: Yellow
+team-name-pharoah3v3v3v3-Green: Green
+team-name-pharoah4v4v4v4-Red: Red
+team-name-pharoah4v4v4v4-Blue: Blue
+team-name-pharoah4v4v4v4-Yellow: Yellow
+team-name-pharoah4v4v4v4-Green: Green
+team-name-picnic4v4-Blue: Blue
+team-name-picnic4v4-Red: Red
+team-name-rooftop1v1-White: White
+team-name-rooftop1v1-Gray: Gray
+team-name-rooftop1v1-Pink: Pink
+team-name-rooftop1v1-Red: Red
+team-name-rooftop1v1-Blue: Blue
+team-name-rooftop1v1-Aqua: Aqua
+team-name-rooftop1v1-Green: Green
+team-name-rooftop1v1-Yellow: Yellow
+team-name-rooftop2v2-White: White
+team-name-rooftop2v2-Gray: Gray
+team-name-rooftop2v2-Pink: Pink
+team-name-rooftop2v2-Red: Red
+team-name-rooftop2v2-Blue: Blue
+team-name-rooftop2v2-Aqua: Aqua
+team-name-rooftop2v2-Green: Green
+team-name-rooftop2v2-Yellow: Yellow
+team-name-rooted1v1-Gray: Gray
+team-name-rooted1v1-Pink: Pink
+team-name-rooted1v1-Red: Red
+team-name-rooted1v1-White: White
+team-name-rooted1v1-Blue: Blue
+team-name-rooted1v1-Aqua: Aqua
+team-name-rooted1v1-Green: Green
+team-name-rooted1v1-Yellow: Yellow
+team-name-rooted2v2-Gray: Gray
+team-name-rooted2v2-Pink: Pink
+team-name-rooted2v2-Red: Red
+team-name-rooted2v2-White: White
+team-name-rooted2v2-Blue: Blue
+team-name-rooted2v2-Aqua: Aqua
+team-name-rooted2v2-Green: Green
+team-name-rooted2v2-Yellow: Yellow
+team-name-rootedcancau-Gray: Gray
+team-name-rootedcancau-Pink: Pink
+team-name-rootedcancau-Red: Red
+team-name-rootedcancau-White: White
+team-name-rootedcancau-Blue: Blue
+team-name-rootedcancau-Aqua: Aqua
+team-name-rootedcancau-Green: Green
+team-name-rootedcancau-Yellow: Yellow
+team-name-ruins4v4-Blue: Blue
+team-name-ruins4v4-Red: Red
+team-name-solace1v1-Gray: Gray
+team-name-solace1v1-Pink: Pink
+team-name-solace1v1-Red: Red
+team-name-solace1v1-White: White
+team-name-solace1v1-Blue: Blue
+team-name-solace1v1-Aqua: Aqua
+team-name-solace1v1-Green: Green
+team-name-solace1v1-Yellow: Yellow
+team-name-solace2v2-Gray: Gray
+team-name-solace2v2-Pink: Pink
+team-name-solace2v2-Red: Red
+team-name-solace2v2-White: White
+team-name-solace2v2-Blue: Blue
+team-name-solace2v2-Aqua: Aqua
+team-name-solace2v2-Green: Green
+team-name-solace2v2-Yellow: Yellow
+team-name-toro1v1-Gray: Gray
+team-name-toro1v1-Pink: Pink
+team-name-toro1v1-Red: Red
+team-name-toro1v1-White: White
+team-name-toro1v1-Blue: Blue
+team-name-toro1v1-Aqua: Aqua
+team-name-toro1v1-Green: Green
+team-name-toro1v1-Yellow: Yellow
+team-name-toro2v2-Gray: Gray
+team-name-toro2v2-Pink: Pink
+team-name-toro2v2-Red: Red
+team-name-toro2v2-White: White
+team-name-toro2v2-Blue: Blue
+team-name-toro2v2-Aqua: Aqua
+team-name-toro2v2-Green: Green
+team-name-toro2v2-Yellow: Yellow
+team-name-torocancau-Gray: Gray
+team-name-torocancau-Pink: Pink
+team-name-torocancau-Red: Red
+team-name-torocancau-White: White
+team-name-torocancau-Blue: Blue
+team-name-torocancau-Aqua: Aqua
+team-name-torocancau-Green: Green
+team-name-torocancau-Yellow: Yellow
+display-group-luckyblock: Luckyblock
+team-name-toroluckyblock-Gray: Gray
+team-name-toroluckyblock-Pink: Pink
+team-name-toroluckyblock-Red: Red
+team-name-toroluckyblock-White: White
+team-name-toroluckyblock-Blue: Blue
+team-name-toroluckyblock-Aqua: Aqua
+team-name-toroluckyblock-Green: Green
+team-name-toroluckyblock-Yellow: Yellow
+display-group-voidless: Voidless
+display-group-pearl: Ender Pearl
+team-name-varyth-Pink: Pink
+team-name-varyth-Yellow: Yellow
+team-name-varyth-Blue: Blue
+team-name-varyth-Aqua: Aqua
+team-name-varyth-Green: Green
+team-name-varyth-White: White
+team-name-varyth-Red: Red
+team-name-varyth-Gray: Gray
+team-name-polemus-Pink: Pink
+team-name-polemus-Yellow: Yellow
+team-name-polemus-White: White
+team-name-polemus-Blue: Blue
+team-name-polemus-Aqua: Aqua
+team-name-polemus-Green: Green
+team-name-polemus-Red: Red
+team-name-polemus-Gray: Gray
+team-name-solacepearl-Gray: Gray
+team-name-solacepearl-Pink: Pink
+team-name-solacepearl-Red: Red
+team-name-solacepearl-White: White
+team-name-solacepearl-Blue: Blue
+team-name-solacepearl-Aqua: Aqua
+team-name-solacepearl-Green: Green
+team-name-solacepearl-Yellow: Yellow
+display-group-1v1: Duels
+team-name-gardenssolo-Blue: Blue
+team-name-gardenssolo-Red: Red
+team-name-bwduo6-Gray: Gray
+team-name-bwduo6-Pink: Pink
+team-name-bwduo6-Red: Red
+team-name-bwduo6-White: White
+team-name-bwduo6-Blue: Blue
+team-name-bwduo6-Aqua: Aqua
+team-name-bwduo6-Green: Green
+team-name-bwduo6-Yellow: Yellow
+team-name-bwsquads7-Yellow: Yellow
+team-name-bwsquads7-Green: Green
+team-name-bwsquads7-Red: Red
+team-name-bwsquads7-Blue: Blue
+team-name-bwsolo1-Green: Green
+team-name-bwsolo1-Blue: Blue
+team-name-bwsolo1-White: White
+team-name-bwsolo1-Yellow: Yellow
+team-name-bwsolo1-Red: Red
+team-name-bwsolo1-Aqua: Aqua
+team-name-bwsolo1-Gray: Gray
+team-name-bwsolo1-Pink: Pink
+team-name-bwsolo2-Gray: Gray
+team-name-bwsolo2-Pink: Pink
+team-name-bwsolo2-Red: Red
+team-name-bwsolo2-White: White
+team-name-bwsolo2-Blue: Blue
+team-name-bwsolo2-Aqua: Aqua
+team-name-bwsolo2-Green: Green
+team-name-bwsolo2-Yellow: Yellow
+team-name-bwtriple2-Blue: Blue
+team-name-bwtriple2-Red: Red
+team-name-bwtriple2-Green: Green
+team-name-bwtriple2-Yellow: Yellow
+team-name-bwsquads1-Blue: Blue
+team-name-bwsquads1-Red: Red
+team-name-bwsquads1-Green: Green
+team-name-bwsquads1-Yellow: Yellow
+team-name-bwtriple1-Blue: Blue
+team-name-bwtriple1-Red: Red
+team-name-bwtriple1-Green: Green
+team-name-bwtriple1-Yellow: Yellow
+team-name-bwtriple5-Green: Green
+team-name-bwtriple5-Blue: Blue
+team-name-bwtriple5-Red: Red
+team-name-bwtriple5-Yellow: Yellow
+team-name-bwtriple7-Blue: Blue
+team-name-bwtriple7-Green: Green
+team-name-bwtriple7-Yellow: Yellow
+team-name-bwtriple7-Red: Red
+team-name-bwsquads4-Yellow: Yellow
+team-name-bwsquads4-Green: Green
+team-name-bwsquads4-Red: Red
+team-name-bwsquads4-Blue: Blue
+team-name-bwduo5-Gray: Gray
+team-name-bwduo5-Pink: Pink
+team-name-bwduo5-Red: Red
+team-name-bwduo5-White: White
+team-name-bwduo5-Blue: Blue
+team-name-bwduo5-Aqua: Aqua
+team-name-bwduo5-Green: Green
+team-name-bwduo5-Yellow: Yellow
+team-name-bwsquads5-Green: Green
+team-name-bwsquads5-Blue: Blue
+team-name-bwsquads5-Red: Red
+team-name-bwsquads5-Yellow: Yellow
+team-name-bwduo3-Gray: Gray
+team-name-bwduo3-Pink: Pink
+team-name-bwduo3-White: White
+team-name-bwduo3-Aqua: Aqua
+team-name-bwduo3-Red: Red
+team-name-bwduo3-Yellow: Yellow
+team-name-bwduo3-Blue: Blue
+team-name-bwduo3-Green: Green
+team-name-bwsolo6-Gray: Gray
+team-name-bwsolo6-Pink: Pink
+team-name-bwsolo6-Red: Red
+team-name-bwsolo6-White: White
+team-name-bwsolo6-Blue: Blue
+team-name-bwsolo6-Aqua: Aqua
+team-name-bwsolo6-Green: Green
+team-name-bwsolo6-Yellow: Yellow
+team-name-luckyblock-Red: Red
+team-name-luckyblock-Blue: Blue
+team-name-luckyblock-Green: Green
+team-name-luckyblock-Yellow: Yellow
+team-name-luckyblock-Pink: Pink
+team-name-luckyblock-White: White
+team-name-luckyblock-Gray: Gray
+team-name-luckyblock-Aqua: Aqua
+team-name-bwduo4-Gray: Gray
+team-name-bwduo4-Pink: Pink
+team-name-bwduo4-Red: Red
+team-name-bwduo4-White: White
+team-name-bwduo4-Blue: Blue
+team-name-bwduo4-Aqua: Aqua
+team-name-bwduo4-Green: Green
+team-name-bwduo4-Yellow: Yellow
+team-name-bwtriple4-Yellow: Yellow
+team-name-bwtriple4-Green: Green
+team-name-bwtriple4-Red: Red
+team-name-bwtriple4-Blue: Blue
+team-name-bwsolo3-Gray: Gray
+team-name-bwsolo3-Pink: Pink
+team-name-bwsolo3-White: White
+team-name-bwsolo3-Aqua: Aqua
+team-name-bwsolo3-Red: Red
+team-name-bwsolo3-Yellow: Yellow
+team-name-bwsolo3-Blue: Blue
+team-name-bwsolo3-Green: Green
+team-name-bwtriple3-Blue: Blue
+team-name-bwtriple3-Red: Red
+team-name-bwtriple3-Green: Green
+team-name-bwtriple3-Yellow: Yellow
+team-name-bwsquads3-Blue: Blue
+team-name-bwsquads3-Red: Red
+team-name-bwsquads3-Green: Green
+team-name-bwsquads3-Yellow: Yellow
+team-name-bwsquads2-Blue: Blue
+team-name-bwsquads2-Red: Red
+team-name-bwsquads2-Green: Green
+team-name-bwsquads2-Yellow: Yellow
+team-name-bwsolo5-Gray: Gray
+team-name-bwsolo5-Pink: Pink
+team-name-bwsolo5-Red: Red
+team-name-bwsolo5-White: White
+team-name-bwsolo5-Blue: Blue
+team-name-bwsolo5-Aqua: Aqua
+team-name-bwsolo5-Green: Green
+team-name-bwsolo5-Yellow: Yellow
+team-name-bwsolo4-Gray: Gray
+team-name-bwsolo4-Pink: Pink
+team-name-bwsolo4-Red: Red
+team-name-bwsolo4-White: White
+team-name-bwsolo4-Blue: Blue
+team-name-bwsolo4-Aqua: Aqua
+team-name-bwsolo4-Green: Green
+team-name-bwsolo4-Yellow: Yellow
+team-name-bwduo1-Green: Green
+team-name-bwduo1-Blue: Blue
+team-name-bwduo1-White: White
+team-name-bwduo1-Yellow: Yellow
+team-name-bwduo1-Red: Red
+team-name-bwduo1-Aqua: Aqua
+team-name-bwduo1-Gray: Gray
+team-name-bwduo1-Pink: Pink
+team-name-bwtriple6-Blue: Blue
+team-name-bwtriple6-Red: Red
+team-name-bwtriple6-Green: Green
+team-name-bwtriple6-Yellow: Yellow
+team-name-bwsquads6-Red: Red
+team-name-bwsquads6-Yellow: Yellow
+team-name-bwsquads6-Blue: Blue
+team-name-bwsquads6-Green: Green
+team-name-bwduo2-Gray: Gray
+team-name-bwduo2-Pink: Pink
+team-name-bwduo2-Red: Red
+team-name-bwduo2-White: White
+team-name-bwduo2-Blue: Blue
+team-name-bwduo2-Aqua: Aqua
+team-name-bwduo2-Green: Green
+team-name-bwduo2-Yellow: Yellow

@@ -1,0 +1,26 @@
+trailsGUI:
+  invSize: 27
+  FIRE:
+    material: BLAZE_POWDER
+    data: 0
+    slot: 11
+  SLIME:
+    material: SLIME_BALL
+    data: 0
+    slot: 12
+  WATER:
+    material: WATER_BUCKET
+    data: 0
+    slot: 13
+  NOTES:
+    material: JUKEBOX
+    data: 0
+    slot: 14
+  CRYSTAL:
+    material: GLASS
+    data: 0
+    slot: 15
+  backItem:
+    material: ARROW
+    data: 0
+    slot: 22

@@ -1,0 +1,19 @@
+lastAccountName: black_man
+timestamps:
+  login: 1675357325870
+  logout: 1675357707627
+ipAddress: 127.0.0.1
+lastlocation:
+  world: luckyblock
+  x: 429.6455387528144
+  y: -0.9397268140589867
+  z: 649.3661857502027
+  yaw: 337.19946
+  pitch: -14.699871
+logoutlocation:
+  world: crmapin
+  x: 0.5468124523821354
+  y: 64.0
+  z: 0.4175847184915828
+  yaw: 0.69605005
+  pitch: 0.39341038

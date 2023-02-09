@@ -1,0 +1,19 @@
+lastAccountName: Mochi
+timestamps:
+  login: 1675275431290
+  logout: 1675275518510
+ipAddress: 127.0.0.1
+lastlocation:
+  world: bwsolo4
+  x: -67.38655125111102
+  y: -10.16803286050481
+  z: -9.4318056594733
+  yaw: 169.95032
+  pitch: 14.400008
+logoutlocation:
+  world: crmapin
+  x: 0.8071283127119737
+  y: 62.0
+  z: 27.938696344048154
+  yaw: -33.35395
+  pitch: 0.24340977

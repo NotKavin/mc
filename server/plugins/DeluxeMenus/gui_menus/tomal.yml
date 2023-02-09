@@ -1,0 +1,61 @@
+menu_title: '&8LuckyBlock'
+open_command:
+- bijju089
+- ntdluckyblock
+size: 45
+update_interval: 1
+items:
+      1:
+        material: basehead-eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGI5MmNiNDMzMzNhYTYyMWM3MGVlZjRlYmYyOTliYTQxMmI0NDZmZTEyZTM0MWNjYzU4MmYzMTkyMTg5In19fQ==
+        slot: 14
+        display_name: '&aBed Wars (Lucky Block)'
+        lore:
+        - '&7Play Lucky Block Bed Wars'
+        - '&c'
+        - '&eClick to join the game!'
+        left_click_commands:
+        - '[player] bw join Luckyblock'
+        - '[close]'
+        right_click_commands:
+        - '[player] bw join Luckyblock'
+        - '[close]'
+        
+      2:
+        material: ENDER_PEARL
+        slot: 44
+        display_name: '&cClick to reconnect!'
+        lore:
+        - '&7Click here to reconnect'
+        - '&7the game you just exited'
+        - '&7each game you have 180 seconds'
+        - '&7to reconnect!'
+        left_click_commands:
+        - '[player] rejoin'
+        - '[close]'
+        right_click_commands:
+        - '[player] rejoin'
+        - '[close]'
+      6:
+        material: 35
+        data: 1
+        slot: 36
+        display_name: '&aPractice'
+        lore:
+        - '&7Improve your gameplay by'
+        - '&7practicing different aspects of'
+        - '&7Bed Wars!'
+        - ''
+        - '&eClick to view modes!'
+        left_click_commands:
+        - '[player] bwp Cancau'
+        right_click_commands:
+        - '[player] bwp Cancau'
+      CLOSE:
+        material: BARRIER
+        slot: 40
+        display_name: '&cClose'
+        lore: []
+        left_click_commands:
+        - '[close]'
+        right_click_commands:
+        - '[close]'
